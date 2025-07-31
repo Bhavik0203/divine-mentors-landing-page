@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { Sparkles, Heart, Brain, Compass, Star, Zap, ChevronLeft, ChevronRight } from 'lucide-react';
-
+import bg from '../../../public/bg2.png';
 export default function SpiritualBenefitsSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
@@ -66,7 +66,8 @@ export default function SpiritualBenefitsSection() {
   const IconComponent = currentBenefit.icon;
 
   return (
-    <section className="py-20 bg-[#f87f18] text-white relative overflow-hidden">
+    <section className=" py-16 bg-[#122730] text-white bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: `url('${bg.src}')` }}>
       {/* Geometric Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -91,12 +92,12 @@ export default function SpiritualBenefitsSection() {
         {/* Header */}
         <div className="text-center ">
           <div className="relative inline-block">
-            <h2 className="text-5xl font-black mb-4 relative">
+            <h2 className="text-5xl font-black text-black mb-4 relative">
               What You'll Gain
               {/* <div className="absolute -top-2 -right-6 w-12 h-12 border-4 border-yellow-400 rounded-full animate-spin"></div> */}
             </h2>
           </div>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto font-light">
+          <p className="text-xl text-gray-600 opacity-90 max-w-2xl mx-auto font-light">
             Transform every aspect of your spiritual journey
           </p>
         </div>
@@ -201,9 +202,20 @@ function BenefitCard({ benefit, isActive }: { benefit: { icon: any, number: stri
       isActive ? 'transform hover:scale-105' : ''
     }`}>
       {/* Card Background */}
-      <div className="relative bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-xl min-h-[320px] flex flex-col">
+      <div className="relative .
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      bg-[#283042] backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-xl min-h-[320px] flex flex-col">
         {/* Number Badge */}
-        <div className="absolute -top-4 -right-4 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-black text-lg shadow-lg">
+        <div className="absolute -top-4 -right-4 w-12 h-12 bg-white rounded-full flex items-center justify-center font-bold text-black text-lg shadow-lg">
           {benefit.number}
         </div>
 
