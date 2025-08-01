@@ -74,12 +74,12 @@ export default function OneBlog() {
       
       {/* Content */}
       <div className="relative z-10">
-  <div className="mx-auto w-full px-10  grid grid-cols-1 lg:grid-cols-3 lg:items-start">
+  <div className="mx-auto w-full px-2 lg:px-10 gap-10  grid grid-cols-1 lg:grid-cols-3 lg:items-start">
     
     {/* Sticky Left Section */}
     <div className="lg:sticky lg:top-4 lg:col-span-1">
     
-<div className="flex-1 w-full max-w-full pt-28 ">
+<div className="flex-1 w-full max-w-full pt-4 sm:pt-28 ">
 <h3 className="font-bold text-gray-900 uppercase mb-4">
                        Events
                       </h3>
@@ -102,7 +102,7 @@ SEPT 15–28  Rüti ZH, Switzerland
   </div>
   
   {/* Bottom Section */}
-  <div className="mx-auto w-full px-10 mt-16 text-center">
+  <div className="mx-auto w-full px-10 sm:px-0 mt-16 text-center">
     <p className="text-gray-800 text-4xl md:text-5xl font-medium mb-2">
       This is not a workshop.
     </p>

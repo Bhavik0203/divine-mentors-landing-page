@@ -204,7 +204,7 @@ const DivineMentorsLanding = () => {
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#576F9F]/80 backdrop-blur-md shadow-lg' : ' bg-[#576F9F]/40 backdrop-blur-md'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 shadow-2xs">
-          <div className="flex justify-between items-center h-16 md:h-20">
+          <div className="flex justify-between items-center h-12 md:h-20">
               <div className="flex-shrink-0">
                 <Image src="/logo.png" alt="Divine Mentors" className="h-12 w-12 md:h-16 md:w-16 lg:h-18 lg:w-18" width={80} height={80} />
               </div>
@@ -279,7 +279,7 @@ const DivineMentorsLanding = () => {
       </header>
 
       {/* Hero Banner */}
-      <section className="relative h-screen flex items-center justify-start px-6 py-12 overflow-hidden">
+      <section className="relative h-screen flex items-center justify-start px-4 sm:px-6 py-8 sm:py-12 overflow-hidden">
   <div className="absolute inset-0 z-0">
     <Image
       src={banner}
@@ -288,8 +288,8 @@ const DivineMentorsLanding = () => {
     />
   </div>
 
-  <div className="relative z-20 text-left text-white max-w-3xl px-10 pt-10 ml-8 lg:ml-16">
-    <h1 className="text-5xl md:text-5xl font-bold mb-6 animate-fade-in">
+  <div className="relative z-20 text-left text-white max-w-3xl px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-12 md:pt-16 ml-0 sm:ml-4 md:ml-6 lg:ml-8">
+    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-2 md:mb-4 animate-fade-in leading-tight">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
           {part}
@@ -297,14 +297,14 @@ const DivineMentorsLanding = () => {
         </React.Fragment>
       ))}
     </h1>
-    <p className="text-xl md:text-2xl mb-6 opacity-90">
+    <p className="text-lg sm:text-lg md:text-xl mb-0 sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <p className="text-lg mb-8 opacity-80 leading-relaxed">
+    <p className="text-base sm:text-lg mb-4 sm:mb-4 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
     <Link href="#contact">
-      <button className="bg-white cursor-pointer text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+      <button className="bg-white cursor-pointer text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
         {t('hero.cta')}
       </button>
     </Link>
@@ -416,10 +416,10 @@ const DivineMentorsLanding = () => {
      </section>
       <div id='blog'>
        
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
           
           <a href="https://divinementors.com/breaking-free-from-addictions-a-spiritual-approach/" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[700px]">
+            <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[719px]">
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               <Image 
                 src={blog1} 
@@ -428,10 +428,7 @@ const DivineMentorsLanding = () => {
               />
               <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                  
-Freeing yourself from <br />
-                  addictions: <br />
-                  A spiritual path
+                  Freeing yourself from addictions: A spiritual path
                 </h2>
                 <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
                   Read More
@@ -440,24 +437,25 @@ Freeing yourself from <br />
             </div>
           </a>
 
-          <div className="lg:col-span-1">
+
+          <div className="lg:col-span-1 space-y-6 lg:space-y-0">
             
             {/* Top Right - Learn and Practice Hindu Tradition */}
             <a href="https://divinementors.com/managing-anxiety-with-mindfulness-and-clarity/" target="_blank" rel="noopener noreferrer" className="block">
-              <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px] hover:shadow-3xl transition-all duration-300">
+              <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 <Image 
                 src={blog2} 
                   alt="Person in meditation" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="relative z-10 flex flex-col justify-center h-full p-6">
-                  <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
+                <div className="relative z-10 flex flex-col justify-center h-full p-4 lg:p-6">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 lg:mb-4  p-4 leading-tight">
                    Dealing with fear through <br/>
                    mindfulness and clarity
 
                   </h2>
-                  <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                  <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
                   Read More
                 </button>
                 </div>
@@ -466,19 +464,19 @@ Freeing yourself from <br />
 
             {/* Bottom Right - Understand the Concepts */}
             <a href="https://divinementors.com/the-role-of-spiritual-counseling-in-mental-health-a-science-backed-alternative-to-psychotherapy/" target="_blank" rel="noopener noreferrer" className="block">
-    <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px] hover:shadow-3xl transition-all duration-300">
+    <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
               <div className="absolute inset-0 bg-black bg-opacity-30"></div>
               <Image 
               src={blog3} 
                 alt="Traditional vessels and artifacts" 
                 className="absolute inset-0 w-full h-full object-cover "
               />
-              <div className="relative z-10 flex flex-col justify-center h-full p-6">
-                <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
+              <div className="relative z-10 flex flex-col justify-center h-full p-4 lg:p-6">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 lg:mb-4 p-4 leading-tight">
                  The Role of Spiritual Counseling in Mental Health: <br/>A Scientifically Based Alternative to <br/>Psychotherapy
 Scientific studies
                 </h2>
-                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
                 Read More
               </button>
               </div>
@@ -562,7 +560,7 @@ Scientific studies
             <div className="lg:col-span-1 z-50">
              
               
-              <div className="space-y-4">
+              <div className="space-y-4 p-4 md:p-0">
                 {faqs.map((faq, index) => (
                   <div key={index} className="bg-white/20 backdrop-blur-md rounded-lg shadow-md">
                     <button
@@ -615,14 +613,14 @@ Scientific studies
                   </div>
                 </div>
                 
-                <div className="mb-6">
+                <div className="mb-2">
                   <label className="block text-sm font-medium text-white mb-2">Special Requirements or Questions</label>
                   <textarea className="w-full px-4 border-white py-3 rounded-lg borderbg-black/20 backdrop-blur-md focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" rows={2} placeholder="Let us know if you have any special requirements or questions..."></textarea>
                 </div>
                 
   
                 
-                <button type="submit" className="w-full cursor-pointer bg-black/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                <button type="submit" className="w-full cursor-pointer bg-white/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                   Complete Registration & Pay
                 </button>
                 
