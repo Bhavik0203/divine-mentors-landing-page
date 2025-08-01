@@ -43,7 +43,7 @@ const AboutSection = () => {
             <p className="text-blue-200 text-lg leading-relaxed mb-8 max-w-4xl">
             Divine Mentors presents an extraordinary spiritual gathering bringing authentic Indian wisdom traditions to Switzerland. Our four esteemed mentors – direct from India's spiritual centers – share centuries-old practices specifically adapted for modern seekers' needs. This (2 week) intensive transformation weekend (delete) combines classical teachings with scientifically validated approaches for mental clarity, emotional balance, and spiritual growth. Set against the inspiring backdrop of the Swiss Alps, you'll find the perfect environment for profound inner work and lasting change. This exclusive event is designed for serious practitioners ready to commit to genuine spiritual development and personal excellence.</p>
 
-            <button className="bg-white hover:bg-blue-200 text-black font-medium px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
+            <button className="bg-white cursor-pointer hover:bg-blue-200 text-black font-medium px-8 py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105">
               More About
             </button>
           </div>

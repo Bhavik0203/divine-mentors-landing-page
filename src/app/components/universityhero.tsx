@@ -33,7 +33,7 @@ const UniversityHero = () => {
             </p>
             
             <div className="pt-4">
-              <button className="bg-white text-gray-800 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-200 shadow-lg">
+              <button className="bg-white cursor-pointer text-gray-800 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors duration-200 shadow-lg">
                 Get Started
               </button>
             </div>

@@ -235,14 +235,14 @@ const DivineMentorsLanding = () => {
 
             {/* Book Now Button */}
             <div className="hidden md:flex">
-              <a href="#contact" className="text-[#576F9F] bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border-2 hover:border-[#576F9F] transform hover:scale-105 transition-all inline-block">
+              <a href="#contact" className="text-[#576F9F] cursor-pointer bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border-2 hover:border-[#576F9F] transform hover:scale-105 transition-all inline-block">
                 {t('navigation.bookNow')}
               </a>
             </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700 cursor-pointer">
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
@@ -303,7 +303,7 @@ const DivineMentorsLanding = () => {
     <p className="text-lg mb-8 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
-    <button className="bg-white text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+    <button className="bg-white cursor-pointer text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
       {t('hero.cta')}
     </button>
   </div>
@@ -431,7 +431,7 @@ Freeing yourself from <br />
                   addictions: <br />
                   A spiritual path
                 </h2>
-                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
                   Read More
                 </button>
               </div>
@@ -455,7 +455,7 @@ Freeing yourself from <br />
                    mindfulness and clarity
 
                   </h2>
-                  <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                  <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
                   Read More
                 </button>
                 </div>
@@ -476,7 +476,7 @@ Freeing yourself from <br />
                  The Role of Spiritual Counseling in Mental Health: <br/>A Scientifically Based Alternative to <br/>Psychotherapy
 Scientific studies
                 </h2>
-                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
                 Read More
               </button>
               </div>
@@ -536,7 +536,7 @@ Scientific studies
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             Don't let another day pass living below your potential. Join thousands who have discovered their divine purpose.
           </p>
-          <button className="bg-#576F9F text-[#576F9F] px-12 py-4 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl">
+          <button className="bg-#576F9F text-[#576F9F] cursor-pointer px-12 py-4 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl">
             Book Your Transformation Now
           </button>
         </div>
@@ -565,7 +565,7 @@ Scientific studies
                   <div key={index} className="bg-white/20 backdrop-blur-md rounded-lg shadow-md">
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                      className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-white/10 hover:backdrop-blur-md transition-colors"
+                      className="w-full cursor-pointer px-6 py-4 text-left flex justify-between items-center hover:bg-white/10 hover:backdrop-blur-md transition-colors"
                     >
                       <span className="font-medium text-white">{faq.question}</span>
                       {openFaq === index ? <ChevronUp className="w-5 h-5 text-white" /> : <ChevronDown className="w-5 h-5 text-white" />}
@@ -620,7 +620,7 @@ Scientific studies
                 
   
                 
-                <button type="submit" className="w-full bg-black/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                <button type="submit" className="w-full cursor-pointer bg-black/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                   Complete Registration & Pay
                 </button>
                 
@@ -731,7 +731,7 @@ Scientific studies
       <div className="fixed bottom-6 right-6 z-50 space-y-3">
         <button 
           onClick={() => window.location.href = 'tel:+919876543210'}
-          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer group"
+          className="bg-green-500 text-white  p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer group"
           title="Call us at +91 98765 43210"
         >
           <Phone className="w-6 h-6 group-hover:animate-pulse" />

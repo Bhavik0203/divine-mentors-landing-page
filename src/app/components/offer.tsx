@@ -197,7 +197,7 @@ export default function OfferingsDesigns() {
           <button
             key={index}
             onClick={() => setCurrentDesign(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${
+            className={`w-3 h-3 rounded-full cursor-pointer transition-all duration-300 ${
               currentDesign === index 
                 ? 'bg-[#f87f18] scale-125' 
                 : 'bg-gray-300 hover:bg-gray-400'
