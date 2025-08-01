@@ -288,7 +288,7 @@ const DivineMentorsLanding = () => {
     />
   </div>
 
-  <div className="relative z-20 text-left text-white max-w-3xl pt-28 pb-20 items-center justify-center px-10">
+  <div className="relative z-20 text-left text-white max-w-3xl  py-16 items-center justify-center px-10">
     <h1 className="text-5xl md:text-5xl font-bold mb-6 animate-fade-in">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
@@ -324,9 +324,9 @@ const DivineMentorsLanding = () => {
       </div>
       
       <div className="relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
           {offerings.map((offering, index) => (
-            <div key={index} className="group">
+            <div key={index} className="group flex justify-center">
               <div className="card group relative w-[280px] h-[320px] bg-white rounded-[15px] flex flex-col items-center justify-center text-center p-6 cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
                 <div className="relative z-10 flex flex-col items-center">
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-[#576F9F] rounded-2xl text-white mb-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg">
