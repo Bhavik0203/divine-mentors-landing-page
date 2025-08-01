@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "./components/I18nProvider";
+import ScrollButton from "./components/scrollbutton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <I18nProvider>
+          {/* <ScrollButton/> */}
           {children}
         </I18nProvider>
       </body>

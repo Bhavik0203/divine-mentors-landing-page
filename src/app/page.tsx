@@ -204,9 +204,9 @@ const DivineMentorsLanding = () => {
       {/* Header */}
       <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#576F9F]/80 backdrop-blur-md shadow-lg' : ' bg-[#576F9F]/40 backdrop-blur-md'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 shadow-2xs">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-16 md:h-20">
               <div className="flex-shrink-0">
-                <Image src="/logo.png" alt="Divine Mentors" className="h-18" width={80} height={80} />
+                <Image src="/logo.png" alt="Divine Mentors" className="h-12 w-12 md:h-16 md:w-16 lg:h-18 lg:w-18" width={80} height={80} />
               </div>
               
             {/* Desktop Navigation */}
@@ -279,7 +279,7 @@ const DivineMentorsLanding = () => {
       </header>
 
       {/* Hero Banner */}
-      <section className="relative h-screen flex items-start justify-start px-6 py-12 overflow-hidden">
+      <section className="relative h-screen flex items-center justify-start px-6 py-12 overflow-hidden">
   <div className="absolute inset-0 z-0">
     <Image
       src={banner}
@@ -288,7 +288,7 @@ const DivineMentorsLanding = () => {
     />
   </div>
 
-  <div className="relative z-20 text-left text-white max-w-3xl  py-16 items-center justify-center px-10">
+  <div className="relative z-20 text-left text-white max-w-3xl px-10 pt-10 ml-8 lg:ml-16">
     <h1 className="text-5xl md:text-5xl font-bold mb-6 animate-fade-in">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
@@ -722,7 +722,7 @@ Scientific studies
                 <a href="#cookies" className="text-gray-300 hover:text-#576F9F transition-colors">Cookie Policy</a>
               </div> */}
               <p className="text-gray-400 text-sm text-center md:text-right">
-                © 2025 Divine Mentors. All rights reserved. | Crafted with care by Digitalize The Globe.
+                © 2025 Divine Mentors. All rights reserved. | Carefully Crafted by Digitalize The Globe.
               </p>
             </div>
           </div>
