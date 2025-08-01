@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "mentors": "Mentors",
+    "events": "Events",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "title": "Experience Transformation Through Authentic Spiritual Wisdom – Exclusive Swiss Event",
+    "subtitle": "Connect with India's timeless masters and discover the path to inner peace, clarity, and sustainable transformation in your life.",
+    "description": "A rare opportunity for genuine seekers: Learn from four authentic spiritual mentors from India who blend centuries-old wisdom with modern approaches to healing and growth. Limited seats – exclusively for serious participants.",
+    "cta": "Register Now - Transform Today"
+  },
+  "painPoints": {
+    "title": "Transform your mindset and unlock your true potential",
+    "subtitle": "Learn ancient wisdom from experienced spiritual mentors",
+    "description": "Build lasting connections with like-minded individuals",
+    "practice": "Develop practical tools for daily spiritual practice",
+    "beliefs": "Overcome limiting beliefs and emotional blockages",
+    "purpose": "Discover your life's purpose and divine calling"
+  },
+  "offerings": {
+    "title": "What We Offer",
+    "authenticGuidance": {
+      "title": "Authentic Spiritual Guidance",
+      "description": "Direct transmission of wisdom through lineage-based mentors with decades of experience in classical Indian traditions."
+    },
+    "personalizedTransformation": {
+      "title": "Personalized Transformation",
+      "description": "Individual assessment of your spiritual journey with customized practices tailored to your unique path of self-discovery."
+    },
+    "scienceBackedMethods": {
+      "title": "Science-Backed Methods",
+      "description": "Proven techniques including pranayama, meditation, and spiritual psychology, validated by clinical research as effective alternatives to traditional approaches."
+    },
+    "modernLifeIntegration": {
+      "title": "Modern Life Integration",
+      "description": "Practical tools for stress management, emotional intelligence, and leadership qualities that seamlessly integrate into your professional and personal life."
+    },
+    "premiumSwissExperience": {
+      "title": "Premium Swiss Experience",
+      "description": "Exclusive setting in Switzerland's breathtaking landscape, ensuring tranquility and focus for profound spiritual work."
+    },
+    "lifelongMentorship": {
+      "title": "Lifelong Mentorship",
+      "description": "Building lasting connections with authentic mentors for continuous guidance on your spiritual journey."
+    }
+  },
+  "mentors": {
+    "ramBaba": {
+      "name": "Ram Baba",
+      "bio": "Private 1:1 consultations offering mindfulness, breathwork, and spiritual clarity.",
+      "specialty": "Meditation & Mindfulness",
+      "offerings": [
+        "Guided Meditation",
+        "Pranayama Practices",
+        "Mindfulness Coaching"
+      ]
+    },
+    "swamiPratik": {
+      "name": "Mahant Swami Pratik Puri",
+      "bio": "1:1 sessions focused on ancient Indian energy healing and inner alignment.",
+      "specialty": "Energy Healing",
+      "offerings": [
+        "Energy Clearing",
+        "Chakra Balancing",
+        "Intuitive Spiritual Guidance"
+      ]
+    },
+    "nagaBaba": {
+      "name": "Mahant Savan Bharti Naga Baba",
+      "bio": "Consultations on Vedic scriptures, philosophy, and spiritual discipline.",
+      "specialty": "Vedic Philosophy",
+      "offerings": [
+        "Vedic Teachings",
+        "Scripture Study",
+        "Spiritual Life Counseling"
+      ]
+    },
+    "acharyaShyam": {
+      "name": "Acharya Shyam Chetan",
+      "bio": "Spiritual guidance from the Divine Feminine path focused on inner peace and transformation.",
+      "specialty": "Spiritual Counseling",
+      "offerings": [
+        "Awakening Divine Feminine",
+        "Inner Peace Practices",
+        "Emotional & Energetic Healing"
+      ]
+    }
+  },
+  "blogs": {
+    "innerPeace": {
+      "title": "The Path to Inner Peace",
+      "excerpt": "Discover ancient techniques for finding tranquility in modern life...",
+      "date": "July 20, 2025"
+    },
+    "divinePurpose": {
+      "title": "Awakening Your Divine Purpose",
+      "excerpt": "Learn how to align with your soul's true calling and live authentically...",
+      "date": "July 15, 2025"
+    },
+    "sacredPractices": {
+      "title": "Healing Through Sacred Practices",
+      "excerpt": "Explore time-tested spiritual practices for holistic healing...",
+      "date": "July 10, 2025"
+    }
+  },
+  "faq": {
+    "difference": {
+      "question": "What makes this event different from other spiritual workshops?",
+      "answer": "This is not a workshop – it's a direct transmission event with authentic lineage-holders from India. Our mentors carry centuries of unbroken spiritual tradition and have been specifically selected for their ability to guide serious Western practitioners. The Swiss setting provides an optimal environment for deep spiritual work while maintaining the highest standards of comfort and accessibility."
+    },
+    "experience": {
+      "question": "Do I need prior experience with meditation or yoga?",
+      "answer": "While prior experience is beneficial, it's not required. Our mentors are skilled at meeting students where they are. However, this event is designed for serious seekers ready to commit to genuine spiritual practice. We welcome beginners with sincere intention as well as advanced practitioners seeking deeper guidance."
+    },
+    "readiness": {
+      "question": "How do I know if I'm ready for this level of spiritual work?",
+      "answer": "If you're feeling called to something deeper than surface-level wellness practices, if you're seeking authentic transformation rather than temporary relief, and if you're ready to take responsibility for your spiritual growth, then you're likely prepared for this experience. Our mentors will assess your readiness during the initial sessions."
+    },
+    "sessions": {
+      "question": "What should I expect during the private sessions with mentors?",
+      "answer": "Each mentor offers a unique approach based on their specialization. Sessions may include personalized meditation instruction, energy healing, spiritual counseling, advanced breathing techniques, or sacred ritual work. All sessions are conducted with utmost respect for your comfort level and spiritual boundaries."
+    },
+    "professionals": {
+      "question": "Is this event suitable for business professionals and executives?",
+      "answer": "Absolutely. Many of our participants are successful professionals seeking to integrate spiritual wisdom with career excellence. Our mentors understand the demands of modern professional life and offer practical applications of spiritual principles that enhance rather than interfere with your success."
+    },
+    "accommodation": {
+      "question": "What are the accommodation and location details?",
+      "answer": "The event takes place in a premium retreat facility (in the countryside of Zürich) in the Swiss Alps, offering comfortable accommodations, organic vegetarian cuisine, (we do not provide accommodation nor food) and stunning natural beauty. Specific location details will be provided upon registration to maintain the intimate and exclusive nature of the gathering."
+    }
+  },
+  "pricing": {
+    "seeker": {
+      "name": "Seeker",
+      "price": "$97",
+      "features": ["Full event access", "Group sessions", "Take-home materials", "Community access"]
+    },
+    "disciple": {
+      "name": "Disciple",
+      "price": "$197",
+      "features": ["Everything in Seeker", "1-on-1 mentor session", "Premium materials", "Priority support"]
+    },
+    "divine": {
+      "name": "Divine",
+      "price": "$397",
+      "features": ["Everything in Disciple", "3 private sessions", "Lifetime community access", "Personal spiritual plan"]
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "readMore": "Read More",
+    "registerNow": "Register Now",
+    "contactUs": "Contact Us",
+    "website": "Website"
+  }
+} 

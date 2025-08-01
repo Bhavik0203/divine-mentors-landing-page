@@ -1,0 +1,162 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "mentors": "Mentors",
+    "events": "Événements",
+    "blog": "Blog",
+    "contact": "Contact",
+    "contactUs": "Contactez-nous",
+    "bookNow": "Réserver maintenant"
+  },
+  "hero": {
+    "title": "Vivez la transformation grâce à la sagesse spirituelle authentique – Événement exclusif en Suisse",
+    "subtitle": "Connectez-vous avec les maîtres intemporels de l'Inde et découvrez le chemin vers la paix intérieure, la clarté et la transformation durable dans votre vie.",
+    "description": "Une rare opportunité pour les vrais chercheurs : Apprenez de quatre mentors spirituels authentiques de l'Inde qui allient la sagesse séculaire aux approches modernes de guérison et de croissance. Places limitées – exclusivement pour les participants sérieux.",
+    "cta": "S'inscrire maintenant - Se transformer aujourd'hui"
+  },
+  "painPoints": {
+    "title": "Transformez votre état d'esprit et libérez votre véritable potentiel",
+    "subtitle": "Apprenez la sagesse ancienne de mentors spirituels expérimentés",
+    "description": "Construisez des connexions durables avec des personnes partageant les mêmes idées",
+    "practice": "Développez des outils pratiques pour la pratique spirituelle quotidienne",
+    "beliefs": "Surmontez les croyances limitantes et les blocages émotionnels",
+    "purpose": "Découvrez le but de votre vie et votre appel divin"
+  },
+  "offerings": {
+    "title": "Ce que nous offrons",
+    "authenticGuidance": {
+      "title": "Guidance spirituelle authentique",
+      "description": "Transmission directe de la sagesse par des mentors basés sur la lignée avec des décennies d'expérience dans les traditions indiennes classiques."
+    },
+    "personalizedTransformation": {
+      "title": "Transformation personnalisée",
+      "description": "Évaluation individuelle de votre parcours spirituel avec des pratiques personnalisées adaptées à votre chemin unique d'auto-découverte."
+    },
+    "scienceBackedMethods": {
+      "title": "Méthodes validées par la science",
+      "description": "Techniques éprouvées incluant le pranayama, la méditation et la psychologie spirituelle, validées par la recherche clinique comme alternatives efficaces aux approches traditionnelles."
+    },
+    "modernLifeIntegration": {
+      "title": "Intégration dans la vie moderne",
+      "description": "Outils pratiques pour la gestion du stress, l'intelligence émotionnelle et les qualités de leadership qui s'intègrent parfaitement dans votre vie professionnelle et personnelle."
+    },
+    "premiumSwissExperience": {
+      "title": "Expérience suisse premium",
+      "description": "Cadre exclusif dans le paysage époustouflant de la Suisse, garantissant tranquillité et concentration pour un travail spirituel profond."
+    },
+    "lifelongMentorship": {
+      "title": "Mentorat à vie",
+      "description": "Construction de connexions durables avec des mentors authentiques pour un accompagnement continu dans votre parcours spirituel."
+    }
+  },
+  "mentors": {
+    "ramBaba": {
+      "name": "Ram Baba",
+      "bio": "Consultations privées 1:1 offrant pleine conscience, respiration et clarté spirituelle.",
+      "specialty": "Méditation et pleine conscience",
+      "offerings": [
+        "Méditation guidée",
+        "Pratiques de pranayama",
+        "Coaching de pleine conscience"
+      ]
+    },
+    "swamiPratik": {
+      "name": "Mahant Swami Pratik Puri",
+      "bio": "Sessions 1:1 axées sur la guérison énergétique indienne ancienne et l'alignement intérieur.",
+      "specialty": "Guérison énergétique",
+      "offerings": [
+        "Nettoyage énergétique",
+        "Équilibrage des chakras",
+        "Guidance spirituelle intuitive"
+      ]
+    },
+    "nagaBaba": {
+      "name": "Mahant Savan Bharti Naga Baba",
+      "bio": "Consultations sur les écritures védiques, la philosophie et la discipline spirituelle.",
+      "specialty": "Philosophie védique",
+      "offerings": [
+        "Enseignements védiques",
+        "Étude des écritures",
+        "Conseil de vie spirituelle"
+      ]
+    },
+    "acharyaShyam": {
+      "name": "Acharya Shyam Chetan",
+      "bio": "Guidance spirituelle du chemin du Divin Féminin axée sur la paix intérieure et la transformation.",
+      "specialty": "Conseil spirituel",
+      "offerings": [
+        "Éveil du Divin Féminin",
+        "Pratiques de paix intérieure",
+        "Guérison émotionnelle et énergétique"
+      ]
+    }
+  },
+  "blogs": {
+    "innerPeace": {
+      "title": "Le chemin vers la paix intérieure",
+      "excerpt": "Découvrez des techniques anciennes pour trouver la tranquillité dans la vie moderne...",
+      "date": "20 juillet 2025"
+    },
+    "divinePurpose": {
+      "title": "Éveiller votre but divin",
+      "excerpt": "Apprenez à vous aligner avec le véritable appel de votre âme et vivre authentiquement...",
+      "date": "15 juillet 2025"
+    },
+    "sacredPractices": {
+      "title": "Guérison par les pratiques sacrées",
+      "excerpt": "Explorez des pratiques spirituelles éprouvées pour la guérison holistique...",
+      "date": "10 juillet 2025"
+    }
+  },
+  "faq": {
+    "difference": {
+      "question": "Qu'est-ce qui rend cet événement différent des autres ateliers spirituels ?",
+      "answer": "Ce n'est pas un atelier – c'est un événement de transmission directe avec des détenteurs de lignée authentiques de l'Inde. Nos mentors portent des siècles de tradition spirituelle ininterrompue et ont été spécifiquement sélectionnés pour leur capacité à guider les praticiens occidentaux sérieux. Le cadre suisse fournit un environnement optimal pour un travail spirituel profond tout en maintenant les plus hauts standards de confort et d'accessibilité."
+    },
+    "experience": {
+      "question": "Ai-je besoin d'expérience préalable en méditation ou yoga ?",
+      "answer": "Bien qu'une expérience préalable soit bénéfique, elle n'est pas requise. Nos mentors sont habiles à rencontrer les étudiants là où ils en sont. Cependant, cet événement est conçu pour les chercheurs sérieux prêts à s'engager dans une pratique spirituelle authentique. Nous accueillons les débutants avec une intention sincère ainsi que les praticiens avancés cherchant une guidance plus profonde."
+    },
+    "readiness": {
+      "question": "Comment savoir si je suis prêt pour ce niveau de travail spirituel ?",
+      "answer": "Si vous vous sentez appelé vers quelque chose de plus profond que les pratiques de bien-être superficielles, si vous cherchez une transformation authentique plutôt qu'un soulagement temporaire, et si vous êtes prêt à prendre la responsabilité de votre croissance spirituelle, alors vous êtes probablement préparé pour cette expérience. Nos mentors évalueront votre préparation lors des sessions initiales."
+    },
+    "sessions": {
+      "question": "À quoi dois-je m'attendre pendant les sessions privées avec les mentors ?",
+      "answer": "Chaque mentor offre une approche unique basée sur sa spécialisation. Les sessions peuvent inclure une instruction de méditation personnalisée, une guérison énergétique, un conseil spirituel, des techniques de respiration avancées ou un travail rituel sacré. Toutes les sessions sont menées avec le plus grand respect pour votre niveau de confort et vos limites spirituelles."
+    },
+    "professionals": {
+      "question": "Cet événement convient-il aux professionnels et cadres d'entreprise ?",
+      "answer": "Absolument. Beaucoup de nos participants sont des professionnels réussis cherchant à intégrer la sagesse spirituelle avec l'excellence de carrière. Nos mentors comprennent les exigences de la vie professionnelle moderne et offrent des applications pratiques des principes spirituels qui améliorent plutôt qu'interfèrent avec votre succès."
+    },
+    "accommodation": {
+      "question": "Quels sont les détails d'hébergement et de localisation ?",
+      "answer": "L'événement se déroule dans une installation de retraite premium (dans la campagne de Zürich) dans les Alpes suisses, offrant des hébergements confortables, une cuisine végétarienne biologique (nous ne fournissons pas l'hébergement ni la nourriture) et une beauté naturelle époustouflante. Les détails de localisation spécifiques seront fournis lors de l'inscription pour maintenir la nature intime et exclusive du rassemblement."
+    }
+  },
+  "pricing": {
+    "seeker": {
+      "name": "Chercheur",
+      "price": "97€",
+      "features": ["Accès complet à l'événement", "Sessions de groupe", "Matériel à emporter", "Accès à la communauté"]
+    },
+    "disciple": {
+      "name": "Disciple",
+      "price": "197€",
+      "features": ["Tout dans Chercheur", "Session mentor 1-à-1", "Matériel premium", "Support prioritaire"]
+    },
+    "divine": {
+      "name": "Divin",
+      "price": "397€",
+      "features": ["Tout dans Disciple", "3 sessions privées", "Accès communautaire à vie", "Plan spirituel personnel"]
+    }
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "readMore": "Lire plus",
+    "registerNow": "S'inscrire maintenant",
+    "contactUs": "Contactez-nous",
+    "website": "Site web"
+  }
+} 

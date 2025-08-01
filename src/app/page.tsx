@@ -1,9 +1,10 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, Star, Users, Calendar, Heart, ChevronDown, ChevronUp, Play, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, CheckCircle, ArrowRight, BookOpen, Award, Target, Zap, Clock, Shield, Brain, Mountain, Handshake } from 'lucide-react';
 import Image from 'next/image';
 import banner from '../../public/mainbanner.jpg';
-import banner2 from '../../public/banner2.jpeg';
+import banner2 from '../../public/banner222.jpg';
 import bg from '../../public/bhavik-02.png';
 import mentor1 from '../../public/RAM_Baba.jpeg';
 import mentor2 from '../../public/Swami_Pratik_3.jpg';
@@ -17,9 +18,15 @@ import OfferingsDesigns from './components/offer';
 import AboutSection from './components/about';
 import EventsWorkshops from './components/events';
 import OneBlog from './components/legacyScrollBar';
+import UniversityHero from './components/universityhero';
+import PricingSection from './components/pricingsection';
+import BenefitsSection from './components/benefitssection';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import Link from 'next/link';
 // import banner from '';
 
 const DivineMentorsLanding = () => {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [activeTab, setActiveTab] = useState(0);
@@ -35,61 +42,49 @@ const DivineMentorsLanding = () => {
   }, []);
 
   const painPoints = [
-    "Transform your mindset and unlock your true potential",
-    "Learn ancient wisdom from experienced spiritual mentors",
-    "Build lasting connections with like-minded individuals",
-    "Develop practical tools for daily spiritual practice",
-    "Overcome limiting beliefs and emotional blockages",
-    "Discover your life's purpose and divine calling"
+    t('painPoints.title'),
+    t('painPoints.subtitle'),
+    t('painPoints.description'),
+    t('painPoints.practice'),
+    t('painPoints.beliefs'),
+    t('painPoints.purpose')
   ];
 
   const mentors = [
     {
-      name: "Ram Baba",
-      bio: "Private 1:1 consultations offering mindfulness, breathwork, and spiritual clarity.",
-      image: mentor1, // Replace with actual image import or URL
-      specialty: "Meditation & Mindfulness",
-      offerings: [
-        "Guided Meditation",
-        "Pranayama Practices",
-        "Mindfulness Coaching"
-      ],
+      name: t('mentors.ramBaba.name'),
+      bio: t('mentors.ramBaba.bio'),
+      image: mentor1,
+      link: 'https://divinementors.com/team/ram-baba/',
+      specialty: t('mentors.ramBaba.specialty'),
+      offerings: t('mentors.ramBaba.offerings', { returnObjects: true }) as string[],
       website: "https://divinementors.com"
     },
     {
-      name: "Mahant Swami Pratik Puri",
-      bio: "1:1 sessions focused on ancient Indian energy healing and inner alignment.",
+      name: t('mentors.swamiPratik.name'),
+      bio: t('mentors.swamiPratik.bio'),
       image: mentor2,
-      specialty: "Energy Healing",
-      offerings: [
-        "Energy Clearing",
-        "Chakra Balancing",
-        "Intuitive Spiritual Guidance"
-      ],
+      link: "https://divinementors.com/team/mahant-swami-pratik-puri/",
+      specialty: t('mentors.swamiPratik.specialty'),
+      offerings: t('mentors.swamiPratik.offerings', { returnObjects: true }) as string[],
       website: "https://divinementors.com"
     },
     {
-      name: "Mahant Savan Bharti Naga Baba",
-      bio: "Consultations on Vedic scriptures, philosophy, and spiritual discipline.",
+      name: t('mentors.nagaBaba.name'),
+      bio: t('mentors.nagaBaba.bio'),
       image: mentor3,
-      specialty: "Vedic Philosophy",
-      offerings: [
-        "Vedic Teachings",
-        "Scripture Study",
-        "Spiritual Life Counseling"
-      ],
+      link: "https://divinementors.com/team/naga-baba/",
+      specialty: t('mentors.nagaBaba.specialty'),
+      offerings: t('mentors.nagaBaba.offerings', { returnObjects: true }) as string[],
       website: "https://divinementors.com"
     },
     {
-      name: "Acharya Shyam Chetan",
-      bio: "Spiritual guidance from the Divine Feminine path focused on inner peace and transformation.",
+      name: t('mentors.acharyaShyam.name'),
+      bio: t('mentors.acharyaShyam.bio'),
       image: mentor4,
-      specialty: "Spiritual Counseling",
-      offerings: [
-        "Awakening Divine Feminine",
-        "Inner Peace Practices",
-        "Emotional & Energetic Healing"
-      ],
+      link: "#contact",
+      specialty: t('mentors.acharyaShyam.specialty'),
+      offerings: t('mentors.acharyaShyam.offerings', { returnObjects: true }) as string[],
       website: "https://divinemothercenter.org"
     }
   ];
@@ -98,97 +93,101 @@ const DivineMentorsLanding = () => {
   const offerings = [
     {
       icon: <Heart className="w-8 h-8" />,
-      title: " Authentic Spiritual Guidance",
-      description: "Direct transmission of wisdom through lineage-based mentors with decades of experience in classical Indian traditions."
+      title: t('offerings.authenticGuidance.title'),
+      description: t('offerings.authenticGuidance.description')
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: " Personalized Transformation",
-      description: "Individual assessment of your spiritual journey with customized practices tailored to your unique path of self-discovery."
+      title: t('offerings.personalizedTransformation.title'),
+      description: t('offerings.personalizedTransformation.description')
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: " Science-Backed Methods",
-      description: "Proven techniques including pranayama, meditation, and spiritual psychology, validated by clinical research as effective alternatives to traditional approaches."
+      title: t('offerings.scienceBackedMethods.title'),
+      description: t('offerings.scienceBackedMethods.description')
     },
     {
       icon: <Target className="w-8 h-8" />,
-      title: " Modern Life Integration",
-      description: "Practical tools for stress management, emotional intelligence, and leadership qualities that seamlessly integrate into your professional and personal life."
+      title: t('offerings.modernLifeIntegration.title'),
+      description: t('offerings.modernLifeIntegration.description')
     },
     {
       icon: <Mountain className="w-8 h-8" />,
-      title: " Premium Swiss Experience",
-      description: "Exclusive setting in Switzerland's breathtaking landscape, ensuring tranquility and focus for profound spiritual work."
+      title: t('offerings.premiumSwissExperience.title'),
+      description: t('offerings.premiumSwissExperience.description')
     },
     {
       icon: <Handshake className="w-8 h-8" />,
-      title: "Lifelong Mentorship",
-      description: "Building lasting connections with authentic mentors for continuous guidance on your spiritual journey."
+      title: t('offerings.lifelongMentorship.title'),
+      description: t('offerings.lifelongMentorship.description')
     }
   ];
 
   const blogs = [
     {
-      title: "The Path to Inner Peace",
-      excerpt: "Discover ancient techniques for finding tranquility in modern life...",
+      title: t('blogs.innerPeace.title'),
+      excerpt: t('blogs.innerPeace.excerpt'),
       image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=250&fit=crop",
-      date: "July 20, 2025"
+      date: t('blogs.innerPeace.date')
     },
     {
-      title: "Awakening Your Divine Purpose",
-      excerpt: "Learn how to align with your soul's true calling and live authentically...",
+      title: t('blogs.divinePurpose.title'),
+      excerpt: t('blogs.divinePurpose.excerpt'),
       image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=400&h=250&fit=crop",
-      date: "July 15, 2025"
+      date: t('blogs.divinePurpose.date')
     },
     {
-      title: "Healing Through Sacred Practices",
-      excerpt: "Explore time-tested spiritual practices for holistic healing...",
+      title: t('blogs.sacredPractices.title'),
+      excerpt: t('blogs.sacredPractices.excerpt'),
       image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=250&fit=crop",
-      date: "July 10, 2025"
+      date: t('blogs.sacredPractices.date')
     }
   ];
 
   const faqs = [
     {
-      question: "What can I expect from this transformational event?",
-      answer: "You'll experience guided meditations, healing sessions, spiritual teachings, and personal mentorship from our divine mentors. The event includes workshops, community sharing, and practical tools for your spiritual journey."
+      question: t('faq.difference.question'),
+      answer: t('faq.difference.answer')
     },
     {
-      question: "Do I need prior spiritual experience?",
-      answer: "Not at all! Our events welcome seekers at all levels, from complete beginners to advanced practitioners. Our mentors tailor their guidance to meet you where you are on your journey."
+      question: t('faq.experience.question'),
+      answer: t('faq.experience.answer')
     },
     {
-      question: "What is included in the event registration?",
-      answer: "Registration includes all sessions, materials, refreshments, access to our community platform, and follow-up resources. Premium packages include one-on-one mentor sessions."
+      question: t('faq.readiness.question'),
+      answer: t('faq.readiness.answer')
     },
     {
-      question: "Is there ongoing support after the event?",
-      answer: "Yes! We provide continuous support through our online community, monthly group calls, and access to exclusive content. Our mentors remain available for guidance."
+      question: t('faq.sessions.question'),
+      answer: t('faq.sessions.answer')
     },
     {
-      question: "What should I bring to the event?",
-      answer: "Just bring an open heart and mind! We'll provide all necessary materials. Comfortable clothing and a journal for personal reflections are recommended."
+      question: t('faq.professionals.question'),
+      answer: t('faq.professionals.answer')
+    },
+    {
+      question: t('faq.accommodation.question'),
+      answer: t('faq.accommodation.answer')
     }
   ];
 
   const pricingTiers = [
     {
-      name: "Seeker",
-      price: "$97",
-      features: ["Full event access", "Group sessions", "Take-home materials", "Community access"],
+      name: t('pricing.seeker.name'),
+      price: t('pricing.seeker.price'),
+      features: t('pricing.seeker.features', { returnObjects: true }) as string[],
       popular: false
     },
     {
-      name: "Disciple",
-      price: "$197",
-      features: ["Everything in Seeker", "1-on-1 mentor session", "Premium materials", "Priority support"],
+      name: t('pricing.disciple.name'),
+      price: t('pricing.disciple.price'),
+      features: t('pricing.disciple.features', { returnObjects: true }) as string[],
       popular: true
     },
     {
-      name: "Divine",
-      price: "$397",
-      features: ["Everything in Disciple", "3 private sessions", "Lifetime community access", "Personal spiritual plan"],
+      name: t('pricing.divine.name'),
+      price: t('pricing.divine.price'),
+      features: t('pricing.divine.features', { returnObjects: true }) as string[],
       popular: false
     }
   ];
@@ -213,20 +212,32 @@ const DivineMentorsLanding = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center justify-center flex-1">
               <div className="flex space-x-8">
-                {['Home', 'About', 'Mentors', 'Events', 'Blog', 'Contact Us'].map((item) => (
-                  <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`} 
-                     className="text-white py-2 hover:text-#576F9F transition-colors font-medium">
-                    {item}
+                {[
+                  { key: 'home', href: '#home' },
+                  { key: 'about', href: '#about' },
+                  { key: 'mentors', href: '#mentors' },
+                  { key: 'events', href: '#events' },
+                  { key: 'blog', href: '#blog' },
+                  { key: 'contact', href: '#contact' }
+                ].map((item) => (
+                  <a key={item.key} href={item.href} 
+                     className="text-white py-2 hover:text-[#d0daee] transition-colors font-medium">
+                    {t(`navigation.${item.key}`)}
                   </a>
                 ))}
               </div>
             </nav>
 
+            {/* Language Switcher */}
+            <div className="hidden md:flex mr-4">
+              <LanguageSwitcher />
+            </div>
+
             {/* Book Now Button */}
             <div className="hidden md:flex">
-              <button className="text-[#576F9F] bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border-2 hover:border-[#576F9F] transform hover:scale-105 transition-all">
-                Book Now
-              </button>
+              <a href="#contact" className="text-[#576F9F] bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border-2 hover:border-[#576F9F] transform hover:scale-105 transition-all inline-block">
+                {t('navigation.bookNow')}
+              </a>
             </div>
 
             {/* Mobile menu button */}
@@ -242,15 +253,26 @@ const DivineMentorsLanding = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {['Home', 'About', 'Mentors', 'Events', 'Blog', 'Contact Us'].map((item) => (
-                <a key={item} href={`#${item.toLowerCase().replace(' ', '-')}`}
+              {[
+                { key: 'home', href: '#home' },
+                { key: 'about', href: '#about' },
+                { key: 'mentors', href: '#mentors' },
+                { key: 'events', href: '#events' },
+                { key: 'blog', href: '#blog' },
+                { key: 'contactUs', href: '#contact' }
+              ].map((item) => (
+                <a key={item.key} href={item.href}
                    className="block px-3 py-2 items-center justify-center text-gray-700 hover:text-#576F9F">
-                  {item}
+                  {t(`navigation.${item.key}`)}
                 </a>
               ))}
-              <button className="w-full mt-2 bg-#576F9F text-white px-6 py-2 rounded-full">
-                Book Now
-              </button>
+              <div className="px-3 py-2">
+                <LanguageSwitcher />
+              </div>
+              <div><a href="#contact" className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
+                {t('navigation.bookNow')}
+              </a></div>
+              
             </div>
           </div>
         )}
@@ -266,33 +288,37 @@ const DivineMentorsLanding = () => {
     />
   </div>
 
-  <div className="relative z-20 text-left text-white max-w-xl py-20 items-center justify-center px-10">
-    <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-      Join the <span className="text-[#576F9F]">Transformational</span> Event
+  <div className="relative z-20 text-left text-white max-w-3xl pt-28 pb-20 items-center justify-center px-10">
+    <h1 className="text-5xl md:text-5xl font-bold mb-6 animate-fade-in">
+      {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
+        <React.Fragment key={index}>
+          {part}
+          {index === 0 && <span className="text-yellow-300">Authentic Spiritual Wisdom</span>}
+        </React.Fragment>
+      ))}
     </h1>
-    <p className="text-xl md:text-2xl mb-8 opacity-90">
-      With Divine Mentors - Awaken Your Inner Wisdom & Transform Your Life
+    <p className="text-xl md:text-2xl mb-6 opacity-90">
+      {t('hero.subtitle')}
+    </p>
+    <p className="text-lg mb-8 opacity-80 leading-relaxed">
+      {t('hero.description')}
     </p>
     <button className="bg-white text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
-      Register Now - Transform Today
+      {t('hero.cta')}
     </button>
   </div>
 
 
 
-        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-white" />
-           src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop" 
-            alt="Spiritual Background" 
-        </div> */}
+       
       </section>
     
       {/* What We Offer */}
       <section className=" py-16" >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">What We Offer</h2>
-        <p className="text-xl text-gray-600">Discover the transformative experiences waiting for you</p>
+        <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('offerings.title')}</h2>
+        <p className="text-xl text-gray-600">{t('common.learnMore')}</p>
       </div>
       
       <div className="relative">
@@ -321,47 +347,14 @@ const DivineMentorsLanding = () => {
       </div>
     </div>
       </section>
-      {/* <OfferingsDesigns/> */}
+     <section id='about'>
        <AboutSection/>
-
-      {/* About the Event */}
-      {/* <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">About the Event</h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Divine Mentors brings together ancient wisdom and modern transformation techniques to create life-changing experiences. Our events are designed to awaken your inner potential, heal past wounds, and guide you toward your highest purpose.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Through sacred teachings, guided meditations, energy healing, and personal mentorship, you'll embark on a journey of profound self-discovery. Our carefully curated programs blend traditional spiritual practices with contemporary healing modalities.
-              </p>
-              <p className="text-lg text-gray-600 mb-8">
-                Join thousands who have already transformed their lives through our divine guidance and supportive community of spiritual seekers.
-              </p>
-              <button className="bg-#576F9F text-white px-8 py-3 rounded-full hover:shadow-lg transform hover:scale-105 transition-all">
-                Learn More About Us
-              </button>
-            </div>
-            <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop" 
-                alt="Spiritual Gathering" 
-                className="rounded-xl shadow-2xl"
-              />
-              <div className="absolute -bottom-6 -right-6 bg-#576F9F rounded-xl p-6 text-white">
-                <div className="flex items-center space-x-2">
-                  <Users className="w-6 h-6" />
-                  <span className="font-bold">10,000+ Lives Transformed</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+       </section>
+     
+     
        
-      {/* Meet the Gurus */}
-      <section className="py-16 bg-cover bg-center bg-no-repeat">
+   
+      <section id='mentors' className="py-16 bg-cover bg-center bg-no-repeat">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-black mb-4">Meet Our Divine Mentors</h2>
@@ -371,17 +364,8 @@ const DivineMentorsLanding = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {mentors.map((mentor, index) => (
               <article key={index} className="flex bg-white transition hover:shadow-xl rounded-lg overflow-hidden">
-                {/* <div className="rotate-180 p-2 [writing-mode:_vertical-lr]">
-                  <time
-                    dateTime="2025-01-01"
-                    className="flex items-center justify-between gap-4 text-xs font-bold text-gray-900 uppercase"
-                  >
-                    <span>2025</span>
-                    <span className="w-px flex-1 bg-gray-900/10"></span>
-                    <span>Divine</span>
-                  </time>
-                </div> */}
-
+              
+              
                 <div className="hidden sm:block sm:basis-56">
                   <Image
                     src={mentor.image}
@@ -392,15 +376,17 @@ const DivineMentorsLanding = () => {
 
                 <div className="flex flex-1 flex-col justify-between">
                   <div className="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-                    <a href="#">
+                  <Link href={mentor.link}>
                       <h3 className="font-bold text-gray-900 uppercase">
                         {mentor.name}
                       </h3>
-                    </a>
-
+                      </Link>
+                    
+                      <Link href={mentor.link}>
                     <p className="mt-2 text-sm/relaxed text-gray-700 mb-4">
                       {mentor.bio}
                     </p>
+                    </Link>
                     
                     <div className="mb-4">
                       <p className="text-xs font-semibold text-gray-600 uppercase mb-2">Specialty:</p>
@@ -409,24 +395,107 @@ const DivineMentorsLanding = () => {
                   </div>
 
                   <div className="sm:flex sm:items-end sm:justify-end">
-                    <a
-                      href="#"
+                  <Link href={mentor.link}
                       className="block bg-[#576F9F] px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-[#4a5f8a]"
                     >
                       Book Session
-                    </a>
+                    </Link>
                   </div>
                 </div>
+              
               </article>
             ))}
           </div>
         </div>
       </section>
    
-      {/* <EventsWorkshops/> */}
+     <section id='events'>
+        <OneBlog/>
+     </section>
+      <div id='blog'>
+       
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          
+          <a href="https://divinementors.com/breaking-free-from-addictions-a-spiritual-approach/" target="_blank" rel="noopener noreferrer" className="block">
+            <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[700px]">
+              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+              <Image 
+                src={blog1} 
+                alt="Person in traditional setting" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                  
+Freeing yourself from <br />
+                  addictions: <br />
+                  A spiritual path
+                </h2>
+                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </a>
 
-      {/* Pain Points Slider */}
-      {/* <section className="py-20 bg-#576F9F text-white">
+          <div className="lg:col-span-1">
+            
+            {/* Top Right - Learn and Practice Hindu Tradition */}
+            <a href="https://divinementors.com/managing-anxiety-with-mindfulness-and-clarity/" target="_blank" rel="noopener noreferrer" className="block">
+              <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px] hover:shadow-3xl transition-all duration-300">
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <Image 
+                src={blog2} 
+                  alt="Person in meditation" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="relative z-10 flex flex-col justify-center h-full p-6">
+                  <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
+                   Dealing with fear through <br/>
+                   mindfulness and clarity
+
+                  </h2>
+                  <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                  Read More
+                </button>
+                </div>
+              </div>
+            </a>
+
+            {/* Bottom Right - Understand the Concepts */}
+            <a href="https://divinementors.com/the-role-of-spiritual-counseling-in-mental-health-a-science-backed-alternative-to-psychotherapy/" target="_blank" rel="noopener noreferrer" className="block">
+    <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px] hover:shadow-3xl transition-all duration-300">
+              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              <Image 
+              src={blog3} 
+                alt="Traditional vessels and artifacts" 
+                className="absolute inset-0 w-full h-full object-cover "
+              />
+              <div className="relative z-10 flex flex-col justify-center h-full p-6">
+                <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
+                 The Role of Spiritual Counseling in Mental Health: <br/>A Scientifically Based Alternative to <br/>Psychotherapy
+Scientific studies
+                </h2>
+                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                Read More
+              </button>
+              </div>
+            </div>
+  </a>
+          </div>
+        </div>
+
+        {/* Side Navigation Icons (Optional) */}
+       
+      </div>
+   
+      
+    {/* <UniversityHero/> */}
+
+      {/* CTA Section */}
+     
+            {/* <PricingSection/> */}
+      {/* <section className="py-20 bg-white text-[#576F9F]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">What You'll Gain</h2>
@@ -447,213 +516,36 @@ const DivineMentorsLanding = () => {
                 key={index}
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentSlide ? 'bg-yellow-400' : 'bg-white/30'
+                  index === currentSlide ? 'bg-[#576F9F]' : 'bg-[#576F9F]/60'
                 }`}
               />
             ))}
           </div>
         </div>
       </section> */}
-      {/* <SpiritualBenefitsSection/> */}
+      <BenefitsSection/>
+      <section id="contactus" className="relative py-16 bg-cover bg-center bg-no-repeat bg-fixed"
+    style={{ backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop')` }}>
       
-      {/* Blog Section */}
-      
-        {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">From Our Blog</h2>
-            <p className="text-xl text-gray-600">Insights and wisdom for your spiritual journey</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {blogs.map((blog, index) => (
-              <article key={index} className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
-                <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <p className="text-sm text-#576F9F font-medium mb-2">{blog.date}</p>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{blog.title}</h3>
-                  <p className="text-gray-600 mb-4">{blog.excerpt}</p>
-                  <a href="#" className="text-#576F9F font-medium hover:text-#576F9F flex items-center">
-                    Read More <ArrowRight className="w-4 h-4 ml-1" />
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <button className="bg-#576F9F text-white px-8 py-3 rounded-full hover:shadow-lg transform hover:scale-105 transition-all">
-              Read All Blogs
-            </button>
-          </div>
-        </div> */}
-        <OneBlog/>
-      <div className=" ">
-        {/* Main Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          
-          {/* Left Side - Full Blog Section */}
-          <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[700px]">
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-            <Image 
-              src={blog1} 
-              alt="Person in traditional setting" 
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                Know the Basic Tenets<br />
-                With Traditional<br />
-                Definitions.
-              </h2>
-              <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
-                Read More
-              </button>
-            </div>
-          </div>
-
-          {/* Right Side - Top and Bottom Sections */}
-          <div className="lg:col-span-1">
-            
-            {/* Top Right - Learn and Practice Hindu Tradition */}
-            <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px]">
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-              <Image 
-              src={blog2} 
-                alt="Person in meditation" 
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-              <div className="relative z-10 flex flex-col justify-center h-full p-6">
-                <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                  Learn and Practice Hindu<br />
-                  Tradition and Culture.
-                </h2>
-                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
-                Read More
-              </button>
-              </div>
-            </div>
-
-            {/* Bottom Right - Understand the Concepts */}
-            <div className="relative bg-black  overflow-hidden shadow-2xl min-h-[350px]">
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
-              <Image 
-              src={blog3} 
-                alt="Traditional vessels and artifacts" 
-                className="absolute inset-0 w-full h-full object-cover "
-              />
-              <div className="relative z-10 flex flex-col justify-center h-full p-6">
-                <h2 className="text-xl lg:text-4xl font-bold text-white mb-4 leading-tight">
-                  Understand the Concepts With<br />
-                  Orthodox Interpretation.
-                </h2>
-                <button className="bg-[#576F9F] hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
-                Read More
-              </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Side Navigation Icons (Optional) */}
-        <div className="fixed right-6 top-1/2 transform -translate-y-1/2 space-y-4 z-20">
-          <div className="bg-red-900 p-3 rounded-lg shadow-lg cursor-pointer hover:bg-red-800 transition-colors">
-            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-            </svg>
-          </div>
-          <div className="bg-red-900 p-3 rounded-lg shadow-lg cursor-pointer hover:bg-red-800 transition-colors">
-            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-            </svg>
-          </div>
-          <div className="bg-red-900 p-3 rounded-lg shadow-lg cursor-pointer hover:bg-red-800 transition-colors">
-            <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4z" clipRule="evenodd" />
-            </svg>
-          </div>
-        </div>
-      </div>
-   
-      
-    
-
-      {/* CTA Section */}
-      <section className=" py-16  bg-cover bg-center bg-no-repeat bg-fixed"
-    style={{ backgroundImage: `url('${banner2.src}')` }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
-            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=200&h=200&fit=crop" alt="Transformation" className="rounded-full mx-auto shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=200&h=200&fit=crop" alt="Healing" className="rounded-full mx-auto shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=200&h=200&fit=crop" alt="Meditation" className="rounded-full mx-auto shadow-lg" />
-            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=200&h=200&fit=crop" alt="Community" className="rounded-full mx-auto shadow-lg" />
-          </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold text-#576F9F mb-6">
+          
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Your Transformation Awaits
           </h2>
-          <p className="text-xl text-#576F9F mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             Don't let another day pass living below your potential. Join thousands who have discovered their divine purpose.
           </p>
-          <button className="bg-#576F9F text-black px-12 py-4 rounded-full text-xl font-bold hover:bg-#576F9F transform hover:scale-105 transition-all duration-300 shadow-2xl">
+          <button className="bg-#576F9F text-[#576F9F] px-12 py-4 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl">
             Book Your Transformation Now
           </button>
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Reserve Your Spot</h2>
-            <p className="text-xl text-gray-600">Choose the perfect package for your transformation journey</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {pricingTiers.map((tier, index) => (
-              <div key={index} className={`relative bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 ${tier.popular ? 'ring-4 ring-#576F9F transform scale-105' : ''}`}>
-                {tier.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-gradient-to-r from-#576F9F to-pink-600 text-white px-6 py-2 rounded-full text-sm font-bold">
-                      Most Popular
-                    </span>
-                  </div>
-                )}
-                
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{tier.name}</h3>
-                  <div className="text-4xl font-bold text-#576F9F mb-4">
-                    {tier.price}
-                    <span className="text-lg text-gray-500">/person</span>
-                  </div>
-                </div>
-                
-                <ul className="space-y-4 mb-8">
-                  {tier.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center">
-                      <CheckCircle className="w-5 h-5 text-green-500 mr-3" />
-                      <span className="text-gray-600">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                
-                <button className={`w-full py-3 rounded-full font-bold transition-all ${
-                  tier.popular 
-                    ? 'bg-gradient-to-r from-#576F9F to-pink-600 text-white hover:shadow-lg' 
-                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
-                }`}>
-                  Select {tier.name}
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ and Booking Form Section */}
-      <section className="relative py-16 bg-cover bg-center bg-no-repeat bg-fixed"
-    style={{ backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop')` }}>
-       <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className=" py-16  bg-[#576F9F]">
+       {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+        <div className="relative z-10 max-w-7xl mx-auto ">
         <div className="mb-8 text-center z-50">
   <h2 className="text-4xl font-bold mb-4 text-white dark:text-white">
     Your Next Big Step Starts Here
@@ -673,7 +565,7 @@ const DivineMentorsLanding = () => {
                   <div key={index} className="bg-white/20 backdrop-blur-md rounded-lg shadow-md">
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                      className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-black/20 hover:backdrop-blur-md transition-colors"
+                      className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-white/10 hover:backdrop-blur-md transition-colors"
                     >
                       <span className="font-medium text-white">{faq.question}</span>
                       {openFaq === index ? <ChevronUp className="w-5 h-5 text-white" /> : <ChevronDown className="w-5 h-5 text-white" />}
@@ -728,7 +620,7 @@ const DivineMentorsLanding = () => {
                 
   
                 
-                <button type="submit" className="w-full bg-#576F9F  text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
+                <button type="submit" className="w-full bg-black/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                   Complete Registration & Pay
                 </button>
                 
@@ -748,13 +640,13 @@ const DivineMentorsLanding = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             {/* Brand & Description */}
             <div className="col-span-1 md:col-span-2">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-#576F9F to-pink-400 bg-clip-text text-transparent mb-4">
-                Divine Mentors
-              </h3>
+               <div className="flex-shrink-0 mb-4">
+                <Image src="/logo.png" alt="Divine Mentors" className="h-28" width={120} height={80} />
+              </div>
               <p className="text-gray-300 mb-6 max-w-md">
                 Guiding souls on their journey to spiritual awakening and personal transformation through ancient wisdom and modern healing practices.
               </p>
-              <div className="flex space-x-4">
+              {/* <div className="flex space-x-4">
                 <a href="#" className="bg-#576F9F p-3 rounded-full hover:bg-#576F9F transition-colors">
                   <Facebook className="w-5 h-5" />
                 </a>
@@ -767,7 +659,7 @@ const DivineMentorsLanding = () => {
                 <a href="#" className="bg-#576F9F p-3 rounded-full hover:bg-#576F9F transition-colors">
                   <Linkedin className="w-5 h-5" />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Links */}
@@ -802,7 +694,7 @@ const DivineMentorsLanding = () => {
               </div>
 
               {/* Newsletter Signup */}
-              <div className="mt-6">
+              {/* <div className="mt-6">
                 <h5 className="font-semibold mb-3">Stay Connected</h5>
                 <div className="flex">
                   <input 
@@ -814,19 +706,19 @@ const DivineMentorsLanding = () => {
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
           {/* Bottom Footer */}
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
-              <div className="flex flex-wrap justify-center md:justify-start space-x-6 mb-4 md:mb-0">
+              {/* <div className="flex flex-wrap justify-center md:justify-start space-x-6 mb-4 md:mb-0">
                 <a href="#privacy" className="text-gray-300 hover:text-#576F9F transition-colors">Privacy Policy</a>
                 <a href="#terms" className="text-gray-300 hover:text-#576F9F transition-colors">Terms of Service</a>
                 <a href="#disclaimer" className="text-gray-300 hover:text-#576F9F transition-colors">Disclaimer</a>
                 <a href="#cookies" className="text-gray-300 hover:text-#576F9F transition-colors">Cookie Policy</a>
-              </div>
+              </div> */}
               <p className="text-gray-400 text-sm text-center md:text-right">
                 © 2025 Divine Mentors. All rights reserved. | Transforming lives through spiritual wisdom.
               </p>
@@ -837,17 +729,15 @@ const DivineMentorsLanding = () => {
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-50 space-y-3">
-        <button className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110">
-          <Phone className="w-6 h-6" />
+        <button 
+          onClick={() => window.location.href = 'tel:+919876543210'}
+          className="bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer group"
+          title="Call us at +91 98765 43210"
+        >
+          <Phone className="w-6 h-6 group-hover:animate-pulse" />
         </button>
       </div>
-      {/* <div className="fixed bottom-20 right-6 z-50 space-y-3">
-      <button className="bg-gradient-to-r from-#576F9F to-pink-600 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:scale-105 font-semibold">
-          Book Now
-        </button>
-      </div> */}
-
-      {/* Additional Styles */}
+     
       <style jsx>{`
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(30px); }
