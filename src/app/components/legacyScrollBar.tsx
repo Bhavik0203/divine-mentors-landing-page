@@ -78,7 +78,11 @@ export default function OneBlog() {
     
     {/* Sticky Left Section */}
     <div className="lg:sticky lg:top-4 lg:col-span-1">
+    
 <div className="flex-1 w-full max-w-full pt-28 ">
+<h3 className="font-bold text-gray-900 uppercase mb-4">
+                       Events
+                      </h3>
       <h2 
   className=" text-gray-800 mb-4" 
   style={{ fontSize: '3.25rem', lineHeight: '3.5rem' }}

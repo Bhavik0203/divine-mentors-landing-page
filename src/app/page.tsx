@@ -269,9 +269,9 @@ const DivineMentorsLanding = () => {
               <div className="px-3 py-2">
                 <LanguageSwitcher />
               </div>
-              <div><a href="#contact" className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
+              <div><Link href="#contact" className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
                 {t('navigation.bookNow')}
-              </a></div>
+              </Link></div>
               
             </div>
           </div>
@@ -303,9 +303,11 @@ const DivineMentorsLanding = () => {
     <p className="text-lg mb-8 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
-    <button className="bg-white cursor-pointer text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
-      {t('hero.cta')}
-    </button>
+    <Link href="#contact">
+      <button className="bg-white cursor-pointer text-[#576F9F] px-8 py-4 rounded-full text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+        {t('hero.cta')}
+      </button>
+    </Link>
   </div>
 
 
@@ -665,7 +667,7 @@ Scientific studies
             {/* Quick Links */}
             <div>
               <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2 cursor-pointer">
                 <li><a href="#home" className="text-gray-300 hover:text-#576F9F transition-colors">Home</a></li>
                 <li><a href="#about" className="text-gray-300 hover:text-#576F9F transition-colors">About Us</a></li>
                 <li><a href="#mentors" className="text-gray-300 hover:text-#576F9F transition-colors">Our Mentors</a></li>
@@ -679,15 +681,15 @@ Scientific studies
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <div className="space-y-3">
-                <div className="flex items-center">
-                  <MapPin className="w-5 h-5 text-#576F9F mr-3" />
+                <div className="flex items-center cursor-pointer">
+                  <MapPin className="w-5 h-5 text-#576F9F mr-3 cursor-pointer" />
                   <span className="text-gray-300">123 Spiritual Way, Pune, Maharashtra, India</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer">
                   <Phone className="w-5 h-5 text-#576F9F mr-3" />
                   <span className="text-gray-300">+91 98765 43210</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center cursor-pointer">
                   <Mail className="w-5 h-5 text-#576F9F mr-3" />
                   <span className="text-gray-300">connect@divinementors.com</span>
                 </div>
@@ -720,7 +722,7 @@ Scientific studies
                 <a href="#cookies" className="text-gray-300 hover:text-#576F9F transition-colors">Cookie Policy</a>
               </div> */}
               <p className="text-gray-400 text-sm text-center md:text-right">
-                © 2025 Divine Mentors. All rights reserved. | Transforming lives through spiritual wisdom.
+                © 2025 Divine Mentors. All rights reserved. | Crafted with care by Digitalize The Globe.
               </p>
             </div>
           </div>
