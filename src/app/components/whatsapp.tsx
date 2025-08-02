@@ -37,13 +37,13 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
   const themes = {
     default: {
       buttonColor: "rgb(33, 202, 95)",
-      buttonHoverColor: "rgb(25, 152, 72)",
+      buttonHoverColor: "rgb(33, 202, 95)",
       headerColor: "#075E54",
       sendButtonColor: "#25D366"
     },
     spiritual: {
-      buttonColor: "rgb(139, 69, 19)", // Brown for spiritual theme
-      buttonHoverColor: "rgb(101, 67, 33)",
+      buttonColor: "rgb(33, 202, 95)", // Brown for spiritual theme
+      buttonHoverColor: "rgb(33, 202, 95)",
       headerColor: "#8B4513",
       sendButtonColor: "#D2691E"
     },
@@ -85,7 +85,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
           e.currentTarget.style.transform = "scale(1.15) rotate(5deg)";
           e.currentTarget.style.backgroundColor = currentTheme.buttonHoverColor;
           e.currentTarget.style.boxShadow = `0px 8px 20px ${currentTheme.buttonColor}40, 0px 4px 8px rgba(0, 0, 0, 0.3)`;
-          e.currentTarget.style.border = "2px solid rgba(255, 255, 255, 0.3)";
+          e.currentTarget.style.border = "2px solid 0px 4px 6px rgba(0, 0, 0, 0.2)";
         }}
         onMouseLeave={(e) => {
           e.currentTarget.style.transform = "scale(1) rotate(0deg)";
@@ -99,7 +99,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
         }}
         onMouseUp={(e) => {
           e.currentTarget.style.transform = "scale(1.15) rotate(5deg)";
-          e.currentTarget.style.boxShadow = `0px 8px 20px ${currentTheme.buttonColor}40, 0px 4px 8px rgba(0, 0, 0, 0.3)`;
+          e.currentTarget.style.boxShadow = `0px 8px 20px 0px 4px 6px rgba(0, 0, 0, 0.2) 40, 0px 4px 8px rgba(0, 0, 0, 0.3)`;
         }}
       >
         <Image 
@@ -167,6 +167,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
                 backgroundColor: "#DCF8C6",
                 padding: "8px",
                 borderRadius: "8px",
+                color: "black",
                 maxWidth: "80%",
                 marginBottom: "10px",
                 fontSize: "14px",
@@ -189,6 +190,7 @@ const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
               flexDirection: "row",
               alignItems: "center",
               gap: "8px",
+              color: "black",
               padding: "12px",
               backgroundColor: "#fff",
               borderBottomLeftRadius: "10px",

@@ -36,9 +36,9 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
       className="w-full font-sans"
       ref={containerRef}>
       
-      <div ref={ref} className="relative mx-auto pb-20">
+      <div ref={ref} className="relative mx-auto ">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start mb-16 md:mb-20">
+          <div key={index} className="flex justify-start mb-16 md:mb-20 text-gray-900">
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div

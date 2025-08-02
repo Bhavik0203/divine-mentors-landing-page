@@ -32,6 +32,54 @@ const DivineMentorsLanding = () => {
   const [activeTab, setActiveTab] = useState(0);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState('india');
+  const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    package: '',
+    specialRequirements: ''
+  });
+  const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Country data with flags and phone codes
+  const countries = [
+    {
+      code: 'india',
+      name: 'India',
+      flag: '🇮🇳',
+      phoneCode: '+91'
+    },
+    {
+      code: 'dubai',
+      name: 'Dubai',
+      flag: '🇦🇪',
+      phoneCode: '+971'
+    },
+    {
+      code: 'usa',
+      name: 'USA',
+      flag: '🇺🇸',
+      phoneCode: '+1'
+    },
+    {
+      code: 'uae',
+      name: 'UAE',
+      flag: '🇦🇪',
+      phoneCode: '+971'
+    },
+    {
+      code: 'uk',
+      name: 'UK',
+      flag: '🇬🇧',
+      phoneCode: '+44'
+    }
+  ];
+
+  const selectedCountryData = countries.find(country => country.code === selectedCountry);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,6 +88,113 @@ const DivineMentorsLanding = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Close country dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (!target.closest('.country-dropdown')) {
+        setIsCountryDropdownOpen(false);
+      }
+    };
+
+    if (isCountryDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isCountryDropdownOpen]);
+
+  // Form validation function
+  const validateForm = () => {
+    const errors: {[key: string]: string} = {};
+    
+    if (!formData.fullName.trim()) {
+      errors.fullName = 'Full name is required';
+    }
+    
+    if (!formData.email.trim()) {
+      errors.email = 'Email is required';
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      errors.email = 'Please enter a valid email address';
+    }
+    
+    if (!phoneNumber.trim()) {
+      errors.phoneNumber = 'Phone number is required';
+    } else if (!/^\d{10,}$/.test(phoneNumber.replace(/\D/g, ''))) {
+      errors.phoneNumber = 'Please enter a valid phone number';
+    }
+    
+    if (!formData.package) {
+      errors.package = 'Please select a package';
+    }
+    
+    setFormErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+    
+    setIsSubmitting(true);
+    
+    try {
+      // Here you would typically send the data to your backend
+      const submissionData = {
+        ...formData,
+        phoneNumber: `${selectedCountryData?.phoneCode}${phoneNumber}`,
+        country: selectedCountry
+      };
+      
+      console.log('Form submission data:', submissionData);
+      
+      // Simulate API call
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Reset form after successful submission
+      setFormData({
+        fullName: '',
+        email: '',
+        phoneNumber: '',
+        package: '',
+        specialRequirements: ''
+      });
+      setPhoneNumber('');
+      setFormErrors({});
+      
+      // Show success message (you can implement a toast notification here)
+      alert('Registration completed successfully! We will contact you soon.');
+      
+    } catch (error) {
+      console.error('Form submission error:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  // Handle input changes
+  const handleInputChange = (field: string, value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
+    
+    // Clear error when user starts typing
+    if (formErrors[field]) {
+      setFormErrors(prev => ({
+        ...prev,
+        [field]: ''
+      }));
+    }
+  };
 
   const painPoints = [
     t('painPoints.title'),
@@ -262,6 +417,7 @@ const DivineMentorsLanding = () => {
                 { key: 'contactUs', href: '#contact' }
               ].map((item) => (
                 <a key={item.key} href={item.href}
+                   onClick={() => setIsMenuOpen(false)}
                    className="block px-3 py-2 items-center justify-center text-gray-700 hover:text-#576F9F">
                   {t(`navigation.${item.key}`)}
                 </a>
@@ -269,7 +425,7 @@ const DivineMentorsLanding = () => {
               <div className="px-3 py-2">
                 <LanguageSwitcher />
               </div>
-              <div><Link href="#contact" className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
+              <div><Link href="#contact" onClick={() => setIsMenuOpen(false)} className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
                 {t('navigation.bookNow')}
               </Link></div>
               
@@ -450,7 +606,7 @@ const DivineMentorsLanding = () => {
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                  <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                    {t('blogs.fear.title')}
 
                   </h2>
@@ -471,7 +627,7 @@ const DivineMentorsLanding = () => {
                 className="absolute inset-0 w-full h-full object-cover "
               />
               <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                  {t('blogs.counseling.title')} 
                 </h2>
                 <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
@@ -502,7 +658,7 @@ const DivineMentorsLanding = () => {
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             {t('cta.transformationDescription')}
           </p>
-          <button className="bg-#576F9F text-[#576F9F] cursor-pointer px-12 py-4 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl">
+          <button className="bg-white text-[#576F9F] cursor-pointer px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-auto">
             {t('cta.bookTransformation')}
           </button>
         </div>
@@ -550,45 +706,145 @@ const DivineMentorsLanding = () => {
             <div className="lg:col-span-1 z-50">
             
               
-              <form className="bg-white/20 backdrop-blur-md rounded-xl p-8 shadow-lg">
+              <form onSubmit={handleSubmit} className="bg-white/20 backdrop-blur-md rounded-xl p-8 shadow-lg">
+              <h2 className="text-3xl font-bold mb-4 text-white dark:text-white md:hidden">
+  Contact Us
+  </h2>
                 <div className="grid grid-cols-1 gap-6 mb-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-white mb-2">{t('form.fullName')}</label>
-                      <input type="text" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterFullName')} />
+                      <input 
+                        type="text" 
+                        value={formData.fullName}
+                        onChange={(e) => handleInputChange('fullName', e.target.value)}
+                        className={`w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white ${formErrors.fullName ? 'border-red-400' : 'border-white'}`} 
+                        placeholder={t('form.enterFullName')} 
+                      />
+                      {formErrors.fullName && (
+                        <p className="text-red-400 text-sm mt-1">{formErrors.fullName}</p>
+                      )}
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-white mb-2">{t('form.emailAddress')}</label>
-                      <input type="email" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterEmail')} />
+                      <input 
+                        type="email" 
+                        value={formData.email}
+                        onChange={(e) => handleInputChange('email', e.target.value)}
+                        className={`w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white ${formErrors.email ? 'border-red-400' : 'border-white'}`} 
+                        placeholder={t('form.enterEmail')} 
+                      />
+                      {formErrors.email && (
+                        <p className="text-red-400 text-sm mt-1">{formErrors.email}</p>
+                      )}
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
+                    <div className="flex flex-col">
                       <label className="block text-sm font-medium text-white mb-2">{t('form.phoneNumber')}</label>
-                      <input type="tel" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterPhone')} />
+                      <div className="relative">
+                        <div className="flex h-12">
+                          {/* Country Flag Dropdown */}
+                          <div className="relative country-dropdown">
+                            <button
+                              type="button"
+                              onClick={() => setIsCountryDropdownOpen(!isCountryDropdownOpen)}
+                              className="flex items-center justify-center px-1 h-full bg-black/20 backdrop-blur-md border border-white border-r-0 rounded-l-lg hover:bg-black/30 transition-colors min-w-[40px]"
+                            >
+                              <span className="text-xl ">{selectedCountryData?.flag}</span>
+                              {/* <span className="text-white text-sm">{selectedCountryData?.phoneCode}</span> */}
+                              <ChevronDown className={`w-4 h-4 ml-1 text-white transition-transform ${isCountryDropdownOpen ? 'rotate-180' : ''}`} />
+                            </button>
+                            
+                            {isCountryDropdownOpen && (
+                              <div className="absolute top-full left-0 z-50 mt-1 w-48 bg-black/90 backdrop-blur-md border border-white rounded-lg shadow-lg max-h-48 overflow-y-auto">
+                                {countries.map((country) => (
+                                  <button
+                                    key={country.code}
+                                    type="button"
+                                    onClick={() => {
+                                      setSelectedCountry(country.code);
+                                      setIsCountryDropdownOpen(false);
+                                    }}
+                                    className="flex items-center w-full px-3 py-2 text-white hover:bg-white/10 transition-colors"
+                                  >
+                                    <span className="text-lg mr-3">{country.flag}</span>
+                                    <span className="text-sm">{country.name}</span>
+                                    <span className="text-sm ml-auto text-gray-300">{country.phoneCode}</span>
+                                  </button>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                          
+                          {/* Phone Number Input */}
+                          <input
+                            type="tel"
+                            value={phoneNumber}
+                            onChange={(e) => {
+                              setPhoneNumber(e.target.value);
+                              if (formErrors.phoneNumber) {
+                                setFormErrors(prev => ({
+                                  ...prev,
+                                  phoneNumber: ''
+                                }));
+                              }
+                            }}
+                            className={`flex-1 px-4 h-full bg-black/20 backdrop-blur-md rounded-r-lg border focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white text-white ${formErrors.phoneNumber ? 'border-red-400' : 'border-white'}`}
+                            placeholder={t('form.enterPhone')}
+                          />
+                        </div>
+                        {formErrors.phoneNumber && (
+                          <p className="text-red-400 text-sm mt-1">{formErrors.phoneNumber}</p>
+                        )}
+                      </div>
                     </div>
-                    <div>
+                    
+                    <div className="flex flex-col">
                       <label className="block text-sm font-medium text-white mb-2">{t('form.packageSelection')}</label>
-                      <select className="w-full px-4 py-3 bg-black/20 backdrop-blur-md text-white rounded-lg border border-white focus:ring-2  focus:ring-#576F9F focus:border-transparent">
-                        <option>{t('form.selectPackage')}</option>
-                        <option>{t('form.seekerPackage')}</option>
-                        <option>{t('form.disciplePackage')}</option>
-                        <option>{t('form.divinePackage')}</option>
+                      <select 
+                        value={formData.package}
+                        onChange={(e) => handleInputChange('package', e.target.value)}
+                        className={`w-full h-12 px-4 bg-black/20 backdrop-blur-md text-white rounded-lg border focus:ring-2 focus:ring-#576F9F focus:border-transparent ${formErrors.package ? 'border-red-400' : 'border-white'}`}
+                      >
+                        <option value="">{t('form.selectPackage')}</option>
+                        <option value="seeker">{t('form.seekerPackage')}</option>
+                        <option value="disciple">{t('form.disciplePackage')}</option>
+                        <option value="divine">{t('form.divinePackage')}</option>
                       </select>
+                      {formErrors.package && (
+                        <p className="text-red-400 text-sm mt-1">{formErrors.package}</p>
+                      )}
                     </div>
                   </div>
                 </div>
                 
                 <div className="mb-2">
                   <label className="block text-sm font-medium text-white mb-2">{t('form.specialRequirements')}</label>
-                  <textarea className="w-full px-4 border-white py-3 rounded-lg borderbg-black/20 backdrop-blur-md focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" rows={2} placeholder={t('form.specialRequirementsPlaceholder')}></textarea>
+                  <textarea 
+                    value={formData.specialRequirements}
+                    onChange={(e) => handleInputChange('specialRequirements', e.target.value)}
+                    className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" 
+                    rows={2} 
+                    placeholder={t('form.specialRequirementsPlaceholder')}
+                  />
                 </div>
                 
   
                 
-                <button type="submit" className="w-full  backdrop-blur-md hover:shadow-lg  bg-#576F9F text-[#576F9F] cursor-pointer px-12 py-2 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] hover:border hover:border-white transform hover:scale-105 transition-all duration-300 shadow-2xl">
-         
-                  {t('form.completeRegistration')}
+                <button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full backdrop-blur-md hover:shadow-lg bg-white text-[#576F9F] cursor-pointer px-4 sm:px-6 md:px-12 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] hover:border-white transform hover:scale-105 transition-all duration-300 shadow-2xl disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                >
+                  {isSubmitting ? (
+                    <div className="flex items-center justify-center">
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-[#576F9F] mr-2"></div>
+                      {t('form.submitting')}
+                    </div>
+                  ) : (
+                    t('form.completeRegistration')
+                  )}
                 </button>
                 
                 
@@ -608,7 +864,14 @@ const DivineMentorsLanding = () => {
             {/* Brand & Description */}
             <div className="col-span-1 md:col-span-2">
                <div className="flex-shrink-0 mb-4">
-                <Image src="/logo.png" alt="Divine Mentors" className="h-28" width={120} height={80} />
+                <Image 
+                  src="/logo.png" 
+                  alt="Divine Mentors" 
+                  className="h-28 cursor-pointer hover:opacity-80 transition-opacity" 
+                  width={120} 
+                  height={80} 
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                />
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
                 {t('footer.description')}

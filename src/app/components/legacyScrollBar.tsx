@@ -99,7 +99,7 @@ SEPT 15–28  Rüti ZH, Switzerland
   </div>
   
   {/* Bottom Section */}
-  <div className="mx-auto w-full px-10 sm:px-0 mt-16 text-center">
+  <div className="mx-auto w-full px-0 sm:px-10 text-center lg:mt-4">
     <p className="text-gray-800 text-4xl md:text-5xl font-medium mb-2">
       This is not a workshop.
     </p>
