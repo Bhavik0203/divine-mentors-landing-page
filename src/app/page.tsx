@@ -289,7 +289,7 @@ const DivineMentorsLanding = () => {
   </div>
 
   <div className="relative z-20 text-left text-white max-w-3xl px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-12 md:pt-16 ml-0 sm:ml-4 md:ml-6 lg:ml-8">
-    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-2 md:mb-8 animate-fade-in leading-tight">
+    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-8 md:mb-8 animate-fade-in leading-tight">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
           {part}
@@ -365,7 +365,7 @@ const DivineMentorsLanding = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {mentors.map((mentor, index) => (
-              <article key={index} className="flex bg-white transition hover:shadow-xl rounded-lg overflow-hidden">
+              <article key={index} className="md:flex bg-white transition hover:shadow-xl rounded-lg overflow-hidden">
               
               
                 <div className="block basis-56">
@@ -438,7 +438,7 @@ const DivineMentorsLanding = () => {
           </a>
 
 
-          <div className="lg:col-span-1 space-y-6 lg:space-y-0">
+          <div className="lg:col-span-1">
             
             {/* Top Right - Learn and Practice Hindu Tradition */}
             <a href="https://divinementors.com/managing-anxiety-with-mindfulness-and-clarity/" target="_blank" rel="noopener noreferrer" className="block">
