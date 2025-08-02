@@ -38,7 +38,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
       
       <div ref={ref} className="relative mx-auto ">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start mb-16 md:mb-20 text-gray-900">
+          <div key={index} className="flex justify-start mb-16 md:mb-20 text-gray-900 selection:text-gray-900">
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div
@@ -47,17 +47,17 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
                   className="h-2 sm:h-4 w-2 sm:w-4 rounded-full bg-neutral-200 border border-neutral-300  p-2" />
               </div>
               <h3
-                className="hidden md:block text-lg sm:pl-10 md:pl-20 md:text-3xl font-bold text-gray-900">
+                className="hidden md:block text-lg sm:pl-10 md:pl-20 md:text-3xl font-bold text-gray-900 selection:text-gray-900">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-16 pr-0 md:pl-8 md:pr-8 w-full">
               <h3
-                className="md:hidden block text-2xl mb-6 text-left font-bold text-gray-900 ">
+                className="md:hidden block text-2xl mb-6 text-left font-bold text-gray-900 selection:text-gray-900">
                 {item.title}
               </h3>
-              <div className="text-lg md:text-xl text-gray-800  leading-relaxed">
+              <div className="text-lg md:text-xl text-gray-800 selection:text-gray-900 leading-relaxed">
                 {item.content}
               </div>
             </div>

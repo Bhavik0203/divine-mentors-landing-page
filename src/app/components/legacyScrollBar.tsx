@@ -93,7 +93,7 @@ SEPT 15–28  Rüti ZH, Switzerland
       </div>
     </div>
     {/* Right Section with Timeline */}
-    <div className="lg:col-span-2 relative w-full overflow-clip">
+    <div className="lg:col-span-2 relative w-full overflow-clip text-gray-900">
       <Timeline data={data} />
     </div>
   </div>
