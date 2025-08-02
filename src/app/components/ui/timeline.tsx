@@ -44,20 +44,20 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
               <div
                 className="h-6 sm:h-10 absolute left-3 md:left-3 w-6 sm:w-10 rounded-full bg-white flex items-center justify-center">
                 <div
-                  className="h-2 sm:h-4 w-2 sm:w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
+                  className="h-2 sm:h-4 w-2 sm:w-4 rounded-full bg-neutral-200 border border-neutral-300  p-2" />
               </div>
               <h3
-                className="hidden md:block text-lg sm:pl-10 md:pl-20 md:text-3xl font-bold text-gray-900 dark:text-black">
+                className="hidden md:block text-lg sm:pl-10 md:pl-20 md:text-3xl font-bold text-gray-900">
                 {item.title}
               </h3>
             </div>
 
             <div className="relative pl-16 pr-0 md:pl-8 md:pr-8 w-full">
               <h3
-                className="md:hidden block text-2xl mb-6 text-left font-bold text-gray-900 dark:text-black">
+                className="md:hidden block text-2xl mb-6 text-left font-bold text-gray-900 ">
                 {item.title}
               </h3>
-              <div className="text-lg md:text-xl text-gray-800 dark:text-neutral-200 leading-relaxed">
+              <div className="text-lg md:text-xl text-gray-800  leading-relaxed">
                 {item.content}
               </div>
             </div>
