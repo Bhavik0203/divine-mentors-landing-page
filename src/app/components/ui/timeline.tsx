@@ -57,7 +57,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
                 className="md:hidden block text-2xl mb-6 text-left font-bold text-gray-900 dark:text-black">
                 {item.title}
               </h3>
-              <div className="text-lg md:text-xl text-neutral-800 dark:text-neutral-200 leading-relaxed">
+              <div className="text-lg md:text-xl text-gray-800 dark:text-neutral-200 leading-relaxed">
                 {item.content}
               </div>
             </div>

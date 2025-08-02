@@ -235,7 +235,7 @@ const DivineMentorsLanding = () => {
 
             {/* Book Now Button */}
             <div className="hidden md:flex">
-              <a href="#contact" className="text-[#576F9F] cursor-pointer bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border-2 hover:border-[#576F9F] transform hover:scale-105 transition-all inline-block">
+              <a href="#contact" className="text-[#576F9F] hover:text-white cursor-pointer bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border hover:bg-[#576F9F] hover:border-white transform hover:scale-105 transition-all inline-block">
                 {t('navigation.bookNow')}
               </a>
             </div>
@@ -304,7 +304,7 @@ const DivineMentorsLanding = () => {
       {t('hero.description')}
     </p>
     <Link href="#contact">
-      <button className="bg-white cursor-pointer text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+      <button className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
         {t('hero.cta')}
       </button>
     </Link>
@@ -398,7 +398,7 @@ const DivineMentorsLanding = () => {
 
                   <div className="sm:flex sm:items-end sm:justify-end">
                   <Link href={mentor.link}
-                      className="block bg-[#576F9F] px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-[#4a5f8a]"
+                      className="block bg-[#576F9F] hover:text-[#576F9F] rounded-lg hover:bg-white px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:border hover:border-[#576F9F]"
                     >
                       Book Session
                     </Link>
@@ -430,7 +430,7 @@ const DivineMentorsLanding = () => {
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                   Freeing yourself from addictions: A spiritual path
                 </h2>
-                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                <button className="bg-[#576F9F] hover:border hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
                   Read More
                 </button>
               </div>
@@ -455,7 +455,7 @@ const DivineMentorsLanding = () => {
                    mindfulness and clarity
 
                   </h2>
-                  <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
+                  <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
                   Read More
                 </button>
                 </div>
@@ -476,7 +476,7 @@ const DivineMentorsLanding = () => {
                  The Role of Spiritual Counseling in Mental Health: <br/>A Scientifically Based Alternative to <br/>Psychotherapy
 Scientific studies
                 </h2>
-                <button className="bg-[#576F9F] cursor-pointer hover:bg-blue-700 text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
+                <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
                 Read More
               </button>
               </div>
