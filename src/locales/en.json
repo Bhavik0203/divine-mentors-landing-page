@@ -13,7 +13,8 @@
     "title": "Experience Transformation Through Authentic Spiritual Wisdom – Exclusive Swiss Event",
     "subtitle": "Connect with India's timeless masters and discover the path to inner peace, clarity, and sustainable transformation in your life.",
     "description": "A rare opportunity for genuine seekers: Learn from four authentic spiritual mentors from India who blend centuries-old wisdom with modern approaches to healing and growth. Limited seats – exclusively for serious participants.",
-    "cta": "Register Now - Transform Today"
+    "cta": "Register Now - Transform Today",
+    "authenticWisdom": "Authentic Spiritual Wisdom"
   },
   "painPoints": {
     "title": "Transform your mindset and unlock your true potential",
@@ -51,6 +52,10 @@
     }
   },
   "mentors": {
+    "title": "Meet Our Divine Mentors",
+    "subtitle": "Learn from masters who have dedicated their lives to spiritual wisdom",
+    "specialty": "Specialty:",
+    "bookSession": "Book Session",
     "ramBaba": {
       "name": "Ram Baba",
       "bio": "Private 1:1 consultations offering mindfulness, breathwork, and spiritual clarity.",
@@ -107,7 +112,17 @@
       "title": "Healing Through Sacred Practices",
       "excerpt": "Explore time-tested spiritual practices for holistic healing...",
       "date": "July 10, 2025"
-    }
+    },
+    "addictions": {
+      "title": "Freeing yourself from addictions: A spiritual path"
+    },
+    "fear": {
+      "title": "Dealing with fear through mindfulness and clarity"
+    },
+    "counseling": {
+      "title": "The Role of Spiritual Counseling in Mental Health:"
+    },
+    "readMore": "Read More"
   },
   "faq": {
     "difference": {
@@ -150,6 +165,74 @@
       "name": "Divine",
       "price": "$397",
       "features": ["Everything in Disciple", "3 private sessions", "Lifetime community access", "Personal spiritual plan"]
+    }
+  },
+  "cta": {
+    "transformationAwaits": "Your Transformation Awaits",
+    "transformationDescription": "Don't let another day pass living below your potential. Join thousands who have discovered their divine purpose.",
+    "bookTransformation": "Book Your Transformation Now",
+    "nextBigStep": "Your Next Big Step Starts Here",
+    "nextBigStepDescription": "Learn more and complete your registration for our transformative events"
+  },
+  "form": {
+    "fullName": "Full Name *",
+    "emailAddress": "Email Address *",
+    "phoneNumber": "Phone Number *",
+    "packageSelection": "Package Selection *",
+    "specialRequirements": "Special Requirements or Questions",
+    "enterFullName": "Enter your full name",
+    "enterEmail": "Enter your email",
+    "enterPhone": "Enter your phone number",
+    "selectPackage": "Select a package",
+    "seekerPackage": "Seeker - $97",
+    "disciplePackage": "Disciple - $197",
+    "divinePackage": "Divine - $397",
+    "specialRequirementsPlaceholder": "Let us know if you have any special requirements or questions...",
+    "completeRegistration": "Complete Registration & Pay"
+  },
+  "footer": {
+    "description": "Guiding souls on their journey to spiritual awakening and personal transformation through ancient wisdom and modern healing practices.",
+    "quickLinks": "Quick Links",
+    "aboutUs": "About Us",
+    "ourMentors": "Our Mentors",
+    "testimonials": "Testimonials",
+    "contactInfo": "Contact Info",
+    "address": "123 Spiritual Way, Pune, Maharashtra, India",
+    "phone": "+91 98765 43210",
+    "email": "connect@divinementors.com",
+    "copyright": "© 2025 Divine Mentors. All rights reserved. | Carefully Crafted by Digitalize The Globe.",
+    "callUs": "Call us at +91 98765 43210"
+  },
+  "about": { 
+    "title": "About",
+    "description": "Divine Mentors presents an extraordinary spiritual gathering bringing authentic Indian wisdom traditions to Switzerland. Our four esteemed mentors – direct from India's spiritual centers – share centuries-old practices specifically adapted for modern seekers' needs. This intensive transformation weekend combines classical teachings with scientifically validated approaches for mental clarity, emotional balance, and spiritual growth. Set against the inspiring backdrop of the Swiss Alps, you'll find the perfect environment for profound inner work and lasting change. This exclusive event is designed for serious practitioners ready to commit to genuine spiritual development and personal excellence."
+  },
+  "benefits": {
+    "title": "What You'll Gain",
+    "subtitle": "Transform every aspect of your spiritual journey with profound, lasting change",
+    "lifePurpose": {
+      "title": "Crystal Clear Life Purpose",
+      "description": "Discover your authentic dharma and align your career, relationships, and daily choices with your soul's true calling through guided self-inquiry and meditation."
+    },
+    "emotionalMastery": {
+      "title": "Emotional Mastery & Resilience",
+      "description": "Learn powerful techniques to transform stress, anxiety, and overwhelm into sources of strength and wisdom using ancient emotional alchemy practices."
+    },
+    "mentalClarity": {
+      "title": "Enhanced Mental Clarity & Focus",
+      "description": "Develop laser-sharp concentration and decision-making abilities through specialized pranayama and mindfulness techniques proven by neuroscience."
+    },
+    "successAbundance": {
+      "title": "Conscious Success & Abundance",
+      "description": "Integrate spiritual principles with practical success strategies to create wealth and achievement that align with your highest values and purpose."
+    },
+    "leadership": {
+      "title": "Authentic Leadership Presence",
+      "description": "Cultivate the charisma, intuition, and influence that comes from inner alignment, enabling you to lead with both power and compassion."
+    },
+    "relationships": {
+      "title": "Harmonious Relationships",
+      "description": "Master the art of conscious communication and emotional intelligence to create deeper, more fulfilling connections in all areas of your life."
     }
   },
   "common": {

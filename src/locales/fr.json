@@ -10,10 +10,11 @@
     "bookNow": "Réserver maintenant"
   },
   "hero": {
-    "title": "Vivez la transformation grâce à la sagesse spirituelle authentique – Événement exclusif en Suisse",
+    "title": "Vivez une transformation grâce à la sagesse spirituelle authentique – Événement exclusif en Suisse",
     "subtitle": "Connectez-vous avec les maîtres intemporels de l'Inde et découvrez le chemin vers la paix intérieure, la clarté et la transformation durable dans votre vie.",
-    "description": "Une rare opportunité pour les vrais chercheurs : Apprenez de quatre mentors spirituels authentiques de l'Inde qui allient la sagesse séculaire aux approches modernes de guérison et de croissance. Places limitées – exclusivement pour les participants sérieux.",
-    "cta": "S'inscrire maintenant - Se transformer aujourd'hui"
+    "description": "Une rare opportunité pour les vrais chercheurs : Apprenez de quatre mentors spirituels authentiques de l'Inde qui allient sagesse séculaire et approches modernes de guérison et de croissance. Places limitées – exclusivement pour les participants sérieux.",
+    "cta": "Inscrivez-vous maintenant - Transformez-vous aujourd'hui",
+    "authenticWisdom": "Sagesse spirituelle authentique"
   },
   "painPoints": {
     "title": "Transformez votre état d'esprit et libérez votre véritable potentiel",
@@ -27,33 +28,37 @@
     "title": "Ce que nous offrons",
     "authenticGuidance": {
       "title": "Guidance spirituelle authentique",
-      "description": "Transmission directe de la sagesse par des mentors basés sur la lignée avec des décennies d'expérience dans les traditions indiennes classiques."
+      "description": "Transmission directe de sagesse par des mentors basés sur la lignée avec des décennies d'expérience dans les traditions indiennes classiques."
     },
     "personalizedTransformation": {
       "title": "Transformation personnalisée",
       "description": "Évaluation individuelle de votre parcours spirituel avec des pratiques personnalisées adaptées à votre chemin unique d'auto-découverte."
     },
     "scienceBackedMethods": {
-      "title": "Méthodes validées par la science",
+      "title": "Méthodes soutenues par la science",
       "description": "Techniques éprouvées incluant le pranayama, la méditation et la psychologie spirituelle, validées par la recherche clinique comme alternatives efficaces aux approches traditionnelles."
     },
     "modernLifeIntegration": {
       "title": "Intégration dans la vie moderne",
-      "description": "Outils pratiques pour la gestion du stress, l'intelligence émotionnelle et les qualités de leadership qui s'intègrent parfaitement dans votre vie professionnelle et personnelle."
+      "description": "Outils pratiques pour la gestion du stress, l'intelligence émotionnelle et les qualités de leadership qui s'intègrent harmonieusement dans votre vie professionnelle et personnelle."
     },
     "premiumSwissExperience": {
       "title": "Expérience suisse premium",
-      "description": "Cadre exclusif dans le paysage époustouflant de la Suisse, garantissant tranquillité et concentration pour un travail spirituel profond."
+      "description": "Cadre exclusif dans le paysage époustouflant de la Suisse, assurant tranquillité et concentration pour un travail spirituel profond."
     },
     "lifelongMentorship": {
       "title": "Mentorat à vie",
-      "description": "Construction de connexions durables avec des mentors authentiques pour un accompagnement continu dans votre parcours spirituel."
+      "description": "Construire des connexions durables avec des mentors authentiques pour un guidage continu sur votre parcours spirituel."
     }
   },
   "mentors": {
+    "title": "Rencontrez nos mentors divins",
+    "subtitle": "Apprenez des maîtres qui ont dédié leur vie à la sagesse spirituelle",
+    "specialty": "Spécialité :",
+    "bookSession": "Réserver une session",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Consultations privées 1:1 offrant pleine conscience, respiration et clarté spirituelle.",
+      "bio": "Consultations privées 1:1 offrant pleine conscience, travail respiratoire et clarté spirituelle.",
       "specialty": "Méditation et pleine conscience",
       "offerings": [
         "Méditation guidée",
@@ -83,10 +88,10 @@
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Guidance spirituelle du chemin du Divin Féminin axée sur la paix intérieure et la transformation.",
+      "bio": "Guidance spirituelle du chemin de la Divine Féminité axée sur la paix intérieure et la transformation.",
       "specialty": "Conseil spirituel",
       "offerings": [
-        "Éveil du Divin Féminin",
+        "Éveil de la Divine Féminité",
         "Pratiques de paix intérieure",
         "Guérison émotionnelle et énergétique"
       ]
@@ -100,23 +105,33 @@
     },
     "divinePurpose": {
       "title": "Éveiller votre but divin",
-      "excerpt": "Apprenez à vous aligner avec le véritable appel de votre âme et vivre authentiquement...",
+      "excerpt": "Apprenez à vous aligner avec l'appel véritable de votre âme et vivre authentiquement...",
       "date": "15 juillet 2025"
     },
     "sacredPractices": {
       "title": "Guérison par les pratiques sacrées",
-      "excerpt": "Explorez des pratiques spirituelles éprouvées pour la guérison holistique...",
+      "excerpt": "Explorez des pratiques spirituelles éprouvées par le temps pour une guérison holistique...",
       "date": "10 juillet 2025"
-    }
+    },
+    "addictions": {
+      "title": "Se libérer des addictions : Un chemin spirituel"
+    },
+    "fear": {
+      "title": "Gérer la peur par la pleine conscience et la clarté"
+    },
+    "counseling": {
+      "title": "Le rôle du conseil spirituel dans la santé mentale :"
+    },
+    "readMore": "Lire plus"
   },
   "faq": {
     "difference": {
       "question": "Qu'est-ce qui rend cet événement différent des autres ateliers spirituels ?",
-      "answer": "Ce n'est pas un atelier – c'est un événement de transmission directe avec des détenteurs de lignée authentiques de l'Inde. Nos mentors portent des siècles de tradition spirituelle ininterrompue et ont été spécifiquement sélectionnés pour leur capacité à guider les praticiens occidentaux sérieux. Le cadre suisse fournit un environnement optimal pour un travail spirituel profond tout en maintenant les plus hauts standards de confort et d'accessibilité."
+      "answer": "Ce n'est pas un atelier – c'est un événement de transmission directe avec des détenteurs de lignée authentiques de l'Inde. Nos mentors portent des siècles de tradition spirituelle ininterrompue et ont été spécifiquement sélectionnés pour leur capacité à guider les pratiquants occidentaux sérieux. Le cadre suisse fournit un environnement optimal pour un travail spirituel profond tout en maintenant les plus hauts standards de confort et d'accessibilité."
     },
     "experience": {
       "question": "Ai-je besoin d'expérience préalable en méditation ou yoga ?",
-      "answer": "Bien qu'une expérience préalable soit bénéfique, elle n'est pas requise. Nos mentors sont habiles à rencontrer les étudiants là où ils en sont. Cependant, cet événement est conçu pour les chercheurs sérieux prêts à s'engager dans une pratique spirituelle authentique. Nous accueillons les débutants avec une intention sincère ainsi que les praticiens avancés cherchant une guidance plus profonde."
+      "answer": "Bien qu'une expérience préalable soit bénéfique, elle n'est pas requise. Nos mentors sont habiles à rencontrer les étudiants là où ils en sont. Cependant, cet événement est conçu pour les chercheurs sérieux prêts à s'engager dans une pratique spirituelle authentique. Nous accueillons les débutants avec une intention sincère ainsi que les pratiquants avancés cherchant un guidage plus profond."
     },
     "readiness": {
       "question": "Comment savoir si je suis prêt pour ce niveau de travail spirituel ?",
@@ -124,15 +139,15 @@
     },
     "sessions": {
       "question": "À quoi dois-je m'attendre pendant les sessions privées avec les mentors ?",
-      "answer": "Chaque mentor offre une approche unique basée sur sa spécialisation. Les sessions peuvent inclure une instruction de méditation personnalisée, une guérison énergétique, un conseil spirituel, des techniques de respiration avancées ou un travail rituel sacré. Toutes les sessions sont menées avec le plus grand respect pour votre niveau de confort et vos limites spirituelles."
+      "answer": "Chaque mentor offre une approche unique basée sur sa spécialisation. Les sessions peuvent inclure des instructions de méditation personnalisées, de la guérison énergétique, du conseil spirituel, des techniques de respiration avancées ou du travail rituel sacré. Toutes les sessions sont menées avec le plus grand respect pour votre niveau de confort et vos limites spirituelles."
     },
     "professionals": {
-      "question": "Cet événement convient-il aux professionnels et cadres d'entreprise ?",
+      "question": "Cet événement est-il adapté aux professionnels et cadres d'entreprise ?",
       "answer": "Absolument. Beaucoup de nos participants sont des professionnels réussis cherchant à intégrer la sagesse spirituelle avec l'excellence de carrière. Nos mentors comprennent les exigences de la vie professionnelle moderne et offrent des applications pratiques des principes spirituels qui améliorent plutôt qu'interfèrent avec votre succès."
     },
     "accommodation": {
       "question": "Quels sont les détails d'hébergement et de localisation ?",
-      "answer": "L'événement se déroule dans une installation de retraite premium (dans la campagne de Zürich) dans les Alpes suisses, offrant des hébergements confortables, une cuisine végétarienne biologique (nous ne fournissons pas l'hébergement ni la nourriture) et une beauté naturelle époustouflante. Les détails de localisation spécifiques seront fournis lors de l'inscription pour maintenir la nature intime et exclusive du rassemblement."
+      "answer": "L'événement se déroule dans une installation de retraite premium (dans la campagne de Zürich) dans les Alpes suisses, offrant des hébergements confortables, une cuisine végétarienne biologique (nous ne fournissons pas d'hébergement ni de nourriture) et une beauté naturelle époustouflante. Les détails de localisation spécifiques seront fournis lors de l'inscription pour maintenir la nature intime et exclusive du rassemblement."
     }
   },
   "pricing": {
@@ -144,12 +159,80 @@
     "disciple": {
       "name": "Disciple",
       "price": "197€",
-      "features": ["Tout dans Chercheur", "Session mentor 1-à-1", "Matériel premium", "Support prioritaire"]
+      "features": ["Tout dans Chercheur", "Session mentor 1-sur-1", "Matériel premium", "Support prioritaire"]
     },
     "divine": {
       "name": "Divin",
       "price": "397€",
       "features": ["Tout dans Disciple", "3 sessions privées", "Accès communautaire à vie", "Plan spirituel personnel"]
+    }
+  },
+  "cta": {
+    "transformationAwaits": "Votre transformation vous attend",
+    "transformationDescription": "Ne laissez pas passer un autre jour à vivre en dessous de votre potentiel. Rejoignez des milliers qui ont découvert leur but divin.",
+    "bookTransformation": "Réservez votre transformation maintenant",
+    "nextBigStep": "Votre prochaine grande étape commence ici",
+    "nextBigStepDescription": "En savoir plus et compléter votre inscription pour nos événements transformateurs"
+  },
+  "form": {
+    "fullName": "Nom complet *",
+    "emailAddress": "Adresse e-mail *",
+    "phoneNumber": "Numéro de téléphone *",
+    "packageSelection": "Sélection de forfait *",
+    "specialRequirements": "Exigences spéciales ou questions",
+    "enterFullName": "Entrez votre nom complet",
+    "enterEmail": "Entrez votre e-mail",
+    "enterPhone": "Entrez votre numéro de téléphone",
+    "selectPackage": "Sélectionnez un forfait",
+    "seekerPackage": "Chercheur - 97€",
+    "disciplePackage": "Disciple - 197€",
+    "divinePackage": "Divin - 397€",
+    "specialRequirementsPlaceholder": "Faites-nous savoir si vous avez des exigences spéciales ou des questions...",
+    "completeRegistration": "Compléter l'inscription et payer"
+  },
+  "footer": {
+    "description": "Guider les âmes dans leur voyage vers l'éveil spirituel et la transformation personnelle à travers la sagesse ancienne et les pratiques de guérison modernes.",
+    "quickLinks": "Liens rapides",
+    "aboutUs": "À propos de nous",
+    "ourMentors": "Nos mentors",
+    "testimonials": "Témoignages",
+    "contactInfo": "Informations de contact",
+    "address": "123 Chemin Spirituel, Pune, Maharashtra, Inde",
+    "phone": "+91 98765 43210",
+    "email": "connect@divinementors.com",
+    "copyright": "© 2025 Divine Mentors. Tous droits réservés. | Soigneusement créé par Digitalize The Globe.",
+    "callUs": "Appelez-nous au +91 98765 43210"
+  },
+  "about": {
+    "title": "À propos de l'événement",
+    "description": "Divine Mentors présente un rassemblement spirituel extraordinaire apportant les traditions de sagesse indienne authentique en Suisse. Nos quatre mentors estimés – directement des centres spirituels de l'Inde – partagent des pratiques séculaires spécifiquement adaptées aux besoins des chercheurs modernes. Ce week-end de transformation intensive combine enseignements classiques et approches scientifiquement validées pour la clarté mentale, l'équilibre émotionnel et la croissance spirituelle. Dans le cadre inspirant des Alpes suisses, vous trouverez l'environnement parfait pour un travail intérieur profond et un changement durable. Cet événement exclusif est conçu pour les praticiens sérieux prêts à s'engager dans un développement spirituel authentique et une excellence personnelle."
+  },
+  "benefits": {
+    "title": "Ce que vous gagnerez",
+    "subtitle": "Transformez chaque aspect de votre voyage spirituel avec un changement profond et durable",
+    "lifePurpose": {
+      "title": "But de vie cristallin",
+      "description": "Découvrez votre dharma authentique et alignez votre carrière, vos relations et vos choix quotidiens avec le véritable appel de votre âme grâce à l'auto-enquête guidée et à la méditation."
+    },
+    "emotionalMastery": {
+      "title": "Maîtrise émotionnelle et résilience",
+      "description": "Apprenez des techniques puissantes pour transformer le stress, l'anxiété et l'accablement en sources de force et de sagesse en utilisant des pratiques anciennes d'alchimie émotionnelle."
+    },
+    "mentalClarity": {
+      "title": "Clarté mentale et concentration améliorées",
+      "description": "Développez des capacités de concentration et de prise de décision laser-sharp grâce à des techniques spécialisées de pranayama et de pleine conscience prouvées par la neuroscience."
+    },
+    "successAbundance": {
+      "title": "Succès conscient et abondance",
+      "description": "Intégrez les principes spirituels avec des stratégies de succès pratiques pour créer richesse et accomplissement qui s'alignent avec vos valeurs et votre but les plus élevés."
+    },
+    "leadership": {
+      "title": "Présence de leadership authentique",
+      "description": "Cultivez le charisme, l'intuition et l'influence qui vient de l'alignement intérieur, vous permettant de diriger avec puissance et compassion."
+    },
+    "relationships": {
+      "title": "Relations harmonieuses",
+      "description": "Maîtrisez l'art de la communication consciente et de l'intelligence émotionnelle pour créer des connexions plus profondes et plus épanouissantes dans tous les domaines de votre vie."
     }
   },
   "common": {

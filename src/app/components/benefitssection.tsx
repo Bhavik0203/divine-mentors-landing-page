@@ -1,46 +1,48 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, Sparkles, Heart, Compass, Shield, Target, Zap, Brain, DollarSign, Star, Home, Play, Pause } from 'lucide-react';
 
 const BenefitsSection = () => {
+  const { t } = useTranslation();
   const [activeCard, setActiveCard] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const benefits = [
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Crystal Clear Life Purpose",
-      description: "Discover your authentic dharma and align your career, relationships, and daily choices with your soul's true calling through guided self-inquiry and meditation.",
+      title: t('benefits.lifePurpose.title'),
+      description: t('benefits.lifePurpose.description'),
       gradient: "from-[#576F9F] to-[#576F9F]/40"
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Emotional Mastery & Resilience",
-      description: "Learn powerful techniques to transform stress, anxiety, and overwhelm into sources of strength and wisdom using ancient emotional alchemy practices.",
+      title: t('benefits.emotionalMastery.title'),
+      description: t('benefits.emotionalMastery.description'),
        gradient: "from-[#576F9F] to-[#576F9F]/40"
     },
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "Enhanced Mental Clarity & Focus",
-      description: "Develop laser-sharp concentration and decision-making abilities through specialized pranayama and mindfulness techniques proven by neuroscience.",
+      title: t('benefits.mentalClarity.title'),
+      description: t('benefits.mentalClarity.description'),
        gradient: "from-[#576F9F] to-[#576F9F]/40"
     },
     {
       icon: <DollarSign className="w-8 h-8" />,
-      title: "Conscious Success & Abundance",
-      description: "Integrate spiritual principles with practical success strategies to create wealth and achievement that align with your highest values and purpose.",
+      title: t('benefits.successAbundance.title'),
+      description: t('benefits.successAbundance.description'),
        gradient: "from-[#576F9F] to-[#576F9F]/40"
     },
     {
       icon: <Star className="w-8 h-8" />,
-      title: "Authentic Leadership Presence",
-      description: "Cultivate the charisma, intuition, and influence that comes from inner alignment, enabling you to lead with both power and compassion.",
+      title: t('benefits.leadership.title'),
+      description: t('benefits.leadership.description'),
        gradient: "from-[#576F9F] to-[#576F9F]/40"
     },
     {
       icon: <Home className="w-8 h-8" />,
-      title: "Harmonious Relationships",
-      description: "Master the art of conscious communication and emotional intelligence to create deeper, more fulfilling connections in all areas of your life.",
+      title: t('benefits.relationships.title'),
+      description: t('benefits.relationships.description'),
        gradient: "from-[#576F9F] to-[#576F9F]/40"
     }
   ];
@@ -72,8 +74,8 @@ const BenefitsSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           
-          <h2 className="text-5xl font-bold text-gray-900 mb-6">What You'll Gain</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Transform every aspect of your spiritual journey with profound, lasting change</p>
+          <h2 className="text-5xl font-bold text-gray-900 mb-6">{t('benefits.title')}</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">{t('benefits.subtitle')}</p>
         </div>
 
         {/* Main content layout */}

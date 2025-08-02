@@ -1,12 +1,26 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import wp from "@/public/images/wha.png"; // ✅ Adjusted import path for WhatsApp icon
-import snd from "@/public/images/send.png";
-const WhatsAppPopup = () => {
+import wp from "../../../public/wha.png";
+import snd from "../../../public/send.png";
+
+interface WhatsAppPopupProps {
+  companyName?: string;
+  phoneNumber?: string;
+  defaultMessage?: string;
+  position?: 'left' | 'right';
+  theme?: 'default' | 'spiritual' | 'corporate';
+}
+
+const WhatsAppPopup: React.FC<WhatsAppPopupProps> = ({
+  companyName = "Divine Mentors",
+  phoneNumber = "+91 9156123575",
+  defaultMessage = "Hello! I'm interested in learning more about your spiritual guidance services.",
+  position = 'left',
+  theme = 'spiritual'
+}) => {
   const [showPopup, setShowPopup] = useState(false);
-  const [phoneNumber] = useState("+91 9156123575"); // ✅ Default WhatsApp number
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState(defaultMessage);
 
   const handleSendMessage = () => {
     if (!message.trim() || !phoneNumber.trim()) return;
@@ -19,6 +33,30 @@ const WhatsAppPopup = () => {
     setMessage("");
   };
 
+  // Theme configurations
+  const themes = {
+    default: {
+      buttonColor: "rgb(33, 202, 95)",
+      buttonHoverColor: "rgb(25, 152, 72)",
+      headerColor: "#075E54",
+      sendButtonColor: "#25D366"
+    },
+    spiritual: {
+      buttonColor: "rgb(139, 69, 19)", // Brown for spiritual theme
+      buttonHoverColor: "rgb(101, 67, 33)",
+      headerColor: "#8B4513",
+      sendButtonColor: "#D2691E"
+    },
+    corporate: {
+      buttonColor: "rgb(59, 130, 246)", // Blue for corporate theme
+      buttonHoverColor: "rgb(37, 99, 235)",
+      headerColor: "#1E40AF",
+      sendButtonColor: "#3B82F6"
+    }
+  };
+
+  const currentTheme = themes[theme];
+
   return (
     <>
       {/* WhatsApp Floating Button */}
@@ -27,7 +65,7 @@ const WhatsAppPopup = () => {
         className="whatsapp-float-btn"
         style={{
           position: "fixed",
-          bottom: "40px",
+          bottom: "20px",
           left: "40px", // ✅ Changed to left side on desktop
           backgroundColor: "rgb(33, 202, 95)",
           border: "none",
@@ -41,9 +79,44 @@ const WhatsAppPopup = () => {
           alignItems: "center",
           justifyContent: "center",
           zIndex: 1000,
+          transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        }}
+        onMouseEnter={(e) => {
+          e.currentTarget.style.transform = "scale(1.15) rotate(5deg)";
+          e.currentTarget.style.backgroundColor = currentTheme.buttonHoverColor;
+          e.currentTarget.style.boxShadow = `0px 8px 20px ${currentTheme.buttonColor}40, 0px 4px 8px rgba(0, 0, 0, 0.3)`;
+          e.currentTarget.style.border = "2px solid rgba(255, 255, 255, 0.3)";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.transform = "scale(1) rotate(0deg)";
+          e.currentTarget.style.backgroundColor = currentTheme.buttonColor;
+          e.currentTarget.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.2)";
+          e.currentTarget.style.border = "none";
+        }}
+        onMouseDown={(e) => {
+          e.currentTarget.style.transform = "scale(0.95) rotate(2deg)";
+          e.currentTarget.style.boxShadow = "0px 2px 4px rgba(0, 0, 0, 0.3)";
+        }}
+        onMouseUp={(e) => {
+          e.currentTarget.style.transform = "scale(1.15) rotate(5deg)";
+          e.currentTarget.style.boxShadow = `0px 8px 20px ${currentTheme.buttonColor}40, 0px 4px 8px rgba(0, 0, 0, 0.3)`;
         }}
       >
-        <Image src={wp} alt="WhatsApp" width={35} height={35} />
+        <Image 
+          src={wp} 
+          alt="WhatsApp" 
+          width={35} 
+          height={35}
+          style={{
+            transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.transform = "scale(1.1)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.transform = "scale(1)";
+          }}
+        />
       </button>
 
       {/* WhatsApp Chat Popup */}
@@ -52,7 +125,7 @@ const WhatsAppPopup = () => {
           style={{
             position: "fixed",
             bottom: "90px",
-            left: "20px", // ✅ Adjusted popup position to left side
+            [position]: "20px",
             width: "320px",
             backgroundColor: "#fff",
             borderRadius: "10px",
@@ -75,7 +148,7 @@ const WhatsAppPopup = () => {
               fontWeight: "bold",
             }}
           >
-            <span>Property Drone Realty</span>
+            <span>{companyName}</span>
             <span onClick={() => setShowPopup(false)} style={{ cursor: "pointer", fontSize: "18px" }}>✖</span>
           </div>
 
@@ -100,7 +173,12 @@ const WhatsAppPopup = () => {
                 boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.1)",
               }}
             >
-              Hey! 👋 Enter a message and send it to WhatsApp.
+              {theme === 'spiritual' 
+                ? "Namaste! 🙏 How can I assist you on your spiritual journey today?"
+                : theme === 'corporate'
+                ? "Hello! 👋 How can we help you with your business needs?"
+                : "Hey! 👋 How can we help you today?"
+              }
             </div>
           </div>
 
@@ -108,7 +186,7 @@ const WhatsAppPopup = () => {
           <div
             style={{
               display: "flex",
-              flexDirection: "row", // ✅ Changed to row layout
+              flexDirection: "row",
               alignItems: "center",
               gap: "8px",
               padding: "12px",
@@ -120,7 +198,7 @@ const WhatsAppPopup = () => {
             {/* Message Input */}
             <input
               type="text"
-              placeholder="Enter your message"
+              placeholder={theme === 'spiritual' ? "Share your spiritual questions..." : "Enter your message"}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               style={{

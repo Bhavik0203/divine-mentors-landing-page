@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "./components/I18nProvider";
 import ScrollButton from "./components/scrollbutton";
+import WhatsAppPopup from "./components/whatsapp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +31,14 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <I18nProvider>
-          {/* <ScrollButton/> */}
+          <ScrollButton/>
+          <WhatsAppPopup 
+            companyName="Divine Mentors"
+            phoneNumber="+91 9156123575"
+            defaultMessage="Hello! I'm interested in learning more about your spiritual guidance services."
+            position="left"
+            theme="spiritual"
+          />
           {children}
         </I18nProvider>
       </body>

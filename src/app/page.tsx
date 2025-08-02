@@ -289,20 +289,20 @@ const DivineMentorsLanding = () => {
   </div>
 
   <div className="relative z-20 text-left text-white max-w-3xl px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-12 md:pt-16 ml-0 sm:ml-4 md:ml-6 lg:ml-8">
-    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-2 md:mb-4 animate-fade-in leading-tight">
+    <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-2 md:mb-8 animate-fade-in leading-tight">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
           {part}
-          {index === 0 && <span className="text-yellow-300">Authentic Spiritual Wisdom</span>}
+                          {index === 0 && <span className="text-yellow-300">{t('hero.authenticWisdom')}</span>}
         </React.Fragment>
       ))}
     </h1>
-    <p className="text-lg sm:text-lg md:text-xl mb-0 sm:mb-2 opacity-90 leading-relaxed">
+    {/* <p className="text-lg sm:text-lg md:text-xl mb-0 sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
     <p className="text-base sm:text-lg mb-4 sm:mb-4 opacity-80 leading-relaxed">
       {t('hero.description')}
-    </p>
+    </p> */}
     <Link href="#contact">
       <button className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
         {t('hero.cta')}
@@ -359,8 +359,8 @@ const DivineMentorsLanding = () => {
       <section id='mentors' className="py-16 bg-cover bg-center bg-no-repeat">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-black mb-4">Meet Our Divine Mentors</h2>
-            <p className="text-xl text-gray-600">Learn from masters who have dedicated their lives to spiritual wisdom</p>
+            <h2 className="text-4xl font-bold text-black mb-4">{t('mentors.title')}</h2>
+            <p className="text-xl text-gray-600">{t('mentors.subtitle')}</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -368,7 +368,7 @@ const DivineMentorsLanding = () => {
               <article key={index} className="flex bg-white transition hover:shadow-xl rounded-lg overflow-hidden">
               
               
-                <div className="hidden sm:block sm:basis-56">
+                <div className="block basis-56">
                   <Image
                     src={mentor.image}
                     alt={mentor.name}
@@ -391,7 +391,7 @@ const DivineMentorsLanding = () => {
                     </Link>
                     
                     <div className="mb-4">
-                      <p className="text-xs font-semibold text-gray-600 uppercase mb-2">Specialty:</p>
+                      <p className="text-xs font-semibold text-gray-600 uppercase mb-2">{t('mentors.specialty')}</p>
                       <p className="text-sm text-gray-800 font-medium">{mentor.specialty}</p>
                     </div>
                   </div>
@@ -400,7 +400,7 @@ const DivineMentorsLanding = () => {
                   <Link href={mentor.link}
                       className="block bg-[#576F9F] hover:text-[#576F9F] rounded-lg hover:bg-white px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:border hover:border-[#576F9F]"
                     >
-                      Book Session
+                      {t('mentors.bookSession')}
                     </Link>
                   </div>
                 </div>
@@ -419,19 +419,19 @@ const DivineMentorsLanding = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2">
           
           <a href="https://divinementors.com/breaking-free-from-addictions-a-spiritual-approach/" target="_blank" rel="noopener noreferrer" className="block">
-            <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[719px]">
+            <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[700px]">
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               <Image 
                 src={blog1} 
                 alt="Person in traditional setting" 
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
+              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 pb-8 lg:pb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
-                  Freeing yourself from addictions: A spiritual path
+                  {t('blogs.addictions.title')}
                 </h2>
                 <button className="bg-[#576F9F] hover:border hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
-                  Read More
+                  {t('blogs.readMore')}
                 </button>
               </div>
             </div>
@@ -443,20 +443,19 @@ const DivineMentorsLanding = () => {
             {/* Top Right - Learn and Practice Hindu Tradition */}
             <a href="https://divinementors.com/managing-anxiety-with-mindfulness-and-clarity/" target="_blank" rel="noopener noreferrer" className="block">
               <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
-                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
                 <Image 
                 src={blog2} 
                   alt="Person in meditation" 
                   className="absolute inset-0 w-full h-full object-cover"
                 />
-                <div className="relative z-10 flex flex-col justify-center h-full p-4 lg:p-6">
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 lg:mb-4  p-4 leading-tight">
-                   Dealing with fear through <br/>
-                   mindfulness and clarity
+                <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                   {t('blogs.fear.title')}
 
                   </h2>
-                  <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
-                  Read More
+                  <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                  {t('blogs.readMore')}
                 </button>
                 </div>
               </div>
@@ -465,19 +464,18 @@ const DivineMentorsLanding = () => {
             {/* Bottom Right - Understand the Concepts */}
             <a href="https://divinementors.com/the-role-of-spiritual-counseling-in-mental-health-a-science-backed-alternative-to-psychotherapy/" target="_blank" rel="noopener noreferrer" className="block">
     <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
-              <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               <Image 
               src={blog3} 
                 alt="Traditional vessels and artifacts" 
                 className="absolute inset-0 w-full h-full object-cover "
               />
-              <div className="relative z-10 flex flex-col justify-center h-full p-4 lg:p-6">
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 lg:mb-4 p-4 leading-tight">
-                 The Role of Spiritual Counseling in Mental Health: <br/>A Scientifically Based Alternative to <br/>Psychotherapy
-Scientific studies
+              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
+                 {t('blogs.counseling.title')} 
                 </h2>
-                <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-6 lg:px-8 py-3 rounded-full transition-all duration-300 w-fit text-sm lg:text-base">
-                Read More
+                <button className="bg-[#576F9F] hover:border-[#576F9F] cursor-pointer hover:bg-white hover:text-[#576F9F] text-white px-8 py-3 rounded-full transition-all duration-300 w-fit">
+                {t('blogs.readMore')}
               </button>
               </div>
             </div>
@@ -490,39 +488,7 @@ Scientific studies
       </div>
    
       
-    {/* <UniversityHero/> */}
-
-      {/* CTA Section */}
-     
-            {/* <PricingSection/> */}
-      {/* <section className="py-20 bg-white text-[#576F9F]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">What You'll Gain</h2>
-            <p className="text-xl opacity-90">Transform every aspect of your spiritual journey</p>
-          </div>
-          
-          <div className="relative h-32 flex items-center justify-center">
-            <div className="text-center max-w-4xl">
-              <p className="text-2xl font-medium transition-all duration-500">
-                {painPoints[currentSlide]}
-              </p>
-            </div>
-          </div>
-          
-          <div className="flex justify-center mt-8 space-x-2">
-            {painPoints.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentSlide ? 'bg-[#576F9F]' : 'bg-[#576F9F]/60'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-      </section> */}
+   
       <BenefitsSection/>
       <section id="contactus" className="relative py-16 bg-cover bg-center bg-no-repeat bg-fixed"
     style={{ backgroundImage: `url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop')` }}>
@@ -531,27 +497,27 @@ Scientific studies
           
           
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Your Transformation Awaits
+            {t('cta.transformationAwaits')}
           </h2>
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
-            Don't let another day pass living below your potential. Join thousands who have discovered their divine purpose.
+            {t('cta.transformationDescription')}
           </p>
           <button className="bg-#576F9F text-[#576F9F] cursor-pointer px-12 py-4 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl">
-            Book Your Transformation Now
+            {t('cta.bookTransformation')}
           </button>
         </div>
       </section>
 
       {/* FAQ and Booking Form Section */}
-    <section className=" py-16  bg-[#576F9F]">
+    <section id='contact' className=" py-16  bg-[#576F9F]">
        {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
         <div className="relative z-10 max-w-7xl mx-auto ">
         <div className="mb-8 text-center z-50">
   <h2 className="text-4xl font-bold mb-4 text-white dark:text-white">
-    Your Next Big Step Starts Here
+    {t('cta.nextBigStep')}
   </h2>
   <p className="text-xl text-gray-200 dark:text-gray-200">
-    Learn more and complete your registration for our transformative events
+    {t('cta.nextBigStepDescription')}
   </p>
 </div>
 
@@ -565,13 +531,13 @@ Scientific studies
                   <div key={index} className="bg-white/20 backdrop-blur-md rounded-lg shadow-md">
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                      className="w-full cursor-pointer px-6 py-4 text-left flex justify-between items-center hover:bg-white/10 hover:backdrop-blur-md transition-colors"
+                      className="w-full cursor-pointer px-6 py-4 bg-white/20 text-left flex rounded-lg justify-between items-center hover:bg-white/10 hover:backdrop-blur-md transition-colors"
                     >
-                      <span className="font-medium text-white">{faq.question}</span>
+                      <span className="font-medium text-white ">{faq.question}</span>
                       {openFaq === index ? <ChevronUp className="w-5 h-5 text-white" /> : <ChevronDown className="w-5 h-5 text-white" />}
                     </button>
                     {openFaq === index && (
-                      <div className="px-6 pb-4">
+                      <div className="px-6 pb-4 py-2 ">
                         <p className="text-gray-100">{faq.answer}</p>
                       </div>
                     )}
@@ -588,40 +554,41 @@ Scientific studies
                 <div className="grid grid-cols-1 gap-6 mb-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-white mb-2">Full Name *</label>
-                      <input type="text" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder="Enter your full name" />
+                      <label className="block text-sm font-medium text-white mb-2">{t('form.fullName')}</label>
+                      <input type="text" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterFullName')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-white mb-2">Email Address *</label>
-                      <input type="email" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder="Enter your email" />
+                      <label className="block text-sm font-medium text-white mb-2">{t('form.emailAddress')}</label>
+                      <input type="email" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterEmail')} />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="block text-sm font-medium text-white mb-2">Phone Number *</label>
-                      <input type="tel" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder="Enter your phone number" />
+                      <label className="block text-sm font-medium text-white mb-2">{t('form.phoneNumber')}</label>
+                      <input type="tel" className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" placeholder={t('form.enterPhone')} />
                     </div>
                     <div>
-                      <label className="block text-sm font-medium text-white mb-2">Package Selection *</label>
+                      <label className="block text-sm font-medium text-white mb-2">{t('form.packageSelection')}</label>
                       <select className="w-full px-4 py-3 bg-black/20 backdrop-blur-md text-white rounded-lg border border-white focus:ring-2  focus:ring-#576F9F focus:border-transparent">
-                        <option>Select a package</option>
-                        <option>Seeker - $97</option>
-                        <option>Disciple - $197</option>
-                        <option>Divine - $397</option>
+                        <option>{t('form.selectPackage')}</option>
+                        <option>{t('form.seekerPackage')}</option>
+                        <option>{t('form.disciplePackage')}</option>
+                        <option>{t('form.divinePackage')}</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 
                 <div className="mb-2">
-                  <label className="block text-sm font-medium text-white mb-2">Special Requirements or Questions</label>
-                  <textarea className="w-full px-4 border-white py-3 rounded-lg borderbg-black/20 backdrop-blur-md focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" rows={2} placeholder="Let us know if you have any special requirements or questions..."></textarea>
+                  <label className="block text-sm font-medium text-white mb-2">{t('form.specialRequirements')}</label>
+                  <textarea className="w-full px-4 border-white py-3 rounded-lg borderbg-black/20 backdrop-blur-md focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" rows={2} placeholder={t('form.specialRequirementsPlaceholder')}></textarea>
                 </div>
                 
   
                 
-                <button type="submit" className="w-full cursor-pointer bg-white/20 backdrop-blur-md text-white py-2 rounded-lg font-bold text-lg hover:shadow-lg transform hover:scale-105 transition-all duration-300">
-                  Complete Registration & Pay
+                <button type="submit" className="w-full  backdrop-blur-md hover:shadow-lg  bg-#576F9F text-[#576F9F] cursor-pointer px-12 py-2 rounded-full bg-white text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] hover:border hover:border-white transform hover:scale-105 transition-all duration-300 shadow-2xl">
+         
+                  {t('form.completeRegistration')}
                 </button>
                 
                 
@@ -644,7 +611,7 @@ Scientific studies
                 <Image src="/logo.png" alt="Divine Mentors" className="h-28" width={120} height={80} />
               </div>
               <p className="text-gray-300 mb-6 max-w-md">
-                Guiding souls on their journey to spiritual awakening and personal transformation through ancient wisdom and modern healing practices.
+                {t('footer.description')}
               </p>
               {/* <div className="flex space-x-4">
                 <a href="#" className="bg-#576F9F p-3 rounded-full hover:bg-#576F9F transition-colors">
@@ -664,32 +631,32 @@ Scientific studies
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <h4 className="text-lg font-semibold mb-4">{t('footer.quickLinks')}</h4>
               <ul className="space-y-2 cursor-pointer">
-                <li><a href="#home" className="text-gray-300 hover:text-#576F9F transition-colors">Home</a></li>
-                <li><a href="#about" className="text-gray-300 hover:text-#576F9F transition-colors">About Us</a></li>
-                <li><a href="#mentors" className="text-gray-300 hover:text-#576F9F transition-colors">Our Mentors</a></li>
-                <li><a href="#events" className="text-gray-300 hover:text-#576F9F transition-colors">Events</a></li>
-                <li><a href="#blog" className="text-gray-300 hover:text-#576F9F transition-colors">Blog</a></li>
-                <li><a href="#testimonials" className="text-gray-300 hover:text-#576F9F transition-colors">Testimonials</a></li>
+                <li><a href="#home" className="text-gray-300 hover:text-#576F9F transition-colors">{t('navigation.home')}</a></li>
+                <li><a href="#about" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.aboutUs')}</a></li>
+                <li><a href="#mentors" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.ourMentors')}</a></li>
+                <li><a href="#events" className="text-gray-300 hover:text-#576F9F transition-colors">{t('navigation.events')}</a></li>
+                <li><a href="#blog" className="text-gray-300 hover:text-#576F9F transition-colors">{t('navigation.blog')}</a></li>
+                <li><a href="#testimonials" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.testimonials')}</a></li>
               </ul>
             </div>
 
             {/* Contact Info */}
             <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+              <h4 className="text-lg font-semibold mb-4">{t('footer.contactInfo')}</h4>
               <div className="space-y-3">
                 <div className="flex items-center cursor-pointer">
                   <MapPin className="w-5 h-5 text-#576F9F mr-3 cursor-pointer" />
-                  <span className="text-gray-300">123 Spiritual Way, Pune, Maharashtra, India</span>
+                  <span className="text-gray-300">{t('footer.address')}</span>
                 </div>
                 <div className="flex items-center cursor-pointer">
                   <Phone className="w-5 h-5 text-#576F9F mr-3" />
-                  <span className="text-gray-300">+91 98765 43210</span>
+                  <span className="text-gray-300">{t('footer.phone')}</span>
                 </div>
                 <div className="flex items-center cursor-pointer">
                   <Mail className="w-5 h-5 text-#576F9F mr-3" />
-                  <span className="text-gray-300">connect@divinementors.com</span>
+                  <span className="text-gray-300">{t('footer.email')}</span>
                 </div>
               </div>
 
@@ -720,19 +687,20 @@ Scientific studies
                 <a href="#cookies" className="text-gray-300 hover:text-#576F9F transition-colors">Cookie Policy</a>
               </div> */}
               <p className="text-gray-400 text-sm text-center md:text-right">
-                © 2025 Divine Mentors. All rights reserved. | Carefully Crafted by Digitalize The Globe.
+                {t('footer.copyright')}
               </p>
             </div>
           </div>
         </div>
       </footer>
+      
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-50 space-y-3">
         <button 
           onClick={() => window.location.href = 'tel:+919876543210'}
-          className="bg-green-500 text-white  p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer group"
-          title="Call us at +91 98765 43210"
+          className="bg-green-500 text-white  p-2 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 hover:shadow-xl active:scale-95 cursor-pointer group"
+          title={t('footer.callUs')}
         >
           <Phone className="w-6 h-6 group-hover:animate-pulse" />
         </button>

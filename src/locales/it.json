@@ -10,10 +10,11 @@
     "bookNow": "Prenota ora"
   },
   "hero": {
-    "title": "Vivi la trasformazione attraverso la saggezza spirituale autentica – Evento esclusivo in Svizzera",
+    "title": "Vivi la trasformazione attraverso l'autentica saggezza spirituale – Evento esclusivo in Svizzera",
     "subtitle": "Connettiti con i maestri senza tempo dell'India e scopri il percorso verso la pace interiore, la chiarezza e la trasformazione sostenibile nella tua vita.",
-    "description": "Una rara opportunità per veri cercatori: Impara da quattro mentori spirituali autentici dall'India che uniscono saggezza secolare con approcci moderni alla guarigione e alla crescita. Posti limitati – esclusivamente per partecipanti seri.",
-    "cta": "Registrati ora - Trasformati oggi"
+    "description": "Una rara opportunità per veri cercatori: Impara da quattro autentici mentori spirituali dall'India che uniscono saggezza secolare e approcci moderni alla guarigione e alla crescita. Posti limitati – esclusivamente per partecipanti seri.",
+    "cta": "Registrati ora - Trasformati oggi",
+    "authenticWisdom": "Saggezza spirituale autentica"
   },
   "painPoints": {
     "title": "Trasforma la tua mentalità e libera il tuo vero potenziale",
@@ -27,7 +28,7 @@
     "title": "Cosa offriamo",
     "authenticGuidance": {
       "title": "Guida spirituale autentica",
-      "description": "Trasmissione diretta della saggezza attraverso mentori basati sulla lignaggio con decenni di esperienza nelle tradizioni indiane classiche."
+      "description": "Trasmissione diretta della saggezza attraverso mentori basati sulla discendenza con decenni di esperienza nelle tradizioni indiane classiche."
     },
     "personalizedTransformation": {
       "title": "Trasformazione personalizzata",
@@ -47,13 +48,17 @@
     },
     "lifelongMentorship": {
       "title": "Mentorato a vita",
-      "description": "Costruzione di connessioni durature con mentori autentici per una guida continua nel tuo percorso spirituale."
+      "description": "Costruire connessioni durature con mentori autentici per una guida continua nel tuo percorso spirituale."
     }
   },
   "mentors": {
+    "title": "Incontra i nostri mentori divini",
+    "subtitle": "Impara dai maestri che hanno dedicato la loro vita alla saggezza spirituale",
+    "specialty": "Specialità:",
+    "bookSession": "Prenota sessione",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Consulenze private 1:1 che offrono consapevolezza, lavoro sul respiro e chiarezza spirituale.",
+      "bio": "Consultazioni private 1:1 che offrono consapevolezza, lavoro sul respiro e chiarezza spirituale.",
       "specialty": "Meditazione e consapevolezza",
       "offerings": [
         "Meditazione guidata",
@@ -63,7 +68,7 @@
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "Sessioni 1:1 focalizzate sulla guarigione energetica indiana antica e allineamento interiore.",
+      "bio": "Sessioni 1:1 focalizzate sulla guarigione energetica indiana antica e l'allineamento interiore.",
       "specialty": "Guarigione energetica",
       "offerings": [
         "Pulizia energetica",
@@ -73,7 +78,7 @@
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Consulenze su scritture vediche, filosofia e disciplina spirituale.",
+      "bio": "Consultazioni su scritture vediche, filosofia e disciplina spirituale.",
       "specialty": "Filosofia vedica",
       "offerings": [
         "Insegnamenti vedici",
@@ -83,7 +88,7 @@
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Guida spirituale dal percorso del Divino Femminile focalizzata sulla pace interiore e trasformazione.",
+      "bio": "Guida spirituale dal sentiero del Divino Femminile focalizzata sulla pace interiore e la trasformazione.",
       "specialty": "Consulenza spirituale",
       "offerings": [
         "Risveglio del Divino Femminile",
@@ -94,20 +99,30 @@
   },
   "blogs": {
     "innerPeace": {
-      "title": "Il percorso verso la pace interiore",
+      "title": "Il sentiero verso la pace interiore",
       "excerpt": "Scopri tecniche antiche per trovare tranquillità nella vita moderna...",
       "date": "20 luglio 2025"
     },
     "divinePurpose": {
       "title": "Risveglia il tuo scopo divino",
-      "excerpt": "Impara ad allinearti con la vera chiamata della tua anima e vivi autenticamente...",
+      "excerpt": "Impara ad allinearti con la vera chiamata della tua anima e vivere autenticamente...",
       "date": "15 luglio 2025"
     },
     "sacredPractices": {
       "title": "Guarigione attraverso pratiche sacre",
       "excerpt": "Esplora pratiche spirituali testate dal tempo per la guarigione olistica...",
       "date": "10 luglio 2025"
-    }
+    },
+    "addictions": {
+      "title": "Liberarsi dalle dipendenze: Un sentiero spirituale"
+    },
+    "fear": {
+      "title": "Gestire la paura attraverso consapevolezza e chiarezza"
+    },
+    "counseling": {
+      "title": "Il ruolo del counseling spirituale nella salute mentale:"
+    },
+    "readMore": "Leggi di più"
   },
   "faq": {
     "difference": {
@@ -124,10 +139,10 @@
     },
     "sessions": {
       "question": "Cosa posso aspettarmi durante le sessioni private con i mentori?",
-      "answer": "Ogni mentore offre un approccio unico basato sulla sua specializzazione. Le sessioni possono includere istruzioni di meditazione personalizzate, guarigione energetica, consulenza spirituale, tecniche di respirazione avanzate o lavoro rituale sacro. Tutte le sessioni sono condotte con il massimo rispetto per il tuo livello di comfort e i tuoi confini spirituali."
+      "answer": "Ogni mentore offre un approccio unico basato sulla sua specializzazione. Le sessioni possono includere istruzioni di meditazione personalizzate, guarigione energetica, consulenza spirituale, tecniche di respirazione avanzate o lavoro rituale sacro. Tutte le sessioni sono condotte con il massimo rispetto per il tuo livello di comfort e i tuoi limiti spirituali."
     },
     "professionals": {
-      "question": "Questo evento è adatto per professionisti aziendali e dirigenti?",
+      "question": "Questo evento è adatto a professionisti e dirigenti aziendali?",
       "answer": "Assolutamente. Molti dei nostri partecipanti sono professionisti di successo che cercano di integrare la saggezza spirituale con l'eccellenza di carriera. I nostri mentori comprendono le esigenze della vita professionale moderna e offrono applicazioni pratiche dei principi spirituali che migliorano piuttosto che interferire con il tuo successo."
     },
     "accommodation": {
@@ -150,6 +165,74 @@
       "name": "Divino",
       "price": "397€",
       "features": ["Tutto in Discepolo", "3 sessioni private", "Accesso alla comunità a vita", "Piano spirituale personale"]
+    }
+  },
+  "cta": {
+    "transformationAwaits": "La tua trasformazione ti aspetta",
+    "transformationDescription": "Non lasciare che passi un altro giorno vivendo al di sotto del tuo potenziale. Unisciti a migliaia che hanno scoperto il loro scopo divino.",
+    "bookTransformation": "Prenota la tua trasformazione ora",
+    "nextBigStep": "Il tuo prossimo grande passo inizia qui",
+    "nextBigStepDescription": "Scopri di più e completa la tua registrazione per i nostri eventi trasformativi"
+  },
+  "form": {
+    "fullName": "Nome completo *",
+    "emailAddress": "Indirizzo email *",
+    "phoneNumber": "Numero di telefono *",
+    "packageSelection": "Selezione pacchetto *",
+    "specialRequirements": "Requisiti speciali o domande",
+    "enterFullName": "Inserisci il tuo nome completo",
+    "enterEmail": "Inserisci la tua email",
+    "enterPhone": "Inserisci il tuo numero di telefono",
+    "selectPackage": "Seleziona un pacchetto",
+    "seekerPackage": "Cercatore - 97€",
+    "disciplePackage": "Discepolo - 197€",
+    "divinePackage": "Divino - 397€",
+    "specialRequirementsPlaceholder": "Facci sapere se hai requisiti speciali o domande...",
+    "completeRegistration": "Completa registrazione e paga"
+  },
+  "footer": {
+    "description": "Guidare le anime nel loro viaggio verso il risveglio spirituale e la trasformazione personale attraverso l'antica saggezza e le moderne pratiche di guarigione.",
+    "quickLinks": "Link rapidi",
+    "aboutUs": "Chi siamo",
+    "ourMentors": "I nostri mentori",
+    "testimonials": "Testimonianze",
+    "contactInfo": "Informazioni di contatto",
+    "address": "123 Via Spirituale, Pune, Maharashtra, India",
+    "phone": "+91 98765 43210",
+    "email": "connect@divinementors.com",
+    "copyright": "© 2025 Divine Mentors. Tutti i diritti riservati. | Creato con cura da Digitalize The Globe.",
+    "callUs": "Chiamaci al +91 98765 43210"
+  },
+  "about": {
+    "title": "Sull'evento",
+    "description": "Divine Mentors presenta un raduno spirituale straordinario che porta le tradizioni di saggezza indiana autentica in Svizzera. I nostri quattro stimati mentori – direttamente dai centri spirituali dell'India – condividono pratiche secolari specificamente adattate alle esigenze dei cercatori moderni. Questo weekend di trasformazione intensiva combina insegnamenti classici e approcci scientificamente validati per chiarezza mentale, equilibrio emotivo e crescita spirituale. Sullo sfondo ispiratore delle Alpi svizzere, troverai l'ambiente perfetto per un lavoro interiore profondo e un cambiamento duraturo. Questo evento esclusivo è progettato per praticanti seri pronti a impegnarsi in un autentico sviluppo spirituale e nell'eccellenza personale."
+  },
+  "benefits": {
+    "title": "Cosa guadagnerai",
+    "subtitle": "Trasforma ogni aspetto del tuo viaggio spirituale con un cambiamento profondo e duraturo",
+    "lifePurpose": {
+      "title": "Scopo di vita cristallino",
+      "description": "Scopri il tuo dharma autentico e allinea la tua carriera, le tue relazioni e le tue scelte quotidiane con la vera chiamata della tua anima attraverso l'auto-indagine guidata e la meditazione."
+    },
+    "emotionalMastery": {
+      "title": "Padronanza emotiva e resilienza",
+      "description": "Impara tecniche potenti per trasformare stress, ansia e sopraffazione in fonti di forza e saggezza usando antiche pratiche di alchimia emotiva."
+    },
+    "mentalClarity": {
+      "title": "Chiarezza mentale e concentrazione potenziate",
+      "description": "Sviluppa capacità di concentrazione e decisione laser-sharp attraverso tecniche specializzate di pranayama e consapevolezza provate dalla neuroscienza."
+    },
+    "successAbundance": {
+      "title": "Successo consapevole e abbondanza",
+      "description": "Integra principi spirituali con strategie di successo pratiche per creare ricchezza e realizzazione che si allineano con i tuoi valori e scopi più alti."
+    },
+    "leadership": {
+      "title": "Presenza di leadership autentica",
+      "description": "Coltiva il carisma, l'intuizione e l'influenza che derivano dall'allineamento interiore, permettendoti di guidare sia con potere che con compassione."
+    },
+    "relationships": {
+      "title": "Relazioni armoniose",
+      "description": "Padroneggia l'arte della comunicazione consapevole e dell'intelligenza emotiva per creare connessioni più profonde e appaganti in tutte le aree della tua vita."
     }
   },
   "common": {

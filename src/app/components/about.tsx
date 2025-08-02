@@ -1,13 +1,15 @@
 "use client"
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 import mentor1 from '../../../public/Swami_Pratik_3.jpg';
 import banner2 from '../../../public/banner222.jpg';
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="py-8 sm:py-12 md:py-16 bg-cover bg-center bg-no-repeat bg-fixed relative"
-    style={{ backgroundImage: `url('${banner2.src}')` }}>
+    <div className="py-8 sm:py-12 md:py-12 bg-[#122730] ">
       {/* Decorative Pattern */}
       
       {/* Main Content */}
@@ -35,13 +37,12 @@ const AboutSection = () => {
           {/* Text Content */}
           <div className="flex-1 text-center lg:text-left max-w-2xl order-1 lg:order-2">
             <div className="mb-4 sm:mb-6">
-              <p className="text-white text-xs sm:text-sm font-medium tracking-wider uppercase mb-2 sm:mb-4">
-                About the Event
-              </p>
+            <h2 className="text-4xl font-bold text-white mb-4"> {t('about.title')}
+              </h2>
             </div>
 
             <p className="text-blue-200 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 max-w-4xl">
-              Divine Mentors presents an extraordinary spiritual gathering bringing authentic Indian wisdom traditions to Switzerland. Our four esteemed mentors – direct from India's spiritual centers – share centuries-old practices specifically adapted for modern seekers' needs. This intensive transformation weekend combines classical teachings with scientifically validated approaches for mental clarity, emotional balance, and spiritual growth. Set against the inspiring backdrop of the Swiss Alps, you'll find the perfect environment for profound inner work and lasting change. This exclusive event is designed for serious practitioners ready to commit to genuine spiritual development and personal excellence.
+              {t('about.description')}
             </p>
 
             {/* <button className="bg-white cursor-pointer hover:bg-blue-200 text-black font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 text-sm sm:text-base">
@@ -51,10 +52,6 @@ const AboutSection = () => {
         </div>
       </div>
 
-      {/* Background Pattern Elements - Hidden on mobile */}
-      <div className="hidden md:block absolute top-20 right-20 w-24 h-24 border border-blue-400/20 rounded-full"></div>
-      <div className="hidden md:block absolute bottom-32 left-16 w-16 h-16 border border-purple-400/20 rounded-full"></div>
-      <div className="hidden md:block absolute top-1/2 right-8 w-8 h-8 bg-blue-400/20 rounded-full"></div>
     </div>
   );
 };

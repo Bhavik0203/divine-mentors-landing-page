@@ -15,7 +15,7 @@ export default function OneBlog() {
           <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] dark:text-neutral-200">
             <strong>rooted in ancient insight</strong>
           </p>
-          <p className="mb-4 text-[15px] md:text-[16px] text-gray-600 dark:text-neutral-300">
+          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 dark:text-neutral-300">
             Personalized guidance based on the timeless wisdom of the Vedas — uncover deeper truths about your life path, relationships, and purpose through sacred conversation and spiritual counsel.
           </p>
         </div>
@@ -80,13 +80,10 @@ export default function OneBlog() {
     <div className="lg:sticky lg:top-4 lg:col-span-1">
     
 <div className="flex-1 w-full max-w-full pt-4 sm:pt-28 ">
-<h3 className="font-bold text-gray-900 uppercase mb-4">
+<h3 className="text-4xl font-bold text-black mb-4">
                        Events
                       </h3>
-      <h2 
-  className=" text-gray-800 mb-4" 
-  style={{ fontSize: '3.25rem', lineHeight: '3.5rem' }}
->
+                      <h2 className="text-4xl font-bold text-black mb-4">
 SEPT 15–28  Rüti ZH, Switzerland
 </h2>
 
