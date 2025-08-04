@@ -41,9 +41,13 @@ const AboutSection = () => {
               </h2>
             </div>
 
-            <p className="text-blue-200 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 max-w-4xl">
-              {t('about.description')}
-            </p>
+            <div className="text-blue-200 text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 max-w-4xl space-y-4">
+              {t('about.description').split('\n\n').map((paragraph, index) => (
+                <p key={index} className="mb-4 last:mb-0">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
 
             {/* <button className="bg-white cursor-pointer hover:bg-blue-200 text-black font-medium px-6 sm:px-8 py-2 sm:py-3 rounded-full transition-all duration-300 hover:shadow-lg hover:scale-105 text-sm sm:text-base">
               More About

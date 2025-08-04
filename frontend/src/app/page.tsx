@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Star, Users, Calendar, Heart, ChevronDown, ChevronUp, Play, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin, CheckCircle, ArrowRight, BookOpen, Award, Target, Zap, Clock, Shield, Brain, Mountain, Handshake } from 'lucide-react';
 import Image from 'next/image';
-import banner from '../../public/mainbanner.jpg';
+import banner from '../../public/mainbanner1.jpg';
 import banner2 from '../../public/banner222.jpg';
 import bg from '../../public/bhavik-02.png';
 import mentor1 from '../../public/RAM_Baba.jpeg';
@@ -399,7 +399,10 @@ const DivineMentorsLanding = () => {
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button className="text-gray-700 cursor-pointer">
+              <button 
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="text-white cursor-pointer"
+              >
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
@@ -440,49 +443,46 @@ const DivineMentorsLanding = () => {
       </header>
 
       {/* Hero Banner */}
-      <section className="relative h-screen flex items-center justify-start px-4 sm:px-6 py-8 sm:py-12 overflow-hidden">
-  <div className="absolute inset-0 z-0">
+      <section className="relative h-screen flex items-center justify-center px-4 sm:px-6 py-8 sm:py-12 overflow-hidden">
+  {/* Background Image */}
+  <div className="absolute inset-0 bg-black z-0">
     <Image
       src={banner}
       alt="Spiritual Background"
-      className="w-full h-full object-cover"
+      className="w-full h-full object-cover  bg-black opacity-50"
     />
   </div>
 
-  <div className="relative z-20 text-left text-white max-w-3xl px-4 sm:px-6 md:px-8 lg:px-10 pt-8 sm:pt-12 md:pt-16 ml-0 sm:ml-4 md:ml-6 lg:ml-8">
+  {/* Overlay */}
+  <div className="absolute  bg-black bg-opacity-0 z-10"></div>
+
+  {/* Foreground Content */}
+  <div className="relative z-20 text-center text-white max-w-3xl px-4 sm:px-6 md:px-8 lg:px-10">
     <h1 className="text-3xl sm:text-3xl md:text-5xl font-bold mb-8 sm:mb-8 md:mb-8 animate-fade-in leading-tight">
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
           {part}
-                          {/* {index === 0 && <span className="text-yellow-300">{t('hero.authenticWisdom')}</span>} */}
+          {/* {index === 0 && <span className="text-yellow-300">{t('hero.authenticWisdom')}</span>} */}
         </React.Fragment>
       ))}
     </h1>
-    <p className="text-lg sm:text-lg md:text-2xl  sm:mb-2 opacity-90 leading-relaxed">
+    <p className="text-lg sm:text-lg md:text-2xl text-white sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <p className="text-base sm:text-lg mb-4 sm:mb-4 mt-4 opacity-80 leading-relaxed">
+    <p className="text-base sm:text-lg mb-4 text-white font-bold sm:mb-4 mt-4 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
-    <div className="flex flex-col sm:flex-row gap-4">
-      
-        <button onClick={() => setIsBookingModalOpen(true)} className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
-          {t('hero.cta')}
-        </button>
-     
-      {/* <button 
-        
-        className="bg-[#576F9F] cursor-pointer hover:bg-[#4A5F8A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white"
+    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <button
+        onClick={() => setIsBookingModalOpen(true)}
+        className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse"
       >
-        Book Now
-      </button> */}
+        {t('hero.cta')}
+      </button>
     </div>
   </div>
+</section>
 
-
-
-       
-      </section>
     
       {/* What We Offer */}
       <section className=" py-16" >
