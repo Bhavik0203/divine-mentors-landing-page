@@ -12,10 +12,10 @@ export default function OneBlog() {
       title: "1:1 Vedic Consultations",
       content: (
         <div>
-          <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] dark:text-neutral-200">
+          <p className="mb-2 text-[17px] font-normal text-neutral9800 md:text-[30px] ">
             <strong>rooted in ancient insight</strong>
           </p>
-          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 dark:text-neutral-300">
+          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 d">
             Personalized guidance based on the timeless wisdom of the Vedas — uncover deeper truths about your life path, relationships, and purpose through sacred conversation and spiritual counsel.
           </p>
         </div>
@@ -25,10 +25,10 @@ export default function OneBlog() {
       title: "1:1 Energy Healing",
       content: (
         <div>
-          <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] dark:text-neutral-200">
+          <p className="mb-2 text-[17px] font-normal text-neutral-900 md:text-[30px] ">
             <strong>to restore what’s been lost</strong>
           </p>
-          <p className="mb-4 text-[15px] md:text-[16px] text-gray-600 dark:text-neutral-300">
+          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 ">
             Through ancient energy healing practices, dissolve blockages and recalibrate your inner system to experience clarity, emotional balance, and energetic renewal.
           </p>
         </div>
@@ -38,10 +38,10 @@ export default function OneBlog() {
       title: "Panchabhuta Rituals",
       content: (
         <div>
-          <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] dark:text-neutral-200">
+          <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] ">
             <strong>harmonize with the 5 elements</strong>
           </p>
-          <p className="mb-4 text-[15px] md:text-[16px] text-gray-600 dark:text-neutral-300">
+          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800">
             A sacred ritual journey that reconnects you with the elemental forces of Earth, Water, Fire, Air, and Space — aligning body, mind, and spirit with nature’s divine rhythm.
           </p>
         </div>
@@ -51,10 +51,10 @@ export default function OneBlog() {
       title: "1:1 Yoga & Breathwork",
       content: (
         <div>
-          <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] dark:text-neutral-200">
+          <p className="mb-2 text-[17px] font-normal text-neutral-900 md:text-[30px] ">
             <strong>from teachers who’ve lived it</strong>
           </p>
-          <p className="mb-4 text-[15px] md:text-[16px] text-gray-600 dark:text-neutral-300">
+          <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 ">
             Dive deep into breath-led movement and traditional yogic wisdom with mentors who embody the path — fostering inner stillness, physical vitality, and spiritual clarity.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function OneBlog() {
 SEPT 15–28  Rüti ZH, Switzerland
 </h2>
 
-        <p className="text-gray-600 leading-relaxed text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
+        <p className="text-gray-800 leading-relaxed text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
         This September, meet India’s sacred wisdom keepers in Zurich.
         <br/>Step into a sacred space with Vedic masters, astrologers, and energy healers.</p>
       </div>
@@ -100,10 +100,10 @@ SEPT 15–28  Rüti ZH, Switzerland
   
   {/* Bottom Section */}
   <div className="mx-auto w-full px-0 sm:px-10 text-center lg:mt-4">
-    <p className="text-gray-800 text-4xl md:text-5xl font-medium mb-2">
+    <p className="text-gray-900 text-4xl md:text-5xl font-medium mb-2">
       This is not a workshop.
     </p>
-    <p className="text-gray-600 text-2xl md:text-3xl italic">
+    <p className="text-gray-800 text-2xl md:text-3xl italic">
       This is a return to something your soul never forgot.
     </p>
   </div>
