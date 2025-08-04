@@ -671,7 +671,7 @@ const DivineMentorsLanding = () => {
           <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
             {t('cta.transformationDescription')}
           </p>
-          <button className="bg-white text-[#576F9F] cursor-pointer px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-auto">
+          <button onClick={() => setIsBookingModalOpen(true)} className="bg-white text-[#576F9F] cursor-pointer px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold hover:bg-[#8ba0ca] hover:text-white border border-[#576F9F] transform hover:scale-105 transition-all duration-300 shadow-2xl w-full sm:w-auto">
             {t('cta.bookTransformation')}
           </button>
         </div>

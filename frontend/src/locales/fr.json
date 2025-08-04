@@ -154,29 +154,41 @@
     "readMore": "Lire plus"
   },
   "faq": {
-    "difference": {
-      "question": "Qu'est-ce qui rend cet événement différent des autres ateliers spirituels ?",
-      "answer": "Ce n'est pas un atelier – c'est un événement de transmission directe avec des détenteurs de lignée authentiques de l'Inde. Nos mentors portent des siècles de tradition spirituelle ininterrompue et ont été spécifiquement sélectionnés pour leur capacité à guider les pratiquants occidentaux sérieux. Le cadre suisse fournit un environnement optimal pour un travail spirituel profond tout en maintenant les plus hauts standards de confort et d'accessibilité."
+    "what": {
+      "question": "De quoi s'agit-il dans l'événement Divine Mentors ?",
+      "answer": "C'est une rare opportunité de recevoir un guidage personnel et direct de maîtres spirituels indiens. Ce n'est pas une classe de groupe ou une conférence—c'est une session privée de 50 minutes adaptée à votre voyage intérieur, guérison émotionnelle et réalignement énergétique."
+    },
+    "mentors": {
+      "question": "Qui sont les mentors ?",
+      "answer": "Nos mentors sont des guérisseurs védiques, astrologues, travailleurs énergétiques et enseignants spirituels renommés de l'Inde—chacun avec des décennies d'expérience dans la guidance des chercheurs. Ils n'enseignent pas seulement. Ils vivent ce qu'ils offrent."
+    },
+    "session": {
+      "question": "Que se passe-t-il dans une session 1:1 ?",
+      "answer": "Chaque session est conçue de manière unique basée sur vos besoins. Elle peut inclure la guérison énergétique, la consultation d'astrologie védique, les pratiques de mantras ou le travail de respiration. L'objectif est simple : éliminer les blocages intérieurs et vous aider à vous reconnecter avec votre propre clarté et votre but."
+    },
+    "location": {
+      "question": "Où se déroule l'événement ?",
+      "answer": "Les sessions se dérouleront à Rüti, Zürich, Suisse, du 15 au 28 septembre."
+    },
+    "cost": {
+      "question": "Combien cela coûte-t-il ?",
+      "answer": "Chaque session de 50 minutes coûte CHF 150-300. Cela inclut un accès direct à un maître indien hautement expérimenté—quelque chose rarement disponible en dehors de l'Inde."
+    },
+    "religious": {
+      "question": "Est-ce un événement religieux ?",
+      "answer": "Non. C'est un événement spirituel ancré dans la sagesse védique ancienne. Il est ouvert à tous—peu importe la religion, l'origine ou les croyances."
+    },
+    "choose": {
+      "question": "Puis-je choisir quel mentor je rencontre ?",
+      "answer": "Oui. Une fois que vous réservez votre session, vous pouvez sélectionner dans notre liste de mentors disponibles basée sur votre intention de guérison—que ce soit la libération émotionnelle, la clarté, le bien-être physique ou l'alignement énergétique."
     },
     "experience": {
-      "question": "Ai-je besoin d'expérience préalable en méditation ou yoga ?",
-      "answer": "Bien qu'une expérience préalable soit bénéfique, elle n'est pas requise. Nos mentors sont habiles à rencontrer les étudiants là où ils en sont. Cependant, cet événement est conçu pour les chercheurs sérieux prêts à s'engager dans une pratique spirituelle authentique. Nous accueillons les débutants avec une intention sincère ainsi que les pratiquants avancés cherchant un guidage plus profond."
+      "question": "Une expérience préalable en yoga ou spiritualité est-elle requise ?",
+      "answer": "Pas du tout. Vous n'avez besoin que de curiosité et d'ouverture. Les mentors vous rencontrent exactement où vous en êtes dans votre voyage."
     },
-    "readiness": {
-      "question": "Comment savoir si je suis prêt pour ce niveau de travail spirituel ?",
-      "answer": "Si vous vous sentez appelé vers quelque chose de plus profond que les pratiques de bien-être superficielles, si vous cherchez une transformation authentique plutôt qu'un soulagement temporaire, et si vous êtes prêt à prendre la responsabilité de votre croissance spirituelle, alors vous êtes probablement préparé pour cette expérience. Nos mentors évalueront votre préparation lors des sessions initiales."
-    },
-    "sessions": {
-      "question": "À quoi dois-je m'attendre pendant les sessions privées avec les mentors ?",
-      "answer": "Chaque mentor offre une approche unique basée sur sa spécialisation. Les sessions peuvent inclure des instructions de méditation personnalisées, de la guérison énergétique, du conseil spirituel, des techniques de respiration avancées ou du travail rituel sacré. Toutes les sessions sont menées avec le plus grand respect pour votre niveau de confort et vos limites spirituelles."
-    },
-    "professionals": {
-      "question": "Cet événement est-il adapté aux professionnels et cadres d'entreprise ?",
-      "answer": "Absolument. Beaucoup de nos participants sont des professionnels réussis cherchant à intégrer la sagesse spirituelle avec l'excellence de carrière. Nos mentors comprennent les exigences de la vie professionnelle moderne et offrent des applications pratiques des principes spirituels qui améliorent plutôt qu'interfèrent avec votre succès."
-    },
-    "accommodation": {
-      "question": "Quels sont les détails d'hébergement et de localisation ?",
-      "answer": "L'événement se déroule dans une installation de retraite premium (dans la campagne de Zürich) dans les Alpes suisses, offrant des hébergements confortables, une cuisine végétarienne biologique (nous ne fournissons pas d'hébergement ni de nourriture) et une beauté naturelle époustouflante. Les détails de localisation spécifiques seront fournis lors de l'inscription pour maintenir la nature intime et exclusive du rassemblement."
+    "booking": {
+      "question": "Comment réserver ma session ?",
+      "answer": "Envoyez simplement un message via WhatsApp au +41 79 795 1817 ou visitez divinementors.com pour voir la disponibilité des mentors et sécuriser votre créneau."
     }
   },
   "pricing": {
@@ -233,8 +245,8 @@
     "callUs": "Appelez-nous au +91 98765 43210"
   },
   "about": {
-    "title": "Pas une retraite. Pas un atelier. Un retour.",
-    "description": "Pendant 14 jours, entrez dans un espace sacré.\n\nOù le silence parle plus fort que les mots.\n\nOù les anciens maîtres védiques s'assoient avec vous—un à un.\nCe n'est pas une conférence de groupe ou une solution rapide.\nC'est un reset énergétique profond.\nPour celui en vous qui est fatigué de faire semblant."
+    "title": "Et si 50 minutes pouvaient tout changer ?",
+    "description": "Ce n'est pas juste un autre événement.\n\nCe n'est pas une retraite de bien-être où vous vous asseyez en tailleur, chantez quelques mantras et rentrez chez vous inchangé.\n\nC'est 14 jours. 4 maîtres indiens.\nChacun avec des décennies d'expérience.\nChacun formé aux sciences védiques anciennes que l'Occident touche à peine.\n\nDes vallées cachées de l'Himalaya au cœur de Zurich—ces enseignants ne viennent pas pour divertir.\nIls viennent pour transformer."
   },
   "benefits": {
     "title": "Ce que vous gagnerez",

@@ -154,29 +154,41 @@
     "readMore": "Leggi di più"
   },
   "faq": {
-    "difference": {
-      "question": "Cosa rende questo evento diverso da altri workshop spirituali?",
-      "answer": "Questo non è un workshop – è un evento di trasmissione diretta con detentori di lignaggio autentici dall'India. I nostri mentori portano secoli di tradizione spirituale ininterrotta e sono stati specificamente selezionati per la loro capacità di guidare praticanti occidentali seri. L'ambiente svizzero fornisce un ambiente ottimale per un lavoro spirituale profondo mantenendo i più alti standard di comfort e accessibilità."
+    "what": {
+      "question": "Di cosa si tratta l'evento Divine Mentors?",
+      "answer": "Questa è una rara opportunità di ricevere una guida personale e diretta da maestri spirituali indiani. Non è una classe di gruppo o una conferenza—è una sessione privata di 50 minuti adattata al tuo viaggio interiore, guarigione emotiva e riallineamento energetico."
+    },
+    "mentors": {
+      "question": "Chi sono i mentori?",
+      "answer": "I nostri mentori sono rinomati guaritori vedici, astrologi, operatori energetici e insegnanti spirituali dall'India—ognuno con decenni di esperienza nel guidare i cercatori. Non insegnano solo. Vivono quello che offrono."
+    },
+    "session": {
+      "question": "Cosa succede in una sessione 1:1?",
+      "answer": "Ogni sessione è progettata in modo unico basata sui tuoi bisogni. Può includere guarigione energetica, consultazione astrologica vedica, pratiche di mantra o lavoro di respirazione. L'obiettivo è semplice: rimuovere i blocchi interiori e aiutarti a riconnetterti con la tua chiarezza e il tuo scopo."
+    },
+    "location": {
+      "question": "Dove si svolge l'evento?",
+      "answer": "Le sessioni si svolgeranno a Rüti, Zurigo, Svizzera, dal 15 al 28 settembre."
+    },
+    "cost": {
+      "question": "Quanto costa?",
+      "answer": "Ogni sessione di 50 minuti costa CHF 150-300. Questo include l'accesso diretto a un maestro indiano altamente esperto—qualcosa raramente disponibile fuori dall'India."
+    },
+    "religious": {
+      "question": "È un evento religioso?",
+      "answer": "No. Questo è un evento spirituale radicato nell'antica saggezza vedica. È aperto a tutti—indipendentemente da religione, background o credenze."
+    },
+    "choose": {
+      "question": "Posso scegliere quale mentore incontro?",
+      "answer": "Sì. Una volta che prenoti la tua sessione, puoi selezionare dalla nostra lista di mentori disponibili basandoti sulla tua intenzione di guarigione—che sia liberazione emotiva, chiarezza, benessere fisico o allineamento energetico."
     },
     "experience": {
-      "question": "Ho bisogno di esperienza precedente con meditazione o yoga?",
-      "answer": "Sebbene l'esperienza precedente sia benefica, non è richiesta. I nostri mentori sono abili nell'incontrare gli studenti dove sono. Tuttavia, questo evento è progettato per cercatori seri pronti a impegnarsi in una pratica spirituale autentica. Accogliamo principianti con intenzione sincera così come praticanti avanzati che cercano una guida più profonda."
+      "question": "È richiesta esperienza precedente in yoga o spiritualità?",
+      "answer": "Per niente. Hai solo bisogno di curiosità e apertura. I mentori ti incontrano esattamente dove sei nel tuo viaggio."
     },
-    "readiness": {
-      "question": "Come so se sono pronto per questo livello di lavoro spirituale?",
-      "answer": "Se ti senti chiamato verso qualcosa di più profondo delle pratiche di benessere superficiali, se stai cercando una trasformazione autentica piuttosto che un sollievo temporaneo, e se sei pronto a prendere la responsabilità per la tua crescita spirituale, allora probabilmente sei preparato per questa esperienza. I nostri mentori valuteranno la tua prontezza durante le sessioni iniziali."
-    },
-    "sessions": {
-      "question": "Cosa posso aspettarmi durante le sessioni private con i mentori?",
-      "answer": "Ogni mentore offre un approccio unico basato sulla sua specializzazione. Le sessioni possono includere istruzioni di meditazione personalizzate, guarigione energetica, consulenza spirituale, tecniche di respirazione avanzate o lavoro rituale sacro. Tutte le sessioni sono condotte con il massimo rispetto per il tuo livello di comfort e i tuoi limiti spirituali."
-    },
-    "professionals": {
-      "question": "Questo evento è adatto a professionisti e dirigenti aziendali?",
-      "answer": "Assolutamente. Molti dei nostri partecipanti sono professionisti di successo che cercano di integrare la saggezza spirituale con l'eccellenza di carriera. I nostri mentori comprendono le esigenze della vita professionale moderna e offrono applicazioni pratiche dei principi spirituali che migliorano piuttosto che interferire con il tuo successo."
-    },
-    "accommodation": {
-      "question": "Quali sono i dettagli di alloggio e posizione?",
-      "answer": "L'evento si svolge in una struttura di ritiro premium (nella campagna di Zurigo) nelle Alpi svizzere, offrendo alloggi confortevoli, cucina vegetariana biologica (non forniamo alloggio né cibo) e bellezza naturale mozzafiato. I dettagli specifici della posizione saranno forniti al momento della registrazione per mantenere la natura intima ed esclusiva del raduno."
+    "booking": {
+      "question": "Come prenoto la mia sessione?",
+      "answer": "Semplicemente invia un messaggio tramite WhatsApp al +41 79 795 1817 o visita divinementors.com per vedere la disponibilità dei mentori e assicurarti il tuo posto."
     }
   },
   "pricing": {
@@ -233,8 +245,8 @@
     "callUs": "Chiamaci al +91 98765 43210"
   },
   "about": {
-    "title": "Non un ritiro. Non un workshop. Un ritorno.",
-    "description": "Per 14 giorni, entra in uno spazio sacro.\n\nDove il silenzio parla più forte delle parole.\n\nDove gli antichi maestri vedici siedono con te—uno a uno.\nQuesto non è una conferenza di gruppo o una soluzione rapida.\nÈ un reset energetico profondo.\nPer quello dentro di te che è stanco di fingere."
+    "title": "E se 50 minuti potessero cambiare tutto?",
+    "description": "Questo non è solo un altro evento.\n\nQuesto non è un ritiro di benessere dove ti siedi a gambe incrociate, canti alcuni mantra e torni a casa immutato.\n\nSono 14 giorni. 4 maestri indiani.\nOgnuno con decenni di esperienza.\nOgnuno addestrato nelle antiche scienze vediche che l'Occidente tocca a malapena.\n\nDalle valli nascoste dell'Himalaya al cuore di Zurigo—questi insegnanti non vengono per intrattenere.\nVengono per trasformare."
   },
   "benefits": {
     "title": "Cosa guadagnerai",
