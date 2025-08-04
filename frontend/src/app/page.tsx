@@ -485,7 +485,7 @@ const DivineMentorsLanding = () => {
     <p className="text-lg sm:text-lg md:text-2xl text-white sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <p className="text-base sm:text-lg mb-4 text-[#576F9F] font-bold sm:mb-4 mt-4 opacity-80 leading-relaxed">
+    <p className="text-base sm:text-lg mb-4 text-[#a8bce6] font-bold sm:mb-4 mt-4 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -605,13 +605,13 @@ const DivineMentorsLanding = () => {
           
           <a href="https://divinementors.com/breaking-free-from-addictions-a-spiritual-approach/" target="_blank" rel="noopener noreferrer" className="block">
             <div className="lg:col-span-1 relative bg-black/10 inset-0 overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[700px]">
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               <Image 
                 src={blog1} 
                 alt="Person in traditional setting" 
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute w-full h-full object-cover"
               />
-              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12 pb-8 lg:pb-12">
+              <div className="absolute inset-0 bg-black/60 z-10"></div>
+              <div className="relative z-20 flex flex-col justify-end h-full p-8 lg:p-12 pb-8 lg:pb-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                   {t('blogs.addictions.title')}
                 </h2>
@@ -649,13 +649,13 @@ const DivineMentorsLanding = () => {
             {/* Bottom Right - Understand the Concepts */}
             <a href="https://divinementors.com/the-role-of-spiritual-counseling-in-mental-health-a-science-backed-alternative-to-psychotherapy/" target="_blank" rel="noopener noreferrer" className="block">
     <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
               <Image 
               src={blog3} 
                 alt="Traditional vessels and artifacts" 
-                className="absolute inset-0 w-full h-full object-cover "
+                className="absolute inset-0 w-full h-full object-cover"
               />
-              <div className="relative z-10 flex flex-col justify-end h-full p-8 lg:p-12">
+              <div className="absolute inset-0 bg-black/60 z-10"></div>
+              <div className="relative z-20 flex flex-col justify-end h-full p-8 lg:p-12">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6 leading-tight">
                  {t('blogs.counseling.title')} 
                 </h2>
@@ -930,7 +930,7 @@ const DivineMentorsLanding = () => {
                 <li><a href="#mentors" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.ourMentors')}</a></li>
                 <li><a href="#events" className="text-gray-300 hover:text-#576F9F transition-colors">{t('navigation.events')}</a></li>
                 <li><a href="#blog" className="text-gray-300 hover:text-#576F9F transition-colors">{t('navigation.blog')}</a></li>
-                <li><a href="#testimonials" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.testimonials')}</a></li>
+                {/* <li><a href="#testimonials" className="text-gray-300 hover:text-#576F9F transition-colors">{t('footer.testimonials')}</a></li> */}
               </ul>
             </div>
 

@@ -66,7 +66,7 @@ export default function OneBlog() {
   
   
   return (
-     <div className="relative isolate overflow-hidden px-6 pt-24 sm:pb-12 lg:overflow-visible lg:px-0
+     <div className="relative isolate overflow-hidden px-6 pt-24 mb-10 sm:pb-20 lg:overflow-visible lg:px-0
        bg-gradient-to-br from-[#576F9F]/20 to-[#576F9F]/5"
 >
              {/* Background Overlay */}
@@ -101,7 +101,7 @@ export default function OneBlog() {
   </div>
   
   {/* Bottom Section */}
-  <div className="mx-auto w-full px-0 sm:px-10 text-center lg:mt-16">
+  <div className="mx-auto w-full px-0 sm:px-10 pb-0 sm:pb-10 text-center lg:mt-16">
     <p className="text-gray-900 text-4xl md:text-5xl font-medium italic mb-2">
       {t('events.notWorkshop')}
     </p>
