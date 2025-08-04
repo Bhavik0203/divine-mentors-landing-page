@@ -58,43 +58,72 @@
     "bookSession": "Reservar sesión",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Consultas privadas 1:1 que ofrecen atención plena, trabajo respiratorio y claridad espiritual.",
-      "specialty": "Meditación y atención plena",
+      "bio": "Cuando el cuerpo se descompone, la raíz suele ser energética. Ram Baba ofrece sanación que es tanto científica como espiritual—Shiva Rasayana, hierbas personalizadas, terapias basadas en la respiración. Él ve dónde está atascada tu energía… y la ayuda a moverse de nuevo.",
+      "specialty": "Sanador Ayurveda, Intuitivo Védico",
       "offerings": [
-        "Meditación guiada",
-        "Prácticas de pranayama",
-        "Coaching de atención plena"
+        "Shiva Rasayana",
+        "Hierbas personalizadas",
+        "Terapias basadas en la respiración"
       ]
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "Sesiones 1:1 enfocadas en sanación energética india antigua y alineación interior.",
-      "specialty": "Sanación energética",
+      "bio": "Swami no está enseñando métodos. Está mostrando una forma de ser. En presencia con él, muchos encuentran el silencio que nunca supieron que anhelaban. Te ayuda a regresar—no a lo que era—sino a lo que es real.",
+      "specialty": "Guía de meditación y maestro de sabiduría",
       "offerings": [
-        "Limpieza energética",
-        "Equilibrio de chakras",
-        "Guía espiritual intuitiva"
+        "Forma de ser",
+        "Trabajo de presencia",
+        "Silencio y quietud"
       ]
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Consultas sobre escrituras védicas, filosofía y disciplina espiritual.",
-      "specialty": "Filosofía védica",
+      "bio": "Para aquellos que llevan el peso del dolor generacional o bucles kármicos… Naga Baba ofrece prácticas de limpieza del alma que trascienden la lógica. Él lee tu campo, no tu rostro. Y en 50 minutos, las cosas se mueven.",
+      "specialty": "Limpiador kármico, guía del alma",
       "offerings": [
-        "Enseñanzas védicas",
-        "Estudio de escrituras",
-        "Asesoramiento de vida espiritual"
+        "Prácticas de limpieza del alma",
+        "Sanación kármica",
+        "Lectura del campo"
       ]
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Guía espiritual del camino de lo Divino Femenino enfocada en paz interior y transformación.",
-      "specialty": "Asesoramiento espiritual",
+      "bio": "La quietud no es algo que se logre. Se recuerda. Acharya trabaja con practicantes avanzados para profundizar su camino—a través de kriyas yóguicos sutiles, respiración y guía interior.",
+      "specialty": "Maestro de yoguis",
       "offerings": [
-        "Despertar de lo Divino Femenino",
-        "Prácticas de paz interior",
-        "Sanación emocional y energética"
+        "Kriyas yóguicos sutiles",
+        "Trabajo respiratorio",
+        "Guía interior"
       ]
+    }
+  },
+  "events": {
+    "title": "Eventos",
+    "subtitle": "15-28 SEPT  Rüti ZH, Suiza",
+    "description": "Este septiembre, conoce a los guardianes de sabiduría sagrada de la India en Zurich. Entra en un espacio sagrado con maestros védicos, astrólogos y sanadores energéticos.",
+    "notWorkshop": "Esto no es un taller.",
+    "returnToSoul": "Es un regreso a algo que tu alma nunca olvidó.",
+    "services": {
+      "vedicConsultations": {
+        "title": "Consultas védicas 1:1",
+        "subtitle": "No predicciones. Reflexiones.",
+        "description": "Siéntate con un maestro. Pregunta lo que has llevado en silencio. Sal con claridad que no se desvanece cuando el mundo se vuelve ruidoso."
+      },
+      "energyHealing": {
+        "title": "Sanación energética 1:1",
+        "subtitle": "Cuando la mente no puede arreglar lo que el alma siente.",
+        "description": "Esto es para lo que está atascado. Lo que es pesado. Lo que es invisible. La energía se mueve donde la presencia es real—y nuestros mentores traen exactamente eso."
+      },
+      "panchabhutaRituals": {
+        "title": "Rituales Panchabhuta",
+        "subtitle": "Estás hecho de tierra. Y agua. Y llama.",
+        "description": "Este ritual sagrado te trae de vuelta a los cinco elementos. No para escapar—sino para recordar a dónde perteneces."
+      },
+      "yogaBreathwork": {
+        "title": "Yoga y trabajo respiratorio 1:1",
+        "subtitle": "No enseñado. Transmitido.",
+        "description": "No se trata de posturas. Se trata de presencia. Quietud. Respiración como oración. Dirigido por aquellos que viven su práctica—no solo la enseñan."
+      }
     }
   },
   "blogs": {
@@ -204,8 +233,8 @@
     "callUs": "Llámanos al +91 98765 43210"
   },
   "about": {
-    "title": "Acerca del evento",
-    "description": "Divine Mentors presenta una reunión espiritual extraordinaria que trae tradiciones de sabiduría india auténtica a Suiza. Nuestros cuatro estimados mentores – directamente de los centros espirituales de la India – comparten prácticas centenarias específicamente adaptadas a las necesidades de los buscadores modernos. Este fin de semana intensivo de transformación combina enseñanzas clásicas con enfoques científicamente validados para claridad mental, equilibrio emocional y crecimiento espiritual. Contra el inspirador telón de fondo de los Alpes suizos, encontrarás el ambiente perfecto para trabajo interior profundo y cambio duradero. Este evento exclusivo está diseñado para practicantes serios listos para comprometerse con desarrollo espiritual auténtico y excelencia personal."
+    "title": "No es un retiro. No es un taller. Un regreso.",
+    "description": "Durante 14 días, entra en un espacio sagrado.\n\nDonde el silencio habla más fuerte que las palabras.\n\nDonde los antiguos maestros védicos se sientan contigo—uno a uno.\nEsto no es una conferencia grupal o una solución rápida.\nEs un reinicio energético profundo.\nPara el que está dentro de ti que está cansado de fingir."
   },
   "benefits": {
     "title": "Lo que ganarás",

@@ -58,43 +58,72 @@
     "bookSession": "Session buchen",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Private 1:1-Beratungen, die Achtsamkeit, Atemarbeit und spirituelle Klarheit bieten.",
-      "specialty": "Meditation & Achtsamkeit",
+      "bio": "Wenn der Körper zusammenbricht, liegt die Wurzel oft im Energetischen. Ram Baba bietet Heilung, die sowohl wissenschaftlich als auch spirituell ist—Shiva Rasayana, personalisierte Kräuter, atembasierte Therapien. Er sieht, wo Ihre Energie feststeckt… und hilft ihr, sich wieder zu bewegen.",
+      "specialty": "Ayurvedischer Heiler, Vedischer Intuitiver",
       "offerings": [
-        "Geführte Meditation",
-        "Pranayama-Praktiken",
-        "Achtsamkeits-Coaching"
+        "Shiva Rasayana",
+        "Personalisierte Kräuter",
+        "Atembasierte Therapien"
       ]
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "1:1-Sessions, die sich auf alte indische Energieheilung und innere Ausrichtung konzentrieren.",
-      "specialty": "Energieheilung",
+      "bio": "Swami lehrt keine Methoden. Er zeigt eine Art des Seins. In seiner Gegenwart finden viele die Stille, die sie nie zu vermissen wussten. Er hilft Ihnen zurückzukehren—nicht zu dem, was war—sondern zu dem, was real ist.",
+      "specialty": "Meditationsführer & Weisheitslehrer",
       "offerings": [
-        "Energie-Reinigung",
-        "Chakra-Ausgleich",
-        "Intuitive spirituelle Führung"
+        "Art des Seins",
+        "Präsenzarbeit",
+        "Stille & Ruhe"
       ]
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Beratung zu vedischen Schriften, Philosophie und spiritueller Disziplin.",
-      "specialty": "Vedische Philosophie",
+      "bio": "Für diejenigen, die das Gewicht von generationenübergreifendem Schmerz oder karmischen Schleifen tragen… Naga Baba bietet seelenreinigende Praktiken, die die Logik transzendieren. Er liest Ihr Feld, nicht Ihr Gesicht. Und in 50 Minuten bewegen sich die Dinge.",
+      "specialty": "Karmischer Reiniger, Seelenführer",
       "offerings": [
-        "Vedische Lehren",
-        "Schriftenstudium",
-        "Spirituelle Lebensberatung"
+        "Seelenreinigende Praktiken",
+        "Karmische Heilung",
+        "Feldlesung"
       ]
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Spirituelle Führung vom Pfad der Göttlichen Weiblichkeit, die sich auf inneren Frieden und Transformation konzentriert.",
-      "specialty": "Spirituelle Beratung",
+      "bio": "Stille ist nicht etwas, das erreicht werden muss. Sie wird erinnert. Acharya arbeitet mit fortgeschrittenen Praktizierenden, um ihren Pfad zu vertiefen—durch subtile yogische Kriyas, Atem und innere Führung.",
+      "specialty": "Lehrer der Yogis",
       "offerings": [
-        "Erwachen der Göttlichen Weiblichkeit",
-        "Innere Friedenspraktiken",
-        "Emotionale & energetische Heilung"
+        "Subtile yogische Kriyas",
+        "Atemarbeit",
+        "Innere Führung"
       ]
+    }
+  },
+  "events": {
+    "title": "Veranstaltungen",
+    "subtitle": "15.-28. SEPT  Rüti ZH, Schweiz",
+    "description": "Diesen September treffen Sie Indiens heilige Weisheitshüter in Zürich. Betreten Sie einen heiligen Raum mit vedischen Meistern, Astrologen und Energieheilern.",
+    "notWorkshop": "Dies ist kein Workshop.",
+    "returnToSoul": "Dies ist eine Rückkehr zu etwas, das Ihre Seele nie vergessen hat.",
+    "services": {
+      "vedicConsultations": {
+        "title": "1:1 Vedische Beratungen",
+        "subtitle": "Keine Vorhersagen. Reflexionen.",
+        "description": "Sitzen Sie mit einem Meister. Fragen Sie, was Sie in Stille getragen haben. Gehen Sie mit einer Klarheit, die nicht verblasst, wenn die Welt laut wird."
+      },
+      "energyHealing": {
+        "title": "1:1 Energieheilung",
+        "subtitle": "Wenn der Verstand nicht reparieren kann, was die Seele fühlt.",
+        "description": "Dies ist für das, was feststeckt. Was schwer ist. Was unsichtbar ist. Energie bewegt sich, wo Präsenz echt ist—und unsere Mentoren bringen genau das."
+      },
+      "panchabhutaRituals": {
+        "title": "Panchabhuta Rituale",
+        "subtitle": "Sie sind aus Erde gemacht. Und Wasser. Und Flamme.",
+        "description": "Dieses heilige Ritual bringt Sie zurück zu den fünf Elementen. Nicht um zu entfliehen—sondern um sich zu erinnern, wohin Sie gehören."
+      },
+      "yogaBreathwork": {
+        "title": "1:1 Yoga & Atemarbeit",
+        "subtitle": "Nicht gelehrt. Übertragen.",
+        "description": "Es geht nicht um Posen. Es geht um Präsenz. Stille. Atem als Gebet. Geführt von denen, die ihre Praxis leben—nicht nur lehren."
+      }
     }
   },
   "blogs": {
@@ -204,8 +233,8 @@
     "callUs": "Rufen Sie uns an unter +91 98765 43210"
   },
   "about": {
-    "title": "Über die Veranstaltung",
-    "description": "Divine Mentors präsentiert ein außergewöhnliches spirituelles Treffen, das authentische indische Weisheitstraditionen in die Schweiz bringt. Unsere vier geschätzten Mentoren – direkt aus Indiens spirituellen Zentren – teilen jahrhundertealte Praktiken, die speziell für die Bedürfnisse moderner Sucher angepasst sind. Dieses intensive Transformationswochenende kombiniert klassische Lehren mit wissenschaftlich validierten Ansätzen für mentale Klarheit, emotionales Gleichgewicht und spirituelles Wachstum. Vor der inspirierenden Kulisse der Schweizer Alpen finden Sie die perfekte Umgebung für tiefgreifende innere Arbeit und dauerhafte Veränderung. Diese exklusive Veranstaltung ist für ernsthafte Praktizierende konzipiert, die bereit sind, sich für authentische spirituelle Entwicklung und persönliche Exzellenz zu engagieren."
+    "title": "Kein Retreat. Kein Workshop. Eine Rückkehr.",
+    "description": "Für 14 Tage treten Sie in einen heiligen Raum ein.\n\nWo Stille lauter spricht als Worte.\n\nWo antike vedische Meister eins zu eins mit Ihnen sitzen.\nDas ist kein Gruppenvortrag oder eine schnelle Lösung.\nEs ist ein tiefer energetischer Reset.\nFür den in Ihnen, der es leid ist, so zu tun."
   },
   "benefits": {
     "title": "Was Sie gewinnen werden",

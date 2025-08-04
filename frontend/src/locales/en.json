@@ -10,10 +10,10 @@
     "bookNow": "Book Now"
   },
   "hero": {
-    "title": "Experience Transformation Through Authentic Spiritual Wisdom – Exclusive Swiss Event",
-    "subtitle": "Connect with India's timeless masters and discover the path to inner peace, clarity, and sustainable transformation in your life.",
-    "description": "A rare opportunity for genuine seekers: Learn from four authentic spiritual mentors from India who blend centuries-old wisdom with modern approaches to healing and growth. Limited seats – exclusively for serious participants.",
-    "cta": "Register Now - Transform Today",
+    "title": "Meet India’s Ancient Masters In Person. In Zurich.",
+    "subtitle": "This September 15–28, India’s sacred wisdom keepers arrive for one-on-one sessions that transform your energy and soul.",
+    "description": "50 min · Private · CHF 150 - 300 per session",
+    "cta": "Reserve Your 1:1 Healing Session →",
     "authenticWisdom": "Authentic Spiritual Wisdom"
   },
   "painPoints": {
@@ -58,43 +58,72 @@
     "bookSession": "Book Session",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Private 1:1 consultations offering mindfulness, breathwork, and spiritual clarity.",
-      "specialty": "Meditation & Mindfulness",
+      "bio": "When the body breaks down, the root is often energetic. Ram Baba offers healing that is both scientific and spiritual—Shiva Rasayana, personalized herbs, breath-based therapies. He sees where your energy is stuck… and helps it move again.",
+      "specialty": "Ayurvedic Healer, Vedic Intuitive",
       "offerings": [
-        "Guided Meditation",
-        "Pranayama Practices",
-        "Mindfulness Coaching"
+        "Shiva Rasayana",
+        "Personalized Herbs",
+        "Breath-based Therapies"
       ]
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "1:1 sessions focused on ancient Indian energy healing and inner alignment.",
-      "specialty": "Energy Healing",
+      "bio": "Swami is not teaching methods. He is showing a way of being. In presence with him, many find silence they never knew they craved. He helps you return—not to what was—but to what is real.",
+      "specialty": "Meditation Guide & Wisdom Teacher",
       "offerings": [
-        "Energy Clearing",
-        "Chakra Balancing",
-        "Intuitive Spiritual Guidance"
+        "Way of Being",
+        "Presence Work",
+        "Silence & Stillness"
       ]
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Consultations on Vedic scriptures, philosophy, and spiritual discipline.",
-      "specialty": "Vedic Philosophy",
+      "bio": "For those carrying the weight of generational pain or karmic loops… Naga Baba offers soul-clearing practices that transcend logic. He reads your field, not your face. And in 50 minutes, things move.",
+      "specialty": "Karmic Cleanser, Soul Guide",
       "offerings": [
-        "Vedic Teachings",
-        "Scripture Study",
-        "Spiritual Life Counseling"
+        "Soul-clearing Practices",
+        "Karmic Healing",
+        "Field Reading"
       ]
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Spiritual guidance from the Divine Feminine path focused on inner peace and transformation.",
-      "specialty": "Spiritual Counseling",
+      "bio": "Stillness is not something to be achieved. It is remembered. Acharya works with advanced practitioners to deepen their path—through subtle yogic kriyas, breath, and inner guidance.",
+      "specialty": "Teacher to Yogis",
       "offerings": [
-        "Awakening Divine Feminine",
-        "Inner Peace Practices",
-        "Emotional & Energetic Healing"
+        "Subtle Yogic Kriyas",
+        "Breath Work",
+        "Inner Guidance"
       ]
+    }
+  },
+  "events": {
+    "title": "Events",
+    "subtitle": "SEPT 15–28  Rüti ZH, Switzerland",
+    "description": "This September, meet India's sacred wisdom keepers in Zurich. Step into a sacred space with Vedic masters, astrologers, and energy healers.",
+    "notWorkshop": "This is not a workshop.",
+    "returnToSoul": "This is a return to something your soul never forgot.",
+    "services": {
+      "vedicConsultations": {
+        "title": "1:1 Vedic Consultations",
+        "subtitle": "Not predictions. Reflections.",
+        "description": "Sit with a master. Ask what you've carried in silence. Walk away with clarity that doesn't fade when the world gets loud."
+      },
+      "energyHealing": {
+        "title": "1:1 Energy Healing",
+        "subtitle": "When the mind can't fix what the soul feels.",
+        "description": "This is for what's stuck. What's heavy. What's unseen. Energy moves where presence is real—and our mentors bring just that."
+      },
+      "panchabhutaRituals": {
+        "title": "Panchabhuta Rituals",
+        "subtitle": "You are made of earth. And water. And flame.",
+        "description": "This sacred ritual brings you back to the five elements. Not to escape—but to remember where you belong."
+      },
+      "yogaBreathwork": {
+        "title": "1:1 Yoga & Breathwork",
+        "subtitle": "Not taught. Transmitted.",
+        "description": "This isn't about poses. It's about presence. Stillness. Breath as prayer. Led by those who live their practice—not just teach it."
+      }
     }
   },
   "blogs": {

@@ -58,43 +58,72 @@
     "bookSession": "Prenota sessione",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Consultazioni private 1:1 che offrono consapevolezza, lavoro sul respiro e chiarezza spirituale.",
-      "specialty": "Meditazione e consapevolezza",
+      "bio": "Quando il corpo si rompe, la radice è spesso energetica. Ram Baba offre guarigione che è sia scientifica che spirituale—Shiva Rasayana, erbe personalizzate, terapie basate sul respiro. Vede dove la tua energia è bloccata… e la aiuta a muoversi di nuovo.",
+      "specialty": "Guaritore Ayurvedico, Intuitivo Vedico",
       "offerings": [
-        "Meditazione guidata",
-        "Pratiche di pranayama",
-        "Coaching di consapevolezza"
+        "Shiva Rasayana",
+        "Erbe personalizzate",
+        "Terapie basate sul respiro"
       ]
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "Sessioni 1:1 focalizzate sulla guarigione energetica indiana antica e l'allineamento interiore.",
-      "specialty": "Guarigione energetica",
+      "bio": "Swami non sta insegnando metodi. Sta mostrando un modo di essere. In presenza con lui, molti trovano il silenzio che non sapevano di desiderare. Ti aiuta a tornare—non a quello che era—ma a quello che è reale.",
+      "specialty": "Guida alla meditazione e insegnante di saggezza",
       "offerings": [
-        "Pulizia energetica",
-        "Bilanciamento dei chakra",
-        "Guida spirituale intuitiva"
+        "Modo di essere",
+        "Lavoro di presenza",
+        "Silenzio e quiete"
       ]
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Consultazioni su scritture vediche, filosofia e disciplina spirituale.",
-      "specialty": "Filosofia vedica",
+      "bio": "Per coloro che portano il peso del dolore generazionale o loop karmici… Naga Baba offre pratiche di pulizia dell'anima che trascendono la logica. Legge il tuo campo, non il tuo viso. E in 50 minuti, le cose si muovono.",
+      "specialty": "Pulitore karmico, guida dell'anima",
       "offerings": [
-        "Insegnamenti vedici",
-        "Studio delle scritture",
-        "Consulenza di vita spirituale"
+        "Pratiche di pulizia dell'anima",
+        "Guarigione karmica",
+        "Lettura del campo"
       ]
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Guida spirituale dal sentiero del Divino Femminile focalizzata sulla pace interiore e la trasformazione.",
-      "specialty": "Consulenza spirituale",
+      "bio": "La quiete non è qualcosa da raggiungere. È ricordata. Acharya lavora con praticanti avanzati per approfondire il loro sentiero—attraverso kriya yogici sottili, respiro e guida interiore.",
+      "specialty": "Insegnante di yogi",
       "offerings": [
-        "Risveglio del Divino Femminile",
-        "Pratiche di pace interiore",
-        "Guarigione emotiva ed energetica"
+        "Kriya yogici sottili",
+        "Lavoro sul respiro",
+        "Guida interiore"
       ]
+    }
+  },
+  "events": {
+    "title": "Eventi",
+    "subtitle": "15-28 SETT  Rüti ZH, Svizzera",
+    "description": "Questo settembre, incontra i custodi della saggezza sacra dell'India a Zurigo. Entra in uno spazio sacro con maestri vedici, astrologi e guaritori energetici.",
+    "notWorkshop": "Questo non è un workshop.",
+    "returnToSoul": "È un ritorno a qualcosa che la tua anima non ha mai dimenticato.",
+    "services": {
+      "vedicConsultations": {
+        "title": "Consultazioni vediche 1:1",
+        "subtitle": "Non predizioni. Riflessioni.",
+        "description": "Siediti con un maestro. Chiedi quello che hai portato in silenzio. Vai via con chiarezza che non svanisce quando il mondo diventa rumoroso."
+      },
+      "energyHealing": {
+        "title": "Guarigione energetica 1:1",
+        "subtitle": "Quando la mente non può riparare quello che l'anima sente.",
+        "description": "Questo è per quello che è bloccato. Quello che è pesante. Quello che è invisibile. L'energia si muove dove la presenza è reale—e i nostri mentori portano esattamente questo."
+      },
+      "panchabhutaRituals": {
+        "title": "Rituali Panchabhuta",
+        "subtitle": "Sei fatto di terra. E acqua. E fiamma.",
+        "description": "Questo rituale sacro ti riporta ai cinque elementi. Non per fuggire—ma per ricordare dove appartieni."
+      },
+      "yogaBreathwork": {
+        "title": "Yoga e lavoro sul respiro 1:1",
+        "subtitle": "Non insegnato. Trasmesso.",
+        "description": "Non si tratta di pose. Si tratta di presenza. Quiete. Respiro come preghiera. Guidato da coloro che vivono la loro pratica—non solo la insegnano."
+      }
     }
   },
   "blogs": {
@@ -204,8 +233,8 @@
     "callUs": "Chiamaci al +91 98765 43210"
   },
   "about": {
-    "title": "Sull'evento",
-    "description": "Divine Mentors presenta un raduno spirituale straordinario che porta le tradizioni di saggezza indiana autentica in Svizzera. I nostri quattro stimati mentori – direttamente dai centri spirituali dell'India – condividono pratiche secolari specificamente adattate alle esigenze dei cercatori moderni. Questo weekend di trasformazione intensiva combina insegnamenti classici e approcci scientificamente validati per chiarezza mentale, equilibrio emotivo e crescita spirituale. Sullo sfondo ispiratore delle Alpi svizzere, troverai l'ambiente perfetto per un lavoro interiore profondo e un cambiamento duraturo. Questo evento esclusivo è progettato per praticanti seri pronti a impegnarsi in un autentico sviluppo spirituale e nell'eccellenza personale."
+    "title": "Non un ritiro. Non un workshop. Un ritorno.",
+    "description": "Per 14 giorni, entra in uno spazio sacro.\n\nDove il silenzio parla più forte delle parole.\n\nDove gli antichi maestri vedici siedono con te—uno a uno.\nQuesto non è una conferenza di gruppo o una soluzione rapida.\nÈ un reset energetico profondo.\nPer quello dentro di te che è stanco di fingere."
   },
   "benefits": {
     "title": "Cosa guadagnerai",

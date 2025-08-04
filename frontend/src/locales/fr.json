@@ -58,43 +58,72 @@
     "bookSession": "Réserver une session",
     "ramBaba": {
       "name": "Ram Baba",
-      "bio": "Consultations privées 1:1 offrant pleine conscience, travail respiratoire et clarté spirituelle.",
-      "specialty": "Méditation et pleine conscience",
+      "bio": "Quand le corps se décompose, la racine est souvent énergétique. Ram Baba offre une guérison qui est à la fois scientifique et spirituelle—Shiva Rasayana, herbes personnalisées, thérapies basées sur la respiration. Il voit où votre énergie est bloquée… et l'aide à bouger à nouveau.",
+      "specialty": "Guérisseur ayurvédique, intuitif védique",
       "offerings": [
-        "Méditation guidée",
-        "Pratiques de pranayama",
-        "Coaching de pleine conscience"
+        "Shiva Rasayana",
+        "Herbes personnalisées",
+        "Thérapies basées sur la respiration"
       ]
     },
     "swamiPratik": {
       "name": "Mahant Swami Pratik Puri",
-      "bio": "Sessions 1:1 axées sur la guérison énergétique indienne ancienne et l'alignement intérieur.",
-      "specialty": "Guérison énergétique",
+      "bio": "Swami n'enseigne pas des méthodes. Il montre une façon d'être. En sa présence, beaucoup trouvent le silence qu'ils ne savaient pas qu'ils désiraient. Il vous aide à revenir—pas à ce qui était—mais à ce qui est réel.",
+      "specialty": "Guide de méditation et enseignant de sagesse",
       "offerings": [
-        "Nettoyage énergétique",
-        "Équilibrage des chakras",
-        "Guidance spirituelle intuitive"
+        "Façon d'être",
+        "Travail de présence",
+        "Silence et quiétude"
       ]
     },
     "nagaBaba": {
       "name": "Mahant Savan Bharti Naga Baba",
-      "bio": "Consultations sur les écritures védiques, la philosophie et la discipline spirituelle.",
-      "specialty": "Philosophie védique",
+      "bio": "Pour ceux qui portent le poids de la douleur générationnelle ou des boucles karmiques… Naga Baba offre des pratiques de nettoyage de l'âme qui transcendent la logique. Il lit votre champ, pas votre visage. Et en 50 minutes, les choses bougent.",
+      "specialty": "Nettoyeur karmique, guide de l'âme",
       "offerings": [
-        "Enseignements védiques",
-        "Étude des écritures",
-        "Conseil de vie spirituelle"
+        "Pratiques de nettoyage de l'âme",
+        "Guérison karmique",
+        "Lecture du champ"
       ]
     },
     "acharyaShyam": {
       "name": "Acharya Shyam Chetan",
-      "bio": "Guidance spirituelle du chemin de la Divine Féminité axée sur la paix intérieure et la transformation.",
-      "specialty": "Conseil spirituel",
+      "bio": "La quiétude n'est pas quelque chose à atteindre. Elle est rappelée. Acharya travaille avec des pratiquants avancés pour approfondir leur chemin—à travers des kriyas yogiques subtils, la respiration et le guidage intérieur.",
+      "specialty": "Enseignant des yogis",
       "offerings": [
-        "Éveil de la Divine Féminité",
-        "Pratiques de paix intérieure",
-        "Guérison émotionnelle et énergétique"
+        "Kriyas yogiques subtils",
+        "Travail respiratoire",
+        "Guidage intérieur"
       ]
+    }
+  },
+  "events": {
+    "title": "Événements",
+    "subtitle": "15-28 SEPT  Rüti ZH, Suisse",
+    "description": "Ce septembre, rencontrez les gardiens de sagesse sacrée de l'Inde à Zurich. Entrez dans un espace sacré avec des maîtres védiques, astrologues et guérisseurs énergétiques.",
+    "notWorkshop": "Ce n'est pas un atelier.",
+    "returnToSoul": "C'est un retour vers quelque chose que votre âme n'a jamais oublié.",
+    "services": {
+      "vedicConsultations": {
+        "title": "Consultations védiques 1:1",
+        "subtitle": "Pas de prédictions. Des réflexions.",
+        "description": "Asseyez-vous avec un maître. Demandez ce que vous avez porté en silence. Repartez avec une clarté qui ne s'estompe pas quand le monde devient bruyant."
+      },
+      "energyHealing": {
+        "title": "Guérison énergétique 1:1",
+        "subtitle": "Quand l'esprit ne peut pas réparer ce que l'âme ressent.",
+        "description": "C'est pour ce qui est coincé. Ce qui est lourd. Ce qui est invisible. L'énergie bouge là où la présence est réelle—et nos mentors apportent exactement cela."
+      },
+      "panchabhutaRituals": {
+        "title": "Rituels Panchabhuta",
+        "subtitle": "Vous êtes fait de terre. Et d'eau. Et de flamme.",
+        "description": "Ce rituel sacré vous ramène aux cinq éléments. Pas pour échapper—mais pour vous souvenir d'où vous appartenez."
+      },
+      "yogaBreathwork": {
+        "title": "Yoga et travail respiratoire 1:1",
+        "subtitle": "Pas enseigné. Transmis.",
+        "description": "Ce n'est pas à propos des postures. C'est à propos de la présence. De la quiétude. De la respiration comme prière. Dirigé par ceux qui vivent leur pratique—pas seulement l'enseignent."
+      }
     }
   },
   "blogs": {
@@ -204,8 +233,8 @@
     "callUs": "Appelez-nous au +91 98765 43210"
   },
   "about": {
-    "title": "À propos de l'événement",
-    "description": "Divine Mentors présente un rassemblement spirituel extraordinaire apportant les traditions de sagesse indienne authentique en Suisse. Nos quatre mentors estimés – directement des centres spirituels de l'Inde – partagent des pratiques séculaires spécifiquement adaptées aux besoins des chercheurs modernes. Ce week-end de transformation intensive combine enseignements classiques et approches scientifiquement validées pour la clarté mentale, l'équilibre émotionnel et la croissance spirituelle. Dans le cadre inspirant des Alpes suisses, vous trouverez l'environnement parfait pour un travail intérieur profond et un changement durable. Cet événement exclusif est conçu pour les praticiens sérieux prêts à s'engager dans un développement spirituel authentique et une excellence personnelle."
+    "title": "Pas une retraite. Pas un atelier. Un retour.",
+    "description": "Pendant 14 jours, entrez dans un espace sacré.\n\nOù le silence parle plus fort que les mots.\n\nOù les anciens maîtres védiques s'assoient avec vous—un à un.\nCe n'est pas une conférence de groupe ou une solution rapide.\nC'est un reset énergétique profond.\nPour celui en vous qui est fatigué de faire semblant."
   },
   "benefits": {
     "title": "Ce que vous gagnerez",

@@ -22,6 +22,7 @@ import UniversityHero from './components/universityhero';
 import PricingSection from './components/pricingsection';
 import BenefitsSection from './components/benefitssection';
 import LanguageSwitcher from './components/LanguageSwitcher';
+import BookingModal from './components/BookingModal';
 import Link from 'next/link';
 // import banner from '';
 
@@ -44,6 +45,7 @@ const DivineMentorsLanding = () => {
   });
   const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isBookingModalOpen, setIsBookingModalOpen] = useState(false);
 
   // Country data with flags and phone codes
   const countries = [
@@ -390,14 +392,14 @@ const DivineMentorsLanding = () => {
 
             {/* Book Now Button */}
             <div className="hidden md:flex">
-              <a href="#contact" className="text-[#576F9F] hover:text-white cursor-pointer bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border hover:bg-[#576F9F] hover:border-white transform hover:scale-105 transition-all inline-block">
+              <button onClick={() => setIsBookingModalOpen(true)} className="text-[#576F9F] hover:text-white cursor-pointer bg-white px-6 py-2 rounded-full hover:shadow-lg hover:border hover:bg-[#576F9F] hover:border-white transform hover:scale-105 transition-all inline-block">
                 {t('navigation.bookNow')}
-              </a>
+              </button>
             </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
-              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-gray-700 cursor-pointer">
+              <button className="text-gray-700 cursor-pointer">
                 {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
             </div>
@@ -425,9 +427,12 @@ const DivineMentorsLanding = () => {
               <div className="px-3 py-2">
                 <LanguageSwitcher />
               </div>
-              <div><Link href="#contact" onClick={() => setIsMenuOpen(false)} className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
+              <div><button onClick={() => {
+                setIsMenuOpen(false);
+                setIsBookingModalOpen(true);
+              }} className="w-full mt-2 bg-[#576F9F] text-white px-6 py-2 rounded-full">
                 {t('navigation.bookNow')}
-              </Link></div>
+              </button></div>
               
             </div>
           </div>
@@ -449,21 +454,29 @@ const DivineMentorsLanding = () => {
       {t('hero.title').split('Authentic Spiritual Wisdom').map((part, index) => (
         <React.Fragment key={index}>
           {part}
-                          {index === 0 && <span className="text-yellow-300">{t('hero.authenticWisdom')}</span>}
+                          {/* {index === 0 && <span className="text-yellow-300">{t('hero.authenticWisdom')}</span>} */}
         </React.Fragment>
       ))}
     </h1>
-    {/* <p className="text-lg sm:text-lg md:text-xl mb-0 sm:mb-2 opacity-90 leading-relaxed">
+    <p className="text-lg sm:text-lg md:text-2xl  sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <p className="text-base sm:text-lg mb-4 sm:mb-4 opacity-80 leading-relaxed">
+    <p className="text-base sm:text-lg mb-4 sm:mb-4 mt-4 opacity-80 leading-relaxed">
       {t('hero.description')}
-    </p> */}
-    <Link href="#contact">
-      <button className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
-        {t('hero.cta')}
-      </button>
-    </Link>
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4">
+      
+        <button onClick={() => setIsBookingModalOpen(true)} className="bg-white cursor-pointer hover:border hover:bg-[#576F9F] hover:border-white hover:text-white text-[#576F9F] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse">
+          {t('hero.cta')}
+        </button>
+     
+      {/* <button 
+        
+        className="bg-[#576F9F] cursor-pointer hover:bg-[#4A5F8A] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse border border-white"
+      >
+        Book Now
+      </button> */}
+    </div>
   </div>
 
 
@@ -956,7 +969,12 @@ const DivineMentorsLanding = () => {
           </div>
         </div>
       </footer>
-      
+
+      {/* Booking Modal */}
+      <BookingModal 
+        isOpen={isBookingModalOpen} 
+        onClose={() => setIsBookingModalOpen(false)} 
+      />
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-6 right-6 z-50 space-y-3">

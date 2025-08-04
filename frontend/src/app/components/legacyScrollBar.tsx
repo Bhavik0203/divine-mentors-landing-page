@@ -1,61 +1,63 @@
+"use client"
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import blogimg2 from "../assets/images/th.jpg"
 // import banner2 from "../images/bg4.png";
 import { Timeline } from "../components/ui/timeline";
 import bgimg from '../../../public/n.jpeg'
 
 export default function OneBlog() {
+  const { t } = useTranslation();
 
- 
   const data = [
     {
-      title: "1:1 Vedic Consultations",
+      title: t('events.services.vedicConsultations.title'),
       content: (
         <div>
           <p className="mb-2 text-[17px] font-normal text-neutral9800 md:text-[30px] ">
-            <strong>rooted in ancient insight</strong>
+            <strong>{t('events.services.vedicConsultations.subtitle')}</strong>
           </p>
           <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 d">
-            Personalized guidance based on the timeless wisdom of the Vedas — uncover deeper truths about your life path, relationships, and purpose through sacred conversation and spiritual counsel.
+            {t('events.services.vedicConsultations.description')}
           </p>
         </div>
       ),
     },
     {
-      title: "1:1 Energy Healing",
+      title: t('events.services.energyHealing.title'),
       content: (
         <div>
           <p className="mb-2 text-[17px] font-normal text-neutral-900 md:text-[30px] ">
-            <strong>to restore what’s been lost</strong>
+            <strong>{t('events.services.energyHealing.subtitle')}</strong>
           </p>
           <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 ">
-            Through ancient energy healing practices, dissolve blockages and recalibrate your inner system to experience clarity, emotional balance, and energetic renewal.
+            {t('events.services.energyHealing.description')}
           </p>
         </div>
       ),
     },
     {
-      title: "Panchabhuta Rituals",
+      title: t('events.services.panchabhutaRituals.title'),
       content: (
         <div>
           <p className="mb-2 text-[17px] font-normal text-neutral-800 md:text-[30px] ">
-            <strong>harmonize with the 5 elements</strong>
+            <strong>{t('events.services.panchabhutaRituals.subtitle')}</strong>
           </p>
           <p className="mb-4 text-[15px] md:text-[16px] text-gray-800">
-            A sacred ritual journey that reconnects you with the elemental forces of Earth, Water, Fire, Air, and Space — aligning body, mind, and spirit with nature’s divine rhythm.
+            {t('events.services.panchabhutaRituals.description')}
           </p>
         </div>
       ),
     },
     {
-      title: "1:1 Yoga & Breathwork",
+      title: t('events.services.yogaBreathwork.title'),
       content: (
         <div>
           <p className="mb-2 text-[17px] font-normal text-neutral-900 md:text-[30px] ">
-            <strong>from teachers who’ve lived it</strong>
+            <strong>{t('events.services.yogaBreathwork.subtitle')}</strong>
           </p>
           <p className="mb-4 text-[15px] md:text-[16px] text-gray-800 ">
-            Dive deep into breath-led movement and traditional yogic wisdom with mentors who embody the path — fostering inner stillness, physical vitality, and spiritual clarity.
+            {t('events.services.yogaBreathwork.description')}
           </p>
         </div>
       ),
@@ -81,15 +83,15 @@ export default function OneBlog() {
     
 <div className="flex-1 w-full max-w-full pt-4 sm:pt-28 ">
 <h3 className="text-4xl font-bold text-black mb-4">
-                       Events
+                       {t('events.title')}
                       </h3>
                       <h2 className="text-4xl font-bold text-black mb-4">
-SEPT 15–28  Rüti ZH, Switzerland
+{t('events.subtitle')}
 </h2>
 
         <p className="text-gray-800 leading-relaxed text-justify" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
-        This September, meet India’s sacred wisdom keepers in Zurich.
-        <br/>Step into a sacred space with Vedic masters, astrologers, and energy healers.</p>
+        {t('events.description')}
+        </p>
       </div>
     </div>
     {/* Right Section with Timeline */}
@@ -101,10 +103,10 @@ SEPT 15–28  Rüti ZH, Switzerland
   {/* Bottom Section */}
   <div className="mx-auto w-full px-0 sm:px-10 text-center lg:mt-4">
     <p className="text-gray-900 text-4xl md:text-5xl font-medium mb-2">
-      This is not a workshop.
+      {t('events.notWorkshop')}
     </p>
     <p className="text-gray-800 text-2xl md:text-3xl italic">
-      This is a return to something your soul never forgot.
+      {t('events.returnToSoul')}
     </p>
   </div>
       </div>
