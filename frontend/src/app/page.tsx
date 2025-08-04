@@ -24,6 +24,7 @@ import BenefitsSection from './components/benefitssection';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import BookingModal from './components/BookingModal';
 import Link from 'next/link';
+import { getApiUrl, API_CONFIG } from '../config/api';
 // import banner from '';
 
 const DivineMentorsLanding = () => {
@@ -148,17 +149,32 @@ const DivineMentorsLanding = () => {
     setIsSubmitting(true);
     
     try {
-      // Here you would typically send the data to your backend
+      // Prepare data for API submission
       const submissionData = {
-        ...formData,
-        phoneNumber: `${selectedCountryData?.phoneCode}${phoneNumber}`,
-        country: selectedCountry
+        fullName: formData.fullName,
+        email: formData.email,
+        phoneNumber: phoneNumber ? `${selectedCountryData?.phoneCode}${phoneNumber}` : null,
+        countryCode: selectedCountryData?.phoneCode || null,
+        package: formData.package || null,
+        specialRequirements: formData.specialRequirements || null
       };
       
       console.log('Form submission data:', submissionData);
       
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Make API call to backend
+      const response = await fetch(getApiUrl(`${API_CONFIG.ENDPOINTS.CONTACTS}/submit`), {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(submissionData)
+      });
+      
+      const result = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(result.message || 'Failed to submit form');
+      }
       
       // Reset form after successful submission
       setFormData({
@@ -171,7 +187,7 @@ const DivineMentorsLanding = () => {
       setPhoneNumber('');
       setFormErrors({});
       
-      // Show success message (you can implement a toast notification here)
+      // Show success message
       alert('Registration completed successfully! We will contact you soon.');
       
     } catch (error) {
@@ -469,7 +485,7 @@ const DivineMentorsLanding = () => {
     <p className="text-lg sm:text-lg md:text-2xl text-white sm:mb-2 opacity-90 leading-relaxed">
       {t('hero.subtitle')}
     </p>
-    <p className="text-base sm:text-lg mb-4 text-white font-bold sm:mb-4 mt-4 opacity-80 leading-relaxed">
+    <p className="text-base sm:text-lg mb-4 text-[#576F9F] font-bold sm:mb-4 mt-4 opacity-80 leading-relaxed">
       {t('hero.description')}
     </p>
     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -489,20 +505,20 @@ const DivineMentorsLanding = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">{t('offerings.title')}</h2>
-        <p className="text-xl text-gray-600">{t('common.learnMore')}</p>
+        {/* <p className="text-xl text-gray-600">{t('common.learnMore')}</p> */}
       </div>
       
-      <div className="relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+      <div className="relative w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center max-w-7xl mx-auto px-4">
           {offerings.map((offering, index) => (
-            <div key={index} className="group flex justify-center">
-              <div className="card group relative w-[280px] h-[320px] bg-white rounded-[15px] flex flex-col items-center justify-center text-center p-6 cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
-                <div className="relative z-10 flex flex-col items-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#576F9F] rounded-2xl text-white mb-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg">
+            <div key={index} className="flex justify-center w-full">
+              <div className="card group relative w-full max-w-[280px] h-[320px] bg-white rounded-[15px] flex flex-col items-center justify-center text-center p-6 cursor-pointer overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative z-10 flex flex-col items-center justify-center h-full w-full">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-[#576F9F] rounded-2xl text-white mb-6 group-hover:rotate-12 transition-transform duration-300 shadow-lg flex-shrink-0">
                     {offering.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#576F9F]/80 transition-colors duration-300">{offering.title}</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">{offering.description}</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#576F9F]/80 transition-colors duration-300 w-full">{offering.title}</h3>
+                  <p className="text-gray-600 leading-relaxed text-sm w-full">{offering.description}</p>
                 </div>
                 
                 {/* Top Right Corner */}
@@ -837,7 +853,7 @@ const DivineMentorsLanding = () => {
                   <textarea 
                     value={formData.specialRequirements}
                     onChange={(e) => handleInputChange('specialRequirements', e.target.value)}
-                    className="w-full px-4 py-3 bg-black/20 backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" 
+                    className="w-full px-4 py-3 bg-black/20 text-white backdrop-blur-md rounded-lg border border-white focus:ring-2 focus:ring-#576F9F focus:border-transparent placeholder-white" 
                     rows={2} 
                     placeholder={t('form.specialRequirementsPlaceholder')}
                   />

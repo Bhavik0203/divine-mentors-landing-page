@@ -6,6 +6,7 @@ require('dotenv').config({ path: './config.env' });
 
 const { sequelize } = require('./config/database');
 const bookingRoutes = require('./routes/bookingRoutes');
+const contactRoutes = require('./routes/contactRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -19,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/bookings', bookingRoutes);
+app.use('/api/contacts', contactRoutes);
 
 // Health check route
 app.get('/health', (req, res) => {

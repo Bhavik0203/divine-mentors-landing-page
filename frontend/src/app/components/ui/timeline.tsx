@@ -38,7 +38,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
       
       <div ref={ref} className="relative mx-auto ">
         {data.map((item, index) => (
-          <div key={index} className="flex justify-start mb-16 md:mb-20 !text-gray-900 selection:!text-gray-900">
+          <div key={index} className="flex justify-start mb-16 md:mb-10 !text-gray-900 selection:!text-gray-900">
             <div
               className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div
@@ -57,7 +57,7 @@ export const Timeline: React.FC<TimelineProps> = ({ data }) => {
                 className="md:hidden block text-2xl mb-6 text-left font-bold !text-gray-900 selection:!text-gray-900">
                 {item.title}
               </h3>
-              <div className="text-lg md:text-xl !text-gray-800 selection:!text-gray-900 leading-relaxed">
+              <div className="text-lg md:text-xl !text-gray-800 selection:!text-gray-900 leading-relaxed" style={{ fontSize: '1.10rem', lineHeight: '2rem', }}>
                 {item.content}
               </div>
             </div>
