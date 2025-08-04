@@ -646,7 +646,6 @@ const DivineMentorsLanding = () => {
               </div>
             </a>
 
-            {/* Bottom Right - Understand the Concepts */}
             <a href="https://divinementors.com/the-role-of-spiritual-counseling-in-mental-health-a-science-backed-alternative-to-psychotherapy/" target="_blank" rel="noopener noreferrer" className="block">
     <div className="relative bg-black overflow-hidden shadow-2xl min-h-[300px] lg:min-h-[350px] hover:shadow-3xl transition-all duration-300">
               <Image 
